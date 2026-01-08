@@ -12,30 +12,44 @@ Este proyecto es un proof of concept que demuestra como la IA puede especializar
 - **Base de Conocimiento**: Incluye la CPE Bolivia 2009 y el Codigo Procesal Constitucional
 - **Interfaz Moderna**: Diseño responsivo con Bootstrap 5
 - **Sugerencias Rapidas**: Preguntas predefinidas para facilitar la consulta
+- **Backend Serverless**: API serverless con Vercel para manejo seguro de credenciales
 
 ## Tecnologias
 
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
-- **Modelo LLM**: Mistral-7B-Instruct via Hugging Face Inference API
-- **Embeddings**: sentence-transformers
+- **Backend**: Vercel Serverless Functions (Node.js)
+- **Modelo LLM**: Llama 3.3 70B via Groq API
+- **Hosting**: Vercel
 
-## Uso
+## Despliegue
 
-1. Visita la pagina web
-2. Configura tu API key de Hugging Face (gratuita)
-3. Escribe tu pregunta sobre la Constitucion boliviana
-4. Recibe respuestas fundamentadas con referencias a articulos especificos
+### Requisitos
+- Node.js
+- Cuenta en Vercel
+- API Key de Groq
+
+### Pasos
+
+1. Clona el repositorio
+2. Instala Vercel CLI: `npm install -g vercel`
+3. Ejecuta: `./scripts/deploy.sh`
+4. Configura la variable de entorno `GROQ_API_KEY` en Vercel
 
 ## Estructura del Proyecto
 
 ```
 abogado-constitucional/
-├── index.html      # Pagina principal
+├── index.html       # Pagina principal
+├── api/
+│   └── chat.js      # Serverless function para Groq
 ├── css/
-│   └── styles.css  # Estilos personalizados
+│   └── styles.css   # Estilos personalizados
 ├── js/
-│   └── app.js      # Logica de la aplicacion
-├── docs/           # Documentos de referencia
+│   └── app.js       # Logica del frontend
+├── scripts/
+│   ├── push.sh      # Script para push a GitHub
+│   └── deploy.sh    # Script para deploy a Vercel
+├── vercel.json      # Configuracion de Vercel
 └── README.md
 ```
 

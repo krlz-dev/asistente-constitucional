@@ -168,12 +168,12 @@
                             <div class="col-md-8">
                                 <h6 class="mb-1"><i class="bi bi-cpu me-2"></i>Modelo de IA</h6>
                                 <p class="text-muted mb-0 small">
-                                    Utilizando <strong>Mistral-7B-Instruct</strong> optimizado para español legal,
+                                    Utilizando <strong>Llama 3.3 70B</strong> via Groq,
                                     con contexto específico de la CPE Bolivia 2009.
                                 </p>
                             </div>
                             <div class="col-md-4 text-md-end">
-                                <span class="badge bg-info"><i class="bi bi-hdd-stack me-1"></i>Hugging Face</span>
+                                <span class="badge bg-info"><i class="bi bi-lightning me-1"></i>Groq</span>
                                 <span class="badge bg-secondary"><i class="bi bi-translate me-1"></i>Español</span>
                             </div>
                         </div>
@@ -291,11 +291,11 @@
                             <ul class="list-unstyled tech-stack">
                                 <li class="d-flex justify-content-between py-2 border-bottom">
                                     <span><i class="bi bi-cpu me-2 text-primary"></i>Modelo LLM</span>
-                                    <span class="badge bg-primary">Mistral-7B-Instruct</span>
+                                    <span class="badge bg-primary">Llama 3.3 70B</span>
                                 </li>
                                 <li class="d-flex justify-content-between py-2 border-bottom">
                                     <span><i class="bi bi-cloud me-2 text-info"></i>Plataforma</span>
-                                    <span class="badge bg-info">Hugging Face Inference</span>
+                                    <span class="badge bg-info">Groq Cloud</span>
                                 </li>
                                 <li class="d-flex justify-content-between py-2 border-bottom">
                                     <span><i class="bi bi-database me-2 text-success"></i>Embeddings</span>
@@ -362,35 +362,6 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn btn-primary"><i class="bi bi-cloud-upload me-2"></i>Subir</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- API Key Modal -->
-    <div class="modal fade" id="apiKeyModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-warning">
-                    <h5 class="modal-title"><i class="bi bi-key me-2"></i>Configurar API Key</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Para usar el asistente, necesitas una API key de Hugging Face:</p>
-                    <div class="mb-3">
-                        <label class="form-label">Hugging Face API Key</label>
-                        <input type="password" class="form-control" id="hfApiKey" placeholder="hf_xxxxxxxxxxxxx">
-                    </div>
-                    <div class="alert alert-info small">
-                        <i class="bi bi-info-circle me-2"></i>
-                        Obtén tu API key gratis en <a href="https://huggingface.co/settings/tokens" target="_blank">huggingface.co/settings/tokens</a>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary" id="saveApiKey">
-                        <i class="bi bi-save me-2"></i>Guardar
-                    </button>
                 </div>
             </div>
         </div>
