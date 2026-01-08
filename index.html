@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente Constitucional Bolivia | Abogado Virtual</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-bank2 me-2"></i>
+                <span>Constitución Bolivia IA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#chat"><i class="bi bi-chat-dots me-1"></i>Consultar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documentos"><i class="bi bi-file-earmark-text me-1"></i>Documentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca"><i class="bi bi-info-circle me-1"></i>Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 pt-5">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Tu Asistente de <span class="text-warning">Derecho Constitucional</span> Boliviano
+                    </h1>
+                    <p class="lead text-white-50 mb-4">
+                        Consulta sobre la Constitución Política del Estado Plurinacional de Bolivia de forma inteligente.
+                        Obtén respuestas claras y fundamentadas en cuestión de segundos.
+                    </p>
+                    <a href="#chat" class="btn btn-warning btn-lg px-4 me-2">
+                        <i class="bi bi-chat-dots me-2"></i>Iniciar Consulta
+                    </a>
+                    <a href="#documentos" class="btn btn-outline-light btn-lg px-4">
+                        <i class="bi bi-book me-2"></i>Ver Documentos
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-illustration">
+                        <i class="bi bi-building-gear"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold">Consulta Constitucional</h2>
+                        <p class="text-muted">Realiza tus preguntas sobre la Constitución Política del Estado Plurinacional de Bolivia</p>
+                    </div>
+
+                    <!-- Quick Prompts -->
+                    <div class="quick-prompts mb-4">
+                        <h6 class="text-muted mb-3"><i class="bi bi-lightbulb me-2"></i>Preguntas sugeridas:</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Cuáles son los derechos fundamentales según la Constitución de Bolivia?">
+                                <i class="bi bi-shield-check me-1"></i>Derechos Fundamentales
+                            </button>
+                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Cómo está organizado el Estado Plurinacional de Bolivia?">
+                                <i class="bi bi-diagram-3 me-1"></i>Organización del Estado
+                            </button>
+                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Qué dice la Constitución sobre los derechos de los pueblos indígenas originarios?">
+                                <i class="bi bi-people me-1"></i>Pueblos Indígenas
+                            </button>
+                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Cuáles son las funciones del Tribunal Constitucional Plurinacional?">
+                                <i class="bi bi-bank me-1"></i>Tribunal Constitucional
+                            </button>
+                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Qué establece la Constitución sobre el régimen económico?">
+                                <i class="bi bi-graph-up me-1"></i>Régimen Económico
+                            </button>
+                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Cómo se puede reformar la Constitución de Bolivia?">
+                                <i class="bi bi-pencil-square me-1"></i>Reforma Constitucional
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Chat Container -->
+                    <div class="chat-container card shadow-lg">
+                        <div class="chat-header card-header bg-primary text-white">
+                            <div class="d-flex align-items-center">
+                                <div class="avatar-icon me-3">
+                                    <i class="bi bi-robot"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Asistente Constitucional</h5>
+                                    <small class="opacity-75">Especializado en CPE Bolivia 2009</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="badge bg-success"><i class="bi bi-circle-fill me-1" style="font-size: 8px;"></i>En línea</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-messages card-body" id="chatMessages">
+                            <!-- Welcome Message -->
+                            <div class="message assistant-message">
+                                <div class="message-avatar">
+                                    <i class="bi bi-robot"></i>
+                                </div>
+                                <div class="message-content">
+                                    <p>¡Bienvenido! Soy tu asistente especializado en la <strong>Constitución Política del Estado Plurinacional de Bolivia</strong>.</p>
+                                    <p>Puedo ayudarte con consultas sobre:</p>
+                                    <ul>
+                                        <li>Derechos fundamentales y garantías constitucionales</li>
+                                        <li>Organización del Estado y sus órganos</li>
+                                        <li>Derechos de las naciones y pueblos indígenas</li>
+                                        <li>Procedimientos constitucionales</li>
+                                        <li>Y mucho más...</li>
+                                    </ul>
+                                    <p>¿En qué puedo ayudarte hoy?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-input card-footer">
+                            <form id="chatForm" class="d-flex gap-2">
+                                <input type="text"
+                                       class="form-control form-control-lg"
+                                       id="userInput"
+                                       placeholder="Escribe tu pregunta sobre la Constitución..."
+                                       autocomplete="off">
+                                <button type="submit" class="btn btn-primary btn-lg px-4" id="sendBtn">
+                                    <i class="bi bi-send"></i>
+                                </button>
+                            </form>
+                            <div class="text-center mt-2">
+                                <small class="text-muted">
+                                    <i class="bi bi-info-circle me-1"></i>
+                                    Presiona Enter para enviar o haz clic en el botón
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Model Info -->
+                    <div class="model-info mt-4 p-3 bg-white rounded shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h6 class="mb-1"><i class="bi bi-cpu me-2"></i>Modelo de IA</h6>
+                                <p class="text-muted mb-0 small">
+                                    Utilizando <strong>Mistral-7B-Instruct</strong> optimizado para español legal,
+                                    con contexto específico de la CPE Bolivia 2009.
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <span class="badge bg-info"><i class="bi bi-hdd-stack me-1"></i>Hugging Face</span>
+                                <span class="badge bg-secondary"><i class="bi bi-translate me-1"></i>Español</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documentos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Base de Conocimiento</h2>
+                <p class="text-muted">Documentos cargados para el asistente constitucional</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="document-icon mb-3">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+                            <h5 class="card-title">Constitución Política del Estado</h5>
+                            <p class="card-text text-muted">CPE Bolivia 2009 - Texto completo con 411 artículos</p>
+                            <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i>Cargado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="document-icon mb-3">
+                                <i class="bi bi-file-earmark-ruled"></i>
+                            </div>
+                            <h5 class="card-title">Código Procesal Constitucional</h5>
+                            <p class="card-text text-muted">Ley 254 - Procedimientos ante el TCP</p>
+                            <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i>Cargado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="document-icon mb-3">
+                                <i class="bi bi-file-earmark-plus"></i>
+                            </div>
+                            <h5 class="card-title">Agregar Documento</h5>
+                            <p class="card-text text-muted">Sube documentos adicionales para ampliar la base</p>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                                <i class="bi bi-upload me-1"></i>Subir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="acerca" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Sobre este Proyecto</h2>
+                    <p class="lead">
+                        Este es un <strong>proof of concept</strong> que demuestra cómo la inteligencia artificial
+                        puede especializarse en dominios legales específicos.
+                    </p>
+                    <p class="text-muted">
+                        El asistente está entrenado específicamente con la Constitución Política del Estado
+                        Plurinacional de Bolivia (2009) y documentos relacionados, permitiendo respuestas
+                        precisas y fundamentadas en derecho constitucional boliviano.
+                    </p>
+
+                    <div class="features-list mt-4">
+                        <div class="feature-item d-flex align-items-start mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">Especialización Legal</h6>
+                                <small class="text-muted">Enfocado exclusivamente en derecho constitucional boliviano</small>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex align-items-start mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">Respuestas Fundamentadas</h6>
+                                <small class="text-muted">Referencias a artículos específicos de la CPE</small>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex align-items-start mb-3">
+                            <div class="feature-icon me-3">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">Modelo Escalable</h6>
+                                <small class="text-muted">Arquitectura replicable para otras especialidades</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-dark text-white">
+                            <i class="bi bi-code-slash me-2"></i>Arquitectura Técnica
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled tech-stack">
+                                <li class="d-flex justify-content-between py-2 border-bottom">
+                                    <span><i class="bi bi-cpu me-2 text-primary"></i>Modelo LLM</span>
+                                    <span class="badge bg-primary">Mistral-7B-Instruct</span>
+                                </li>
+                                <li class="d-flex justify-content-between py-2 border-bottom">
+                                    <span><i class="bi bi-cloud me-2 text-info"></i>Plataforma</span>
+                                    <span class="badge bg-info">Hugging Face Inference</span>
+                                </li>
+                                <li class="d-flex justify-content-between py-2 border-bottom">
+                                    <span><i class="bi bi-database me-2 text-success"></i>Embeddings</span>
+                                    <span class="badge bg-success">sentence-transformers</span>
+                                </li>
+                                <li class="d-flex justify-content-between py-2 border-bottom">
+                                    <span><i class="bi bi-translate me-2 text-warning"></i>Idioma</span>
+                                    <span class="badge bg-warning text-dark">Español Nativo</span>
+                                </li>
+                                <li class="d-flex justify-content-between py-2">
+                                    <span><i class="bi bi-front me-2 text-secondary"></i>Frontend</span>
+                                    <span class="badge bg-secondary">Bootstrap 5</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">
+                        <i class="bi bi-bank2 me-2"></i>
+                        <strong>Asistente Constitucional Bolivia</strong>
+                    </p>
+                    <small class="text-muted">Proof of Concept - Aplicaciones de IA Especializadas</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">
+                        Desarrollado con <i class="bi bi-heart-fill text-danger"></i> para el Estado Plurinacional de Bolivia
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Upload Modal -->
+    <div class="modal fade" id="uploadModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-upload me-2"></i>Subir Documento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Selecciona un documento (PDF, TXT, DOCX)</label>
+                        <input type="file" class="form-control" accept=".pdf,.txt,.docx">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Descripción del documento</label>
+                        <textarea class="form-control" rows="3" placeholder="Ej: Ley del Tribunal Constitucional..."></textarea>
+                    </div>
+                    <div class="alert alert-info small">
+                        <i class="bi bi-info-circle me-2"></i>
+                        Los documentos serán procesados y añadidos a la base de conocimiento del asistente.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary"><i class="bi bi-cloud-upload me-2"></i>Subir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Key Modal -->
+    <div class="modal fade" id="apiKeyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title"><i class="bi bi-key me-2"></i>Configurar API Key</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Para usar el asistente, necesitas una API key de Hugging Face:</p>
+                    <div class="mb-3">
+                        <label class="form-label">Hugging Face API Key</label>
+                        <input type="password" class="form-control" id="hfApiKey" placeholder="hf_xxxxxxxxxxxxx">
+                    </div>
+                    <div class="alert alert-info small">
+                        <i class="bi bi-info-circle me-2"></i>
+                        Obtén tu API key gratis en <a href="https://huggingface.co/settings/tokens" target="_blank">huggingface.co/settings/tokens</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="saveApiKey">
+                        <i class="bi bi-save me-2"></i>Guardar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
