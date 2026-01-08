@@ -7,13 +7,19 @@
 
 // Configuration
 const CONFIG = {
-    API_URL: '/api/chat'
+    API_URL: '/api/chat',
+    ARTICLES_API: '/api/articles'
 };
 
 // Application State
 let state = {
     chatHistory: [],
-    isLoading: false
+    isLoading: false,
+    articles: [],
+    filteredArticles: [],
+    articlesDisplayed: 0,
+    articlesPerPage: 20,
+    currentArticle: null
 };
 
 // DOM Elements
@@ -51,6 +57,9 @@ function initApp() {
             }
         });
     });
+
+    // Initialize articles section
+    initArticles();
 }
 
 // Handle form submission
@@ -207,4 +216,254 @@ function setLoading(isLoading) {
 // Scroll chat to bottom
 function scrollToBottom() {
     chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// ==========================================
+// ARTICLES SECTION
+// ==========================================
+
+async function initArticles() {
+    const articlesGrid = document.getElementById('articlesGrid');
+    const articleSearch = document.getElementById('articleSearch');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
+
+    if (!articlesGrid) return;
+
+    // Load articles
+    try {
+        const response = await fetch(CONFIG.ARTICLES_API);
+        if (!response.ok) throw new Error('Failed to load articles');
+
+        const data = await response.json();
+        state.articles = data.articulos || [];
+        state.filteredArticles = [...state.articles];
+
+        // Update stats
+        document.getElementById('totalArticles').textContent = state.articles.length;
+        const withAnalysis = state.articles.filter(a => a.tieneAnalisis).length;
+        document.getElementById('articlesWithAnalysis').textContent = withAnalysis;
+
+        // Display articles
+        displayArticles();
+
+    } catch (error) {
+        console.error('Error loading articles:', error);
+        articlesGrid.innerHTML = `
+            <div class="col-12 text-center py-5">
+                <i class="bi bi-exclamation-triangle text-warning" style="font-size: 3rem;"></i>
+                <p class="text-muted mt-2">No se pudieron cargar los artículos</p>
+            </div>
+        `;
+    }
+
+    // Search functionality
+    if (articleSearch) {
+        articleSearch.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            filterArticles(query);
+        });
+    }
+
+    // Load more button
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            displayArticles(true);
+        });
+    }
+
+    // Ask about article button
+    const askAboutBtn = document.getElementById('askAboutArticle');
+    if (askAboutBtn) {
+        askAboutBtn.addEventListener('click', () => {
+            if (state.currentArticle) {
+                const articleModal = bootstrap.Modal.getInstance(document.getElementById('articleModal'));
+                articleModal.hide();
+
+                userInput.value = `Explícame el Artículo ${state.currentArticle.id} de la Constitución`;
+                document.getElementById('chat').scrollIntoView({ behavior: 'smooth' });
+                userInput.focus();
+            }
+        });
+    }
+}
+
+function filterArticles(query) {
+    if (!query) {
+        state.filteredArticles = [...state.articles];
+    } else {
+        state.filteredArticles = state.articles.filter(art => {
+            const idMatch = art.id.toString().includes(query);
+            const titleMatch = (art.titulo || '').toLowerCase().includes(query);
+            const descMatch = (art.presentacion || '').toLowerCase().includes(query);
+            return idMatch || titleMatch || descMatch;
+        });
+    }
+
+    state.articlesDisplayed = 0;
+    displayArticles();
+}
+
+function displayArticles(append = false) {
+    const articlesGrid = document.getElementById('articlesGrid');
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
+
+    if (!append) {
+        articlesGrid.innerHTML = '';
+        state.articlesDisplayed = 0;
+    }
+
+    const start = state.articlesDisplayed;
+    const end = start + state.articlesPerPage;
+    const toDisplay = state.filteredArticles.slice(start, end);
+
+    if (toDisplay.length === 0 && !append) {
+        articlesGrid.innerHTML = `
+            <div class="col-12 text-center py-5">
+                <i class="bi bi-search text-muted" style="font-size: 3rem;"></i>
+                <p class="text-muted mt-2">No se encontraron artículos</p>
+            </div>
+        `;
+        loadMoreContainer.style.display = 'none';
+        return;
+    }
+
+    toDisplay.forEach(article => {
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-4';
+        col.innerHTML = `
+            <div class="card article-card h-100 shadow-sm" data-article-id="${article.id}">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge bg-primary">Art. ${article.id}</span>
+                        ${article.tieneAnalisis ? '<span class="badge bg-success"><i class="bi bi-check-circle"></i></span>' : ''}
+                    </div>
+                    <h6 class="card-title">${article.titulo || 'Artículo ' + article.id}</h6>
+                    <p class="card-text small text-muted">${article.presentacion ? article.presentacion.substring(0, 150) + '...' : 'Sin descripción disponible'}</p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <button class="btn btn-sm btn-outline-primary w-100 view-article-btn">
+                        <i class="bi bi-eye me-1"></i>Ver detalle
+                    </button>
+                </div>
+            </div>
+        `;
+
+        // Add click handler
+        col.querySelector('.view-article-btn').addEventListener('click', () => {
+            showArticleDetail(article.id);
+        });
+
+        articlesGrid.appendChild(col);
+    });
+
+    state.articlesDisplayed = end;
+
+    // Show/hide load more button
+    if (end < state.filteredArticles.length) {
+        loadMoreContainer.style.display = 'block';
+    } else {
+        loadMoreContainer.style.display = 'none';
+    }
+}
+
+async function showArticleDetail(articleId) {
+    const modalTitle = document.getElementById('articleModalTitle');
+    const modalBody = document.getElementById('articleModalBody');
+    const modal = new bootstrap.Modal(document.getElementById('articleModal'));
+
+    modalTitle.textContent = `Artículo ${articleId}`;
+    modalBody.innerHTML = `
+        <div class="text-center py-5">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="text-muted mt-2">Cargando artículo...</p>
+        </div>
+    `;
+
+    modal.show();
+
+    try {
+        const response = await fetch(`${CONFIG.ARTICLES_API}?id=${articleId}`);
+        if (!response.ok) throw new Error('Article not found');
+
+        const article = await response.json();
+        state.currentArticle = article;
+
+        modalTitle.textContent = article.titulo || `Artículo ${articleId}`;
+
+        let content = '';
+
+        if (article.articuloTranscrito) {
+            content += `
+                <div class="mb-4">
+                    <h6 class="text-primary"><i class="bi bi-file-text me-2"></i>Texto del Artículo</h6>
+                    <div class="p-3 bg-light rounded">${article.articuloTranscrito}</div>
+                </div>
+            `;
+        }
+
+        if (article.presentacion) {
+            content += `
+                <div class="mb-4">
+                    <h6 class="text-primary"><i class="bi bi-info-circle me-2"></i>Presentación</h6>
+                    <p>${article.presentacion}</p>
+                </div>
+            `;
+        }
+
+        if (article.descripcion) {
+            content += `
+                <div class="mb-4">
+                    <h6 class="text-primary"><i class="bi bi-card-text me-2"></i>Descripción</h6>
+                    <p>${article.descripcion}</p>
+                </div>
+            `;
+        }
+
+        if (article.analisis && article.analisis.length > 0) {
+            content += `
+                <div class="mb-4">
+                    <h6 class="text-primary"><i class="bi bi-lightbulb me-2"></i>Análisis</h6>
+                    <div class="accordion" id="analysisAccordion">
+            `;
+
+            article.analisis.forEach((analisis, idx) => {
+                content += `
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button ${idx > 0 ? 'collapsed' : ''}" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#analysis${idx}">
+                                <span class="badge bg-secondary me-2">${analisis.tipo}</span>
+                                ${analisis.titulo}
+                            </button>
+                        </h2>
+                        <div id="analysis${idx}" class="accordion-collapse collapse ${idx === 0 ? 'show' : ''}"
+                             data-bs-parent="#analysisAccordion">
+                            <div class="accordion-body">
+                                ${analisis.contenido || 'Sin contenido disponible'}
+                                ${analisis.concordancias ? `<hr><small class="text-muted"><strong>Concordancias:</strong> ${analisis.concordancias}</small>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            content += `</div></div>`;
+        }
+
+        if (!content) {
+            content = '<p class="text-muted">No hay información detallada disponible para este artículo.</p>';
+        }
+
+        modalBody.innerHTML = content;
+
+    } catch (error) {
+        console.error('Error loading article:', error);
+        modalBody.innerHTML = `
+            <div class="text-center py-5">
+                <i class="bi bi-exclamation-triangle text-warning" style="font-size: 3rem;"></i>
+                <p class="text-muted mt-2">No se pudo cargar el artículo</p>
+            </div>
+        `;
+    }
 }

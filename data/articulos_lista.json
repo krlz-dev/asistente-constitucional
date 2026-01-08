@@ -1,0 +1,2540 @@
+[
+  {
+    "id": 1,
+    "titulo": "Artículo 1",
+    "presentacion": "El Artículo 1 inaugura el apartado dedicado a las bases fundamentales del Estado. Hace referencia al modelo de Estado en el que Bolivia se constituye y señala cada uno de los pilares y fundamentos del mismo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 2,
+    "titulo": "Artículo 2",
+    "presentacion": "El Artículo 2 se encuentra en el apartado dedicado a las bases fundamentales del Estado. Hace referencia al derecho a la libre determinación de las naciones y pueblos indígena originario campesinos y las dimensiones que abarca el mismo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 3,
+    "titulo": "Artículo 3",
+    "presentacion": "El Artículo 3 se encuentra en el apartado dedicado al modelo de Estado. Hace referencia a la conformación de la nación boliviana y define al pueblo boliviano....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 4,
+    "titulo": "Artículo 4",
+    "presentacion": "El Artículo 4 se encuentra en el apartado referido al modelo de Estado. Hace referencia a la libertad de religión y creencias espirituales conforme a las distintas cosmovisiones, así como la independencia del Estado de la religión....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 5,
+    "titulo": "Artículo 5",
+    "presentacion": "El Artículo 5 se encuentra en el apartado dedicado al modelo de Estado. Hace referencia a los idiomas oficiales del Estado y a su uso en el espacio público....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 6,
+    "titulo": "Artículo 6",
+    "presentacion": "El Artículo 6 clausura el apartado dedicado al modelo de Estado. Hace referencia a la localización de la Capital de Bolivia y establece los símbolos del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 7,
+    "titulo": "Artículo 7",
+    "presentacion": "El Artículo 7 se encuentra en el apartado dedicado a las bases fundamentales del Estado. Hace referencia a las características y determinaciones de la soberanía....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 8,
+    "titulo": "Artículo 8",
+    "presentacion": "El Artículo 8 se encuentra en el apartado dedicado a los principios, valores y fines del Estado. Hace referencia a los principios ético-morales de la sociedad plural que el Estado asume y promueve, y que constituyen la propuesta del vivir bien; también hace referencia a los valores sobre los que el ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 9,
+    "titulo": "Artículo 9",
+    "presentacion": "El Artículo 9 se encuentra en el apartado dedicado a principios, valores y fines del Estado. Hace referencia a los fines y funciones esenciales del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 10,
+    "titulo": "Artículo 10",
+    "presentacion": "El Artículo 10 se encuentra en el apartado dedicado a los principios, valores y fines del Estado. Hace referencia a Bolivia como un Estado pacifista, que rechaza toda guerra de agresión y prohíbe la instalación de bases militares extranjeras....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 11,
+    "titulo": "Artículo 11 ",
+    "presentacion": "El Artículo 11 se encuentra en el apartado dedicado al sistema de gobierno. Hace referencia a la forma de gobierno que adopta el Estado boliviano que es democrática, participativa, representativa y comunitaria. Asimismo el artículo establece las instituciones de cada uno de estos tipos de democracia...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 12,
+    "titulo": "Artículo 12",
+    "presentacion": "El Artículo 12 clausura el apartado dedicado al modelo de Estado. Hace referencia a la organización y estructura del poder público, a través del reconocimiento de los órganos del Estado, sobre todo a partir de la inclusión del órgano Electoral a los tradicionales Legislativo, Ejecutivo y Judicial. T...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 13,
+    "titulo": "Artículo 13",
+    "presentacion": "El Artículo 13 se encuentra en el apartado dedicado a las disposiciones generales de los derechos fundamentales y garantías. Hace referencia a los parámetros generales de los derechos reconocidos por la Constitución Política del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 14,
+    "titulo": "Artículo 14",
+    "presentacion": "El Artículo 14 se encuentra en el apartado dedicado a las disposiciones generales de los derechos fundamentales y garantías. Hace referencia a la personalidad y capacidad jurídica de todos los seres humanos; la prohibición y sanción de toda forma de discriminación; el ejercicio de derechos; la aplic...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 15,
+    "titulo": "Artículo 15",
+    "presentacion": "El Artículo 15 se encuentra en el apartado dedicado a los derechos fundamentales–fundamentales. Hace referencia al derecho a la vida y a la integridad; las prohibiciones de tortura, tratos crueles, inhumanos, degradantes o humillantes, pena de muerte, violencia, desapariciones forzadas, servidumbre,...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 16,
+    "titulo": "Artículo 16",
+    "presentacion": "El Artículo 16 se encuentra en el apartado dedicado a los derechos fundamentales–fundamentales. Hace referencia al derecho al agua y a la alimentación. Asimismo estipula la obligación estatal de garantizar la seguridad alimentaria....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 17,
+    "titulo": "Artículo 17",
+    "presentacion": "El Artículo 17 se encuentra en el apartado dedicado a los derechos fundamentales-fundamentales. Hace referencia a que el derecho a recibir educación en todos los niveles es un derecho fundamental de toda persona, y establece además las características básicas de éste....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 18,
+    "titulo": "Artículo 18 ",
+    "presentacion": "El Artículo 18 se encuentra en el apartado dedicado a los derechos fundamentales-fundamentales. Hace referencia al derecho a la salud, determina la obligación estatal de inclusión y acceso a la salud de todas las personas y las características y principios del derecho a la salud....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 19,
+    "titulo": "Artículo 19",
+    "presentacion": "El Artículo 19 se encuentra en el apartado dedicado a los derechos fundamentales–fundamentales. Hace referencia al derecho a un hábitat y vivienda adecuada y determina la obligación estatal de promover los planes de vivienda de interés social....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 20,
+    "titulo": "Artículo 20",
+    "presentacion": "El Artículo 20 se encuentra en el apartado dedicado a los derechos fundamentales–fundamentales. Hace referencia al derecho de acceso a los servicios básicos de agua potable, alcantarillado, electricidad, gas domiciliario, postal y telecomunicaciones. Adicionalmente establece la responsabilidad estat...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 21,
+    "titulo": "Artículo 21",
+    "presentacion": "El Artículo 21 se encuentra en el apartado sobre derechos civiles. Hace referencia a los derechos civiles reconocidos a los bolivianos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 22,
+    "titulo": "Artículo 22",
+    "presentacion": "El Artículo 22 se encuentra en el apartado sobre derechos civiles. Hace referencia a la inviolabilidad de la dignidad y la libertad de la persona....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 23,
+    "titulo": "Artículo 23",
+    "presentacion": "El Artículo 23 se encuentra en el apartado sobre derechos civiles. Hace referencia a la libertad y la seguridad personal, las medidas privativas de libertad en caso de adolescentes, y las medidas a tomar en caso de delito flagrante. También establece el derecho a la información de la persona privada...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 24,
+    "titulo": "Artículo 24",
+    "presentacion": "El Artículo 24 se encuentra en el apartado dedicado a los derechos civiles. Hace referencia al derecho de petición y la obtención de respuesta formal y pronta. Además indica que la identificación del peticionario es el único requerimiento para ejercer dicho derecho....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 25,
+    "titulo": "Artículo 25",
+    "presentacion": "El Artículo 25 se encuentra en el apartado dedicado a los derechos civiles. Hace referencia a la inviolabilidad del domicilio, de la correspondencia, de papeles privados y manifestaciones privadas contenidas en cualquier soporte, además del secreto de las comunicaciones privadas, salvo la existencia...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 26,
+    "titulo": "Artículo 26",
+    "presentacion": "El Artículo 26 inaugura el apartado dedicado a los derechos de participación política. Hace referencia al derecho de las ciudadanas y los ciudadanos de participar en la formación, ejercicio y control del poder político, las vías y condiciones para el ejercicio de este derecho....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 27,
+    "titulo": "Artículo 27",
+    "presentacion": "El Artículo 27 se encuentra en el apartado dedicado a los derechos de participación política. Hace referencia al derecho de las bolivianas y los bolivianos residentes en el exterior de participar en las elecciones de la Presidencia y Vicepresidencia del Estado y demás señaladas por la ley, asimismo ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 28,
+    "titulo": "Artículo 28",
+    "presentacion": "El Artículo 28 se encuentra en el apartado dedicado a los derechos de participación política. Hace referencia a la suspensión del ejercicio de los derechos políticos, así como las acciones que puedan llevar a dicha medida....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 29,
+    "titulo": "Artículo 29",
+    "presentacion": "El Artículo 29 se encuentra en el apartado dedicado a los derechos de participación política. Hace referencia al reconocimiento del derecho a pedir asilo y refugio, por parte de ciudadanos extranjeros víctimas de persecución política o ideológica, así como la imposibilidad de expulsar o entregar a u...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 30,
+    "titulo": "Artículo 30",
+    "presentacion": "El Artículo 30 se encuentra en el apartado dedicado a los derechos de las naciones y pueblos indígena originario campesinos. Hace referencia a los parámetros que permiten definir a una nación y pueblo indígena originario campesino y establece los derechos fundamentales de estas colectividades. Final...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 31,
+    "titulo": "Artículo 31",
+    "presentacion": "El Artículo 31 se encuentra en el apartado dedicado a los derechos de las naciones y pueblos indígena originario campesinos. Hace referencia a las naciones y pueblos indígena originario campesinos en peligro de extinción, en situación de aislamiento voluntario, y no contactados, así como a su derech...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 32,
+    "titulo": "Artículo 32",
+    "presentacion": "El Artículo 32 se encuentra en el apartado dedicado a los derechos de las naciones y pueblos indígena originario campesinos. Hace referencia a los derechos que goza el pueblo afroboliviano....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 33,
+    "titulo": "Artículo 33",
+    "presentacion": "El Artículo 33 se encuentra en el apartado sobre derecho del medio ambiente. Hace referencia a los derechos de las personas, al medio ambiente, a la garantía en el ejercicio de estos derechos a individuos y colectividades de las presentes y futuras generaciones, así como a otros seres vivos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 34,
+    "titulo": "Artículo 34",
+    "presentacion": "El Artículo 34 se encuentra en el aparatado dedicado a los derechos del medio ambiente. Hace referencia a la facultad de toda persona para ejercitar las acciones legales en defensa del derecho del medio ambiente, además de las acciones de oficio de las instituciones públicas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 35,
+    "titulo": "Artículo 35",
+    "presentacion": "El Artículo 35 inaugura el apartado de derechos a la salud. Hace referencia a la protección y promoción del derecho de salud. Adicionalmente determina la incorporación de la medicina tradicional al Sistema Único de Salud....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 36,
+    "titulo": "Artículo 36",
+    "presentacion": "El Artículo 36 se encuentra en el apartado referido al derecho a la salud y a la seguridad social. Hace referencia a la disposición constitucional que el Estado garantice el acceso al seguro universal de salud. Adicionalmente estipula como rol del Estado el control del ejercicio de los servicios púb...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 37,
+    "titulo": "Artículo 37",
+    "presentacion": "El Artículo 37 se encuentra en el apartado dedicado al derecho a la salud y a la seguridad social. Hace referencia a la obligación estatal garantizar y sostener el derecho a la salud, mismo que se constituye en una función suprema y primera responsabilidad financiera. Adicionalmente establece que se...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 38,
+    "titulo": "Artículo 38",
+    "presentacion": "El Artículo 38 se encuentra en el apartado de derecho a la salud y a la seguridad social. Hace referencia a los bienes y servicios públicos de salud como propiedad del Estado, los mismos no podrán ser privatizados, ni concesionados. Además determina la prestación de forma ininterrumpida de los servi...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 39,
+    "titulo": "Artículo 39",
+    "presentacion": "El Artículo 39 se encuentra en el apartado dedicado a los derechos de las personas privadas de libertad. Hace referencia a la garantía estatal del servicio público de salud y al reconocimiento del servicio privado de salud. La regulación y la vigilancia para la atención de calidad, infraestructura y...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 40,
+    "titulo": "Artículo 40",
+    "presentacion": "El Artículo 40 se encuentra en el apartado dedicado a los derechos a la salud y a la seguridad social. Hace referencia a la obligación estatal de garantizar la participación de la población organizada en la toma de decisión y gestión del sistema público de salud....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 41,
+    "titulo": "Artículo 41",
+    "presentacion": "El Artículo 41 se encuentra en el apartado dedicado a los derechos a la salud y a la seguridad social. Hace referencia a la obligación estatal de garantizar el acceso de la población a los medicamentos, en los que se priorizarán los medicamentos genéricos. El derecho al acceso no podrá ser restringi...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 42,
+    "titulo": "Artículo 42",
+    "presentacion": "El Artículo 42 se encuentra en el apartado de derecho a la salud. Hace referencia a la responsabilidad estatal de promoción y garantía de la medicina tradicional. También estipula la promoción y la regulación de la medicina tradicional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 43,
+    "titulo": "Artículo 43",
+    "presentacion": "El Artículo 43 se encuentra en el apartado dedicado al derecho a la salud. Hace referencia a la regulación de las donaciones o trasplantes de células, tejidos u otros órganos a través de una reserva de ley....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 44,
+    "titulo": "Artículo 44",
+    "presentacion": "El Artículo 44 se encuentra en el apartado de los derechos a la salud. Hace referencia a la prohibición del sometimiento de una persona a intervenciones quirúrgicas, examen médico o de laboratorio, o experimentos científicos, sin su consentimiento....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 45,
+    "titulo": "Artículo 45",
+    "presentacion": "El Artículo 45 se encuentra en el apartado dedicado al derecho a la salud. Hace referencia al derecho de todas las bolivianas y los bolivianos al acceso a la seguridad social, sus principios, dirección y administración. Asimismo estipula el alcance de la cobertura del régimen de seguridad social, la...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 46,
+    "titulo": "Artículo 46",
+    "presentacion": "El Artículo 46 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia al derecho de toda persona al trabajo digno con una remuneración justa y a una fuente laboral estable. El Estado debe proteger el trabajo. Así también se prohíbe el trabajo forzoso u otras formas d...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 47,
+    "titulo": "Artículo 47",
+    "presentacion": "El Artículo 47 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia al derecho que tiene cualquier persona de dedicarse a cualquier actividad económica lícita y que no sea perjudicial al bien colectivo, asimismo establece la protección estatal a trabajadoras y trab...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 48,
+    "titulo": "Artículo 48",
+    "presentacion": "El Artículo 48 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia a la obligatoriedad en el cumplimiento de las disposiciones sociales y laborales, el respeto al principio de protección de los trabajadores, el reconocimiento de sus derechos y beneficios y la prim...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 49,
+    "titulo": "Artículo 49",
+    "presentacion": "El Artículo 49 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia al derecho a la negociación colectiva, la regulación de la ley en relación a los derechos sociales de los trabajadores y la protección que debe brindar el Estado en cuanto a la estabilidad laboral....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 50,
+    "titulo": "Artículo 50",
+    "presentacion": "El Artículo 50 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia a que el Estado debe resolver los conflictos laborales mediante tribunales y organismos especializados....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 51,
+    "titulo": "Artículo 51",
+    "presentacion": "El Artículo 51 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia al derecho a la sindicalización de los trabajadores y la asociación de los trabajadores por cuenta propia para la defensa de sus intereses....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 52,
+    "titulo": "Artículo 52",
+    "presentacion": "El Artículo 52 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia al derecho a la libre asociación empresarial....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 53,
+    "titulo": "Artículo 53",
+    "presentacion": "El Artículo 53 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia al derecho a la huelga....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 54,
+    "titulo": "Artículo 54",
+    "presentacion": "El Artículo 54 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia a los deberes del Estado de establecer políticas de empleo, de proteger y defender el aparato industrial y servicios estatales. Asimismo, señala que los trabajadores pueden reactivar empresas en pr...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 55,
+    "titulo": "Artículo 55",
+    "presentacion": "El Artículo 55 se encuentra en el apartado dedicado al derecho al trabajo y al empleo. Hace referencia a los principios del sistema cooperativo, así como al fomento y la regulación por parte del Estado a dicho sistema....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 56,
+    "titulo": "Artículo 56",
+    "presentacion": "El Artículo 56 se encuentra en el apartado dedicado al derecho a la propiedad. Hace referencia al derecho de toda persona a la propiedad privada individual o colectiva, a la función y uso de la misma y la garantía de la sucesión hereditaria....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 57,
+    "titulo": "Artículo 57",
+    "presentacion": "El Artículo 57 se encuentra en el apartado dedicado al derecho a la propiedad. Hace referencia a los parámetros generales de la expropiación, así como la prohibición de la reversión de la propiedad inmueble urbana....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 58,
+    "titulo": "Artículo 58",
+    "presentacion": "El Artículo 58 inaugura el apartado dedicado a los derechos de la niñez, adolescencia y juventud. Establece que se considera niña, niño o adolescente a toda persona menor de edad. Asimismo determina el reconocimiento de derechos para las niñas, niños o adolescentes de acuerdo con lo que establece la...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 59,
+    "titulo": "Artículo 59",
+    "presentacion": "El Artículo 59 se encuentra en el apartado dedicado a los derechos de la niñez, adolescencia y juventud. Hace referencia al derecho que tiene toda niña, niño y adolescente a su desarrollo integral, a vivir y crecer en el seno de su familia, a tener iguales derechos y deberes respecto a sus progenito...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 60,
+    "titulo": "Artículo 60 ",
+    "presentacion": "El Artículo 60 se encuentra en el apartado dedicado a los derechos de la niñez, adolescencia y juventud. Hace referencia al deber del Estado, la sociedad y la familia de garantizar la prioridad del interés superior del niño, niña y adolescente....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 61,
+    "titulo": "Artículo 61",
+    "presentacion": "El Artículo 61 se encuentra en el apartado dedicado a los derechos de la niñez, adolescencia y juventud. Hace referencia a la prohibición y sanción de toda forma de violencia contra las niñas, niños y adolescentes, tanto en la familia como en la sociedad, así como la prohibición del trabajo forzado ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 62,
+    "titulo": "Artículo 62",
+    "presentacion": "El Artículo 62 inaugura el apartado dedicado a los derechos de las familias. Hace referencia al reconocimiento y la protección estatal a las familias como núcleo de la sociedad, de manera que garantizará las condiciones sociales y económicas necesarias para su desarrollo integral. Asimismo determina...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 63,
+    "titulo": "Artículo 63",
+    "presentacion": "El Artículo 63 se encuentra en el apartado de los derechos de las familias. Hace referencia al matrimonio, su constitución y la igualdad de derechos y deberes entre los cónyuges. Asimismo determina las características y efectos de las uniones libres y de hecho....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 64,
+    "titulo": "Artículo 64",
+    "presentacion": "El Artículo 64 se encuentra en el apartado dedicado a los derechos de las familias. Hace referencia a la igualdad de deberes de los cónyuges y convivientes para el mantenimiento y responsabilidad del hogar, la educación y formación integral de las hijas e hijos. Así como la obligación estatal de pro...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 65,
+    "titulo": "Artículo 65",
+    "presentacion": "El Artículo 65 se encuentra en el apartado dedicado a los derechos de las familias. Hace referencia a la presunción de la filiación de las niñas, niños o adolescentes, la misma que se efectuará por indicación del padre o la madre. El cargo de prueba recae en quien niegue la filiación....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 66,
+    "titulo": "Artículo 66",
+    "presentacion": "El Artículo 66 se encuentra en el apartado dedicado a los derechos de las familias. Hace referencia a los derechos sexuales y derechos reproductivos de toda mujer y hombre....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 67,
+    "titulo": "Artículo 67",
+    "presentacion": "El Artículo 67 inaugura el apartado dedicado a los derechos de las personas adultas mayores. Hace referencia a sus derechos específicos y la obligación estatal de proveer una renta vitalicia de vejez....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 68,
+    "titulo": "Artículo 68",
+    "presentacion": "El Artículo 68 se encuentra en el apartado dedicado a los derechos de las personas adultas mayores. Hace referencia a la obligación del Estado de adoptar políticas públicas que beneficien a las personas adultas mayores, así como la prohibición y sanción de toda forma de maltrato, abandono, violencia...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 69,
+    "titulo": "Artículo 69",
+    "presentacion": "El Artículo 69 clausura el apartado dedicado a los derechos de las personas adultas mayores. Hace referencia a los beneficios y preferencias de las que gozan las Beneméritas y los Beneméritos de la Patria....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 70,
+    "titulo": "Artículo 70",
+    "presentacion": "El Artículo 70 inaugura el apartado dedicado a los derechos de las personas con discapacidad. Hace referencia los derechos de los que gozan estas personas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 71,
+    "titulo": "Artículo 71",
+    "presentacion": "El Artículo 71 se encuentra en el apartado dedicado a los derechos de las personas con discapacidad. Hace referencia a la integración de las personas con discapacidad a los diferentes ámbitos sociales, la prohibición de toda forma de discriminación y agresión hacia este colectivo, además de la oblig...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 72,
+    "titulo": "Artículo 72",
+    "presentacion": "El Artículo 72 clausura el apartado dedicado a los derechos de las personas con discapacidad. Hace referencia a la obligación del Estado de garantizar servicios integrales de prevención y rehabilitación a las personas con discapacidad y otros beneficios previstos en la ley....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 73,
+    "titulo": "Artículo 73",
+    "presentacion": "El Artículo 73 inaugura el apartado referido a los derechos de las personas privadas de libertad. Hace referencia a que toda persona privada de libertad debe ser tratada con respeto a la dignidad humana. Así también establece el derecho a comunicarse y la prohibición de incomunicación....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 74,
+    "titulo": "Artículo 74",
+    "presentacion": "El Artículo 74 se encuentra en el apartado referido a los derechos de las personas privadas de libertad. Hace referencia a la obligación del Estado hacia los privados de libertad en relación a la reinserción, respeto de derechos, retención y custodia en un ambiente adecuado, además de la oportunidad...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 75,
+    "titulo": "Artículo 75",
+    "presentacion": "El Artículo 75 inaugura el apartado dedicado a los derechos de las consumidoras y consumidores y de las usuarias y los usuarios. Hace referencia a los derechos que tienen las usuarias y los usuarios y las consumidoras y los consumidores, en tanto los productos suministrados y la información correspo...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 76,
+    "titulo": "Artículo 76",
+    "presentacion": "El Artículo 76 cierra el apartado dedicado a los derechos de las usuarias y los usuarios y de las consumidoras y los consumidores. Hace referencia a la responsabilidad estatal de garantizar el acceso a un sistema de transporte integral, así como la prohibición del establecimiento de controles aduane...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 77,
+    "titulo": "Artículo 77",
+    "presentacion": "El Artículo 77 inaugura el apartado dedicado a la educación. Hace referencia a la educación como una función suprema del Estado, determina que tanto el Estado como la sociedad tienen tuición sobre el sistema educativo, los procesos que comprende este sistema y las instituciones que lo componen....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 78,
+    "titulo": "Artículo 78",
+    "presentacion": "El Artículo 78 se encuentra en el apartado dedicado a la educación. Hace referencia a las características de la educación, así como la cualidad intracultural, intercultural y pluriling&uuml;e en todo el sistema educativo, los fundamentos del sistema educativo y la garantía a la educación vocacional ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 79,
+    "titulo": "Artículo 79",
+    "presentacion": "El Artículo 79 se encuentra en el apartado dedicado a la educación. Hace referencia a los elementos que forman parte de los principios fundamentales del Estado en lo respectivo a los valores ético morales de la sociedad plural. Se incorporan valores de equidad, no violencia y respeto a los derechos ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 80,
+    "titulo": "Artículo 80",
+    "presentacion": "El Artículo 80 se encuentra en el apartado dedicado a la educación. Hace referencia al objetivo de la educación, las orientaciones y contribuciones de ésta....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 81,
+    "titulo": "Artículo 81",
+    "presentacion": "El Artículo 81 se encuentra en el apartado dedicado a la educación. Hace referencia al acceso a la educación como derecho al establecer la gratuidad de la educación fiscal en todos sus niveles; y como obligación, al establecer su obligatoriedad hasta el bachillerato....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 82,
+    "titulo": "Artículo 82",
+    "presentacion": "El Artículo 82 se encuentra en el apartado dedicado a la educación. Hace referencia a la garantía en el acceso y permanencia de la educación para todas las ciudadanas y ciudadanos en condición de igualdad. Además establece un mandato al Estado de apoyar a los estudiantes con menos posibilidades econ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 83,
+    "titulo": "Artículo 83",
+    "presentacion": "El Artículo 83 se encuentra en el apartado dedicado a la educación. Hace referencia a la garantía a la participación social, comunitaria y de padres de familia en el sistema educativo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 84,
+    "titulo": "Artículo 84",
+    "presentacion": "El Artículo 84 se encuentra en el apartado dedicado a la educación. Hace referencia al deber del Estado y de la sociedad de erradicar el analfabetismo. Esta erradicación debe ser realizada a través de programas acordes con la realidad cultural y ling&uuml;ística de la población....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 85,
+    "titulo": "Artículo 85",
+    "presentacion": "El Artículo 85 se encuentra en el apartado dedicado a la educación. Hace referencia a que el Estado debe promover y garantizar la educación permanente de niñas, niños y adolescentes con requisitos especiales en el aprendizaje, ya sea por tener discapacidad o talentos extraordinarios. Adicionalmente ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 86,
+    "titulo": "Artículo 86",
+    "presentacion": "El Artículo 86 se encuentra en el apartado dedicado a la educación. Hace referencia a que en los centros educativos se garantizará la libertad de conciencia, de fe, de la enseñanza religiosa y espiritualidad de las naciones y pueblos indígena originario campesinos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 87,
+    "titulo": "Artículo 87",
+    "presentacion": "El Artículo 87 se encuentra en el apartado dedicado a la educación. Hace referencia al reconocimiento y respeto a las unidades educativas de convenio y que éstas funcionarán bajo la tuición de las autoridades públicas y se regirán por las mismas normas, políticas, planes y programas del sistema educ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 88,
+    "titulo": "Artículo 88",
+    "presentacion": "El Artículo 88 se encuentra en el apartado dedicado a la educación. Hace referencia a que el reconocimiento y el respeto a las unidades educativas privadas se deben regir por las políticas, planes, programas y autoridades del sistema educativo, adicionalmente determina el derecho de las madres y pad...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 89,
+    "titulo": "Artículo 89",
+    "presentacion": "El Artículo 89 se encuentra en el apartado dedicado a la educación. Hace referencia al seguimiento, la medición, la evaluación y la acreditación de la calidad educativa en todo el sistema educativo realizada por una institución pública, técnica y especializada....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 90,
+    "titulo": "Artículo 90",
+    "presentacion": "El Artículo 90 clausura el apartado dedicado a la educación. Hace referencia a que el Estado reconocerá la vigencia de institutos de formación humanística, técnica y tecnológica en los niveles medio y superior; promoverá la formación técnica, tecnológica, productiva, artística y ling&uuml;ística; y ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 91,
+    "titulo": "Artículo 91",
+    "presentacion": "El Artículo 91 se encuentra en el apartado dedicado a la educación superior. Hace referencia a los procesos, las cualidades, la misión y la conformación de ésta....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 92,
+    "titulo": "Artículo 92",
+    "presentacion": "El Artículo 92 se encuentra en el apartado dedicado a la educación superior. Hace referencia y desarrolla la autonomía de las universidades públicas, que en conjunto conforman la Universidad Boliviana y los títulos y diplomas que pueden extender....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 93,
+    "titulo": "Artículo 93",
+    "presentacion": "El Artículo 93 se encuentra en el apartado dedicado a la educación superior. Hace referencia a las universidades públicas y determina que deben estar subvencionadas por el Estado; tener mecanismos de participación social; establecer mecanismos de rendición de cuentas y transparencia en el uso de los...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 94,
+    "titulo": "Artículo 94",
+    "presentacion": "El Artículo 94 se encuentra en el apartado dedicado a la educación superior. Desarrolla las universidades privadas y establece los parámetros que rigen a las universidades privadas, la autorización que requiere su funcionamiento, la otorgación de diplomas académicos pero con tribunales examinadores ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 95,
+    "titulo": "Artículo 95",
+    "presentacion": "El Artículo 95 se encuentra en el apartado dedicado a la educación superior. Asigna tres deberes específicos a las universidades: crear y sostener centros interculturales de formación y capacitación técnica y cultural, implementar programas relativos a lenguas de naciones y pueblos indígena originar...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 96,
+    "titulo": "Artículo 96",
+    "presentacion": "El Artículo 96 se encuentra en el apartado dedicado a la educación superior. Hace referencia a la responsabilidad del Estado respecto a la formación y capacitación docente para el magisterio público y las características de esta formación. Establece que los docentes del magisterio deben ser parte de...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 97,
+    "titulo": "Artículo 97",
+    "presentacion": "El Artículo 97 cierra el apartado dedicado a la educación superior. Hace referencia a la misión fundamental de la formación post-gradual e indica que estará coordinada por una instancia especial conformada por las universidades del sistema educativo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 98,
+    "titulo": "Artículo 98",
+    "presentacion": "El Artículo 98 inaugura el apartado dedicado a culturas. Hace referencia a la importancia de la diversidad cultural para el Estado para lograr la cohesión y convivencia armónica a través de la interculturalidad con respeto a las diferencias y en igualdad de condiciones....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 99,
+    "titulo": "Artículo 99",
+    "presentacion": "El Artículo 99 se encuentra en el apartado dedicado a culturas. Hace referencia a las características del patrimonio cultural del pueblo boliviano y los lineamientos básicos de su uso y usufructo. De igual manera establece un claro mandato al Estado respecto a sus obligaciones en materia de patrimon...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 100,
+    "titulo": "Artículo 100",
+    "presentacion": "El Artículo 100 se encuentra en el apartado dedicado a culturas. Hace referencia al patrimonio de las naciones y pueblos indígena originario campesinos y que éste es parte de la expresión e identidad del Estado; adicionalmente establece que es obligación del Estado proteger los saberes y conocimient...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 101,
+    "titulo": "Artículo 101",
+    "presentacion": "El Artículo 101 se encuentra en el apartado dedicado a culturas. Hace referencia al mandato de especial protección del Estado: en primer lugar al componente intangible de las manifestaciones de arte y las industrias populares; y en segundo lugar los sitios y actividades declarados patrimonio cultura...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 102,
+    "titulo": "Artículo 102",
+    "presentacion": "El Artículo 102 clausura el apartado dedicado a culturas. Hace referencia al mandato del Estado de registrar y proteger la propiedad intelectual, sea esta individual o colectiva, y sobre obras o descubrimientos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 103,
+    "titulo": "Artículo 103",
+    "presentacion": "El Artículo 103 se encuentra en el apartado dedicado a la ciencia, tecnología e investigación. Hace referencia a las responsabilidades del Estado y otros agentes públicos y privados para fomentar la ciencia, la tecnología y la investigación....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 104,
+    "titulo": "Artículo 104",
+    "presentacion": "El Artículo 104 abre el apartado dedicado al deporte y la recreación. Hace referencia al derecho de toda persona al deporte, a la cultura física y la recreación, así como la garantía estatal de acceso universal al deporte....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 105,
+    "titulo": "Artículo 105",
+    "presentacion": "El Artículo 105 se encuentra en el apartado dedicado al deporte y la recreación. Hace referencia a que el Estado promoverá el desarrollo de la cultura física y la práctica deportiva....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 106,
+    "titulo": "Artículo 106",
+    "presentacion": "El Artículo 106 se encuentra en el apartado dedicado a los derechos de comunicación social. Hace referencia a la obligación estatal de garantizar los derechos a la comunicación, a la información, a la libertad de expresión, a la rectificación y a la réplica. Además señala el reconocimiento expreso d...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 107,
+    "titulo": "Artículo 107",
+    "presentacion": "El Artículo 107 se encuentra en el apartado dedicado a los derechos de comunicación social. Hace referencia a las contribuciones que deben realizar los medios de comunicación social, además de los principios de veracidad y responsabilidad que deben respetar. Se establece también que los medios de co...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 108,
+    "titulo": "Artículo 108",
+    "presentacion": "El Artículo 108 se encuentra en el apartado dedicado a los deberes. Hace referencia al catálogo de deberes de las bolivianas y los bolivianos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 109,
+    "titulo": "Artículo 109",
+    "presentacion": "El Artículo 109 inaugura el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la garantía de la aplicabilidad directa de todos los derechos reconocidos en la Constitución....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 110,
+    "titulo": "Artículo 110",
+    "presentacion": "El Artículo 110 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la jurisdicción y competencia de las autoridades bolivianas, así como a la responsabilidad intelectual, material y directa de la vulneración de derechos y de los atentados contra la seguridad per...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 111,
+    "titulo": "Artículo 111",
+    "presentacion": "El Artículo 111 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la imprescriptibilidad de los delitos de genocidio, lesa humanidad, de traición a la patria y crímenes de guerra....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 112,
+    "titulo": "Artículo 112",
+    "presentacion": "El Artículo 112 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la imprescriptibilidad de los delitos que atenten contra el patrimonio del Estado y causen grave daño económico cometido por las servidoras y los servidores públicos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 113,
+    "titulo": "Artículo 113",
+    "presentacion": "El Artículo 113 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia al derecho a la indemnización, reparación y resarcimiento de daños y perjuicios a las víctimas, asimismo precisa que si el Estado es condenado a la reparación patrimonial de daños y perjuicios éste...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 114,
+    "titulo": "Artículo 114",
+    "presentacion": "El Artículo 114 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la prohibición de tortura, desaparición, confinamiento, coacción, exacción o cualquier forma de violencia física o moral; las declaraciones resultantes de estos métodos serán nulas de pleno derec...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 115,
+    "titulo": "Artículo 115",
+    "presentacion": "El Artículo 115 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la tutela judicial efectiva....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 116,
+    "titulo": "Artículo 116",
+    "presentacion": "El Artículo 116 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la presunción de inocencia, el principio que señala que en caso de duda debe aplicarse la solución que beneficie al imputado y el principio de legalidad....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 117,
+    "titulo": "Artículo 117",
+    "presentacion": "El Artículo 117 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a que ninguna persona puede ser condenada sin ser oída y juzgada, que ninguna persona será juzgada más de una vez por un mismo hecho y que no se interpondrán sanción privativa de libertad por deuda...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 118,
+    "titulo": "Artículo 118",
+    "presentacion": "El Artículo 118 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia al sistema de penas en Bolivia, prohibiendo la infamia, la muerte civil y el confinamiento. Estableciendo la pena máxima de treinta años y determinando que las sanciones de privación de libertad de...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 119,
+    "titulo": "Artículo 119",
+    "presentacion": "El Artículo 119 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la igualdad de oportunidades que tienen las partes durante el proceso. Adicionalmente establece la inviolabilidad del derecho a la defensa y la obligación del Estado de brindar un defensor gratui...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 120,
+    "titulo": "Artículo 120",
+    "presentacion": "El Artículo 120 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia al derecho de toda persona a ser oída por autoridad jurisdiccional competente, independiente e imparcial, lo que implica que no podrá ser juzgada por comisiones especiales u otras autoridades juris...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 121,
+    "titulo": "Artículo 121",
+    "presentacion": "El Artículo 121 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia al derecho de guardar silencio así como la intervención de la víctima en procesos penales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 122,
+    "titulo": "Artículo 122",
+    "presentacion": "El Artículo 122 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la nulidad de los actos de personas que usurpen funciones o ejerzan jurisdicción o potestad que no emane de la ley. Indica además el basamento legal del Recurso Directo de Nulidad....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 123,
+    "titulo": "Artículo 123",
+    "presentacion": "El Artículo 123 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a la irretroactividad de la ley, excepto en materia laboral, penal y de corrupción....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 124,
+    "titulo": "Artículo 124",
+    "presentacion": "El Artículo 124 se encuentra en el apartado dedicado a las garantías jurisdiccionales. Hace referencia a las acciones o actividades consideradas como traición a la patria, además de establecer la sanción correspondiente a éstas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 125,
+    "titulo": "Artículo 125",
+    "presentacion": "El Artículo 125 se encuentra en el apartado dedicado a las acciones de defensa. Hace referencia a la naturaleza y las condiciones básicas de la Acción de Libertad....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 126,
+    "titulo": "Artículo 126",
+    "presentacion": "El Artículo 126 se encuentra en el aparatado dedicado a las acciones de defensa. Hace referencia al procedimiento de la Acción de Libertad....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 127,
+    "titulo": "Artículo 127",
+    "presentacion": "El Artículo 127 se encuentra en el apartado dedicado a la Acción de Libertad. Hace referencia a las consecuencias de la resistencia al cumplimiento de las decisiones judiciales de la Acción de Libertad....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 128,
+    "titulo": "Artículo 128",
+    "presentacion": "El Artículo 128 se encuentra en el apartado dedicado a las acciones de defensa. Hace referencia al Amparo Constitucional, una acción de defensa de los derechos reconocidos en la Constitución y la ley....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 129,
+    "titulo": "Artículo 129",
+    "presentacion": "El Artículo 129 se encuentra en el apartado dedicado a las acciones de defensa. Hace referencia al procedimiento de la Acción de Amparo Constitucional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 130,
+    "titulo": "Artículo 130",
+    "presentacion": "El Artículo 130 se encuentra en el apartado dedicado a las acciones de defensa. Hace referencia a la Acción de Protección de Privacidad que protege el derecho a la autodeterminación informativa....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 131,
+    "titulo": "Artículo 131",
+    "presentacion": "El Artículo 131 se encuentra en el apartado dedicado a las acciones de defensa. Hace referencia al procedimiento de la Acción de Protección de Privacidad....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 132,
+    "titulo": "Artículo 132",
+    "presentacion": "El Artículo 132 se encuentra en el apartado dedicado a las acciones de defensa. Hace referencia a la Acción de Inconstitucionalidad y a la legitimación activa de la misma....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 133,
+    "titulo": "Artículo 133",
+    "presentacion": "El Artículo 133 se encuentra en el apartado dedicado a la Acción de Inconstitucionalidad. Hace referencia al efecto de la sentencia que declare la inconstitucionalidad de una ley, decreto o cualquier género de resolución no judicial....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 134,
+    "titulo": "Artículo 134",
+    "presentacion": "El Artículo 134 se encuentra en el apartado dedicado a las acciones de defensa. Hace referencia a la Acción de Cumplimiento....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 135,
+    "titulo": "Artículo 135",
+    "presentacion": "El Artículo 135 se encuentra en el apartado dedicado a las acciones de defensa. Hace referencia a la Acción Popular....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 136,
+    "titulo": "Artículo 136",
+    "presentacion": "El Artículo 136 cierra el apartado dedicado a la Acción Popular. Hace referencia a los elementos básicos del procedimiento de la Acción Popular....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 137,
+    "titulo": "Artículo 137",
+    "presentacion": "El Artículo 137 se encuentra en el apartado dedicado al Estado de excepción. Hace referencia a las condiciones para la declaración del Estado de excepción en todo o en una parte del territorio boliviano, así como sus efectos respecto a las garantías de los derechos y los derechos fundamentales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 138,
+    "titulo": "Artículo 138",
+    "presentacion": "El Artículo 138 se encuentra en el apartado dedicado a los Estados de excepción. Hace referencia a la vigencia y prórroga del Estado de excepción mediante autorización legislativa....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 139,
+    "titulo": "Artículo 139",
+    "presentacion": "El Artículo 139 se encuentra en el apartado dedicado a los Estados de excepción. Hace referencia a la rendición de cuentas del Ejecutivo a la Asamblea Legislativa Plurinacional sobre la declaración y el desarrollo del Estado de excepción, advierte que quienes violen derechos constitucionales serán o...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 140,
+    "titulo": "Artículo 140",
+    "presentacion": "El Artículo 140 cierra el apartado dedicado a los estados de excepción. Hace referencia a la prohibición de conceder a un órgano o persona alguna facultades extraordinarias, acumulación del poder público o supremacía, así como la prohibición de iniciar la reforma constitucional mientras esté vigente...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 141,
+    "titulo": "Artículo 141",
+    "presentacion": "El Artículo 141 inaugura el apartado dedicado a la nacionalidad. Hace referencia a las formas de adquisición de la nacionalidad boliviana y desarrolla la nacionalidad por nacimiento. Este artículo debe ser leído en conjunto con el Artículo 142, que dispone las características de la adquisición de la...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 142,
+    "titulo": "Artículo 142",
+    "presentacion": "El Artículo 142 se encuentra en el apartado dedicado a la nacionalidad. Hace referencia al tiempo y las condiciones necesarias para poder adquirir la nacionalidad boliviana por naturalización, así como la posibilidad de reducción del tiempo en casos específicos. Este artículo debe ser leído conjunta...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 143,
+    "titulo": "Artículo 143",
+    "presentacion": "El Artículo 143 clausura el apartado dedicado a la nacionalidad. Hace referencia al derecho a la nacionalidad, en cuanto a las condiciones de la doble nacionalidad para los bolivianos y las bolivianas quienes adquieran una segunda nacionalidad y para los extranjeros quienes obtengan la nacionalidad ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 144,
+    "titulo": "Artículo 144",
+    "presentacion": "El Artículo 144 se encuentra en el apartado dedicado a ciudadanía. Hace referencia al estatus de ciudadanía boliviana, así como las características que suponen el ejercicio y la suspensión del ejercicio de la misma....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 145,
+    "titulo": "Artículo 145",
+    "presentacion": "El Artículo 145 se encuentra en el apartado dedicado al Órgano Legislativo. Establece la conformación de la Asamblea Legislativa Plurinacional, así como la facultad de realizar y sancionar leyes....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 146,
+    "titulo": "Artículo 146",
+    "presentacion": "El Artículo 146 se encuentra en el apartado dedicado a la Asamblea Legislativa Plurinacional. Establece la composición y forma de elección de la Cámara de Diputados, asimismo contempla disposiciones sobre las circunscripciones electorales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 147,
+    "titulo": "Artículo 147",
+    "presentacion": "El Artículo 147 se encuentra en el apartado dedicado a la Asamblea Legislativa Plurinacional. Hace referencia a las garantías para la equidad de género y la participación proporcional de naciones y pueblos indígena originario campesinos en la elección de asambleístas. Así mismo determina los element...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 148,
+    "titulo": "Artículo 148",
+    "presentacion": "El Artículo 148 se encuentra en el apartado dedicado al Órgano Legislativo. Hace referencia a la conformación de la Cámara de Senadores y la forma de elegir a sus miembros....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 149,
+    "titulo": "Artículo 149",
+    "presentacion": "El Artículo 149 se encuentra en el apartado dedicado al Órgano Legislativo. Hace referencia a los requisitos para ser candidata o candidato a la Asamblea Legislativa Plurinacional...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 150,
+    "titulo": "Artículo 150",
+    "presentacion": "El Artículo 150 se encuentra en el apartado dedicado al Órgano Legislativo. Hace referencia a las asambleístas y los asambleístas suplentes, así como a la prohibición de desempeñar otras funciones públicas y la irrevocabilidad de la renuncia de los miembros de la Asamblea....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 151,
+    "titulo": "Artículo 151",
+    "presentacion": "El Artículo 151 se encuentra en el apartado dedicado a la Asamblea Legislativa Plurinacional. Hace referencia a la inviolabilidad personal y material de la que gozan los asambleístas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 152,
+    "titulo": "Artículo 152",
+    "presentacion": "El Artículo 152 se encuentra en el apartado del Órgano Legislativo. Hace referencia a la no inmunidad parlamentaria. Asimismo determina que, durante el mandato de los y las asambleístas no se les aplicará la detención preventiva, salvo delito flagrante....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 153,
+    "titulo": "Artículo 153",
+    "presentacion": "El Artículo 153 se encuentra en el apartado del Órgano Legislativo. Dispone que el Vicepresidente o Vicepresidenta del Estado presida la Asamblea Legislativa Plurinacional, además hace referencia a las sesiones ordinarias de la Asamblea....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 154,
+    "titulo": "Artículo 154",
+    "presentacion": "El Artículo 154 se encuentra en el apartado dedicado al Órgano Legislativo. Hace referencia a que la Comisión de Asamblea funciona durante los recesos de las sesiones de la Asamblea Legislativa Plurinacional. Además establece los lineamientos para la convocatoria a sesiones extraordinarias durante e...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 155,
+    "titulo": "Artículo 155",
+    "presentacion": "El Artículo 155 se encuentra en el apartado del Órgano Legislativo. Hace referencia al día y lugar para la inauguración de las sesiones de la Asamblea Legislativa Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 156,
+    "titulo": "Artículo 156",
+    "presentacion": "El Artículo 156 se encuentra en el apartado dedicado al Órgano Legislativo. Hace referencia al tiempo de mandato para Diputados, Diputadas, Senadores y Senadoras, así como su posibilidad de reelección....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 157,
+    "titulo": "Artículo 157",
+    "presentacion": "El Artículo 157 se encuentra en el apartado dedicado al Órgano Legislativo. Hace referencia a las causales por las cuales las Diputadas, los Diputados, las Senadoras y los Senadores son susceptibles de perder su mandato....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 158,
+    "titulo": "Artículo 158",
+    "presentacion": "El Artículo 158 se encuentra en el apartado dedicado al Órgano Legislativo. Hace referencia a las atribuciones de la Asamblea Legislativa Plurinacional y hace mención al Reglamento por el que se rige la Asamblea....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 159,
+    "titulo": "Artículo 159",
+    "presentacion": "El Artículo 159 se encuentra en el apartado referido a la Asamblea Legislativa Plurinacional. Hace referencia a las atribuciones de la Cámara de Diputados....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 160,
+    "titulo": "Artículo 160",
+    "presentacion": "El Artículo 160 se encuentra en el apartado e referido al Órgano Legislativo. Hace referencia a las atribuciones de la Cámara de Senadores....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 161,
+    "titulo": "Artículo 161",
+    "presentacion": "El Artículo 161 se encuentra en el apartado dedicado a la Asamblea Legislativa Plurinacional. Hace referencia a las funciones para las cuales las dos Cámaras deben reunirse....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 162,
+    "titulo": "Artículo 162",
+    "presentacion": "El Artículo 162 se encuentra en el apartado dedicado al Procedimiento Legislativo. Hace referencia a los sujetos que tienen la facultad de iniciativa legislativa....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 163,
+    "titulo": "Artículo 163",
+    "presentacion": "El Artículo 163 se encuentra en el apartado dedicado al procedimiento legislativo. Hace referencia de manera detallada cada uno de los pasos y formalidades, que en su conjunto, constituyen el procedimiento legislativo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 164,
+    "titulo": "Artículo 164",
+    "presentacion": "El Artículo 164 se encuentra en el apartado dedicado al procedimiento legislativo. Hace referencia al requisito formal de la publicación de la ley promulgada para su entrada en vigencia....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 165,
+    "titulo": "Artículo 165",
+    "presentacion": "El Artículo 165 inaugura el apartado dedicado al Órgano Ejecutivo. Hace referencia a la composición del Órgano Ejecutivo, así como la cualidad de las determinaciones en Consejo de Ministros....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 166,
+    "titulo": "Artículo 166",
+    "presentacion": "El Artículo 166 se encuentra en el apartado dedicado a la Presidencia y Vicepresidencia. Hace referencia a la elección de Presidenta o Presidente y de Vicepresidenta o Vicepresidente del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 167,
+    "titulo": "Artículo 167",
+    "presentacion": "El Artículo 167 se encuentra en el apartado dedicado a la Presidencia y Vicepresidencia del Estado. Hace referencia a las condiciones existentes para el acceso a la candidatura para la Presidencia y Vicepresidencia del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 168,
+    "titulo": "Artículo 168",
+    "presentacion": "El Artículo 168 se encuentra en el apartado dedicado a la Presidencia y Vicepresidencia del Estado. Hace referencia a la temporalidad del mandato de la Presidenta o del Presidente y de la Vicepresidenta o del Vicepresidente del Estado, así como la posibilidad de su reelección....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 169,
+    "titulo": "Artículo 169",
+    "presentacion": "El Artículo 169 se encuentra en el apartado dedicado a la Presidencia y Vicepresidencia del Estado. Hace referencia a las condiciones de la sucesión a la Presidencia del Estado, tanto en casos de ausencia temporal, como de ausencia definitiva de la Presidenta o Presidente del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 170,
+    "titulo": "Artículo 170",
+    "presentacion": "El Artículo 170 se encuentra en el apartado dedicado a la Presidencia y Vicepresidencia del Estado. Hace referencia a las condiciones de cesación de mandato de la Presidenta o del Presidente del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 171,
+    "titulo": "Artículo 171",
+    "presentacion": "El Artículo 171 se encuentra en el apartado dedicado a la Presidencia y Vicepresidencia del Estado. Hace referencia a las condiciones de revocatoria de mandato de la Presidenta o Presidente del Estado, así como las acciones que se llevan a cabo una vez ejecutada tal revocatoria de mandato....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 172,
+    "titulo": "Artículo 172",
+    "presentacion": "El Artículo 172 se encuentra en el apartado dedicado a la Presidencia y Vicepresidencia del Estado. Hace referencia a las atribuciones otorgadas a la Presidenta o al Presidente del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 173,
+    "titulo": "Artículo 173",
+    "presentacion": "El Artículo 173 se encuentra en el apartado dedicado a la Presidencia y Vicepresidencia del Estado. Hace referencia a las condiciones que regulan la ausencia de la Presidenta o del Presidente del Estado del territorio boliviano, por misión oficial....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 174,
+    "titulo": "Artículo 174",
+    "presentacion": "El Artículo 174 cierra el apartado dedicado a la Presidencia y Vicepresidencia del Estado. Hace referencia a las atribuciones otorgadas a la Vicepresidenta o al Vicepresidente del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 175,
+    "titulo": "Artículo 175",
+    "presentacion": "El Artículo 175 inaugura el acápite dedicado a los ministerios de Estado. Hace referencia a la característica de servidoras y servidores públicos de las Ministras y los Ministros de Estado, sus atribuciones y la responsabilidad sobre los actos de su administración....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 176,
+    "titulo": "Artículo 176",
+    "presentacion": "El Artículo 176 se encuentra en el apartado referido a los Ministerios de Estado. Hace referencia a los requisitos para poder acceder a la designación de Ministra o Ministro de Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 177,
+    "titulo": "Artículo 177",
+    "presentacion": "El Artículo 177 cierra el apartado dedicado al Órgano Ejecutivo. Hace referencia a la condición para la designación de Ministras o Ministros de Estado, de no poder acceder a la designación en caso que se sostengan deudas o contratos pendientes con el Estado, ya sea de forma directa o indirecta....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 178,
+    "titulo": "Artículo 178",
+    "presentacion": "El Artículo 178 inaugura el apartado dedicado al Órgano Judicial y al Tribunal Constitucional Plurinacional. Hace referencia a que la potestad de impartir justicia emana del pueblo boliviano, establece los principios en lo que se sustenta esta potestad y señala a la carrera judicial y la autonomía p...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 179,
+    "titulo": "Artículo 179",
+    "presentacion": "El Artículo 179 se encuentra en el apartado dedicado al Órgano Judicial y al Tribunal Constitucional Plurinacional. Hace referencia al orden de jurisdicciones reconocidas por el texto constitucional: ordinaria, agroambiental e indígena originaria campesina, otras jurisdicciones especiales serán regu...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 180,
+    "titulo": "Artículo 180",
+    "presentacion": "El Artículo 180 se encuentra en el apartado dedicado a la Jurisdicción Ordinaria. Hace referencia a los principios procesales en los que se fundamenta esta jurisdicción, asimismo señala que la misma no reconocerá fueros, privilegios ni tribunales de excepción, finalmente reconoce a la jurisdicción m...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 181,
+    "titulo": "Artículo 181",
+    "presentacion": "El Artículo 181 inaugura el apartado dedicado al Tribunal Supremo de Justicia. Hace referencia a la naturaleza, organización y composición del Tribunal Supremo de Justicia....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 182,
+    "titulo": "Artículo 182",
+    "presentacion": "El Artículo 182 se encuentra en el apartado dedicado al Tribunal Supremo de Justicia. Hace referencia a la manera de elección de las Magistradas y los Magistrados de este Tribunal....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 183,
+    "titulo": "Artículo 183",
+    "presentacion": "El Artículo 183 se encuentra en el apartado del Tribunal Supremo de Justicia. Hace referencia a la prohibición de reelección de Magistradas y Magistrados del Tribunal Supremo de Justicia. Establece que su periodo de mandato es de seis años, así como los motivos del cese de este mandato....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 184,
+    "titulo": "Artículo 184",
+    "presentacion": "El Artículo 184 se encuentra en el apartado dedicado al Tribunal Supremo de Justicia. Hace referencia a las atribuciones del Tribunal Supremo de Justicia, además de las señaladas por ley....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 185,
+    "titulo": "Artículo 185",
+    "presentacion": "El Artículo 185 cierra el apartado dedicado al Tribunal Supremo de Justicia. Hace referencia a la dedicación exclusiva de las y los Magistrados de este Tribunal....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 186,
+    "titulo": "Artículo 186",
+    "presentacion": "El Artículo 186 se encuentra en el apartado sobre la jurisdicción agroambiental. Hace referencia al Tribunal Agroambiental, así como a la jurisdicción que a esta institución le compete. También puntualiza los principios que rigen a dicha colegiatura....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 187,
+    "titulo": "Artículo 187",
+    "presentacion": "El Artículo 187 se encuentra en el apartado sobre jurisdicción agroambiental. Hace referencia a los requisitos necesarios para ser elegida o elegido, Magistrada o Magistrado del Tribunal Agroambiental. De hecho, este artículo puntualiza algunos requisitos específicos a dicha instancia, y para los de...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 188,
+    "titulo": "Artículo 188",
+    "presentacion": "El Artículo 188 se encuentra en el apartado sobre jurisdicción agroambiental. Hace referencia, por un lado, a la forma de elección de las Magistradas y los Magistrados del Tribunal Agroambiental, mediante sufragio universal. Por otro lado, el artículo establece cuales son las prohibiciones e incompa...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 189,
+    "titulo": "Artículo 189",
+    "presentacion": "El Artículo 189 se encuentra en el apartado dedicado a la jurisdicción agroambiental. Hace referencia a las atribuciones del Tribunal Agroambiental, es decir los ámbitos de vigencia de esta entidad en lo que se refiere a temas agrarios, ambientales y la organización de la jurisdicción agroambiental....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 190,
+    "titulo": "Artículo 190",
+    "presentacion": "El Artículo 190 abre el apartado sobre jurisdicción indígena originario campesina. Hace referencia, por un lado, a las características de la jurisdicción indígena originario campesina, es decir las bases sobre las cuales las naciones y pueblos indígena originario campesinos podrán ejercer sus funcio...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 191,
+    "titulo": "Artículo 191",
+    "presentacion": "El Artículo 191 se encuentra en el apartado dedicado a la jurisdicción indígena originario campesina. Hace referencia, en primera instancia, al fundamento de la jurisdicción indígena originario campesina, sobre la base del vínculo existente entre los miembros de una nación y pueblo indígena originar...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 192,
+    "titulo": "Artículo 192",
+    "presentacion": "El Artículo 192 se encuentra en el apartado dedicado a la jurisdicción indígena originario campesina. Hace referencia a la forma de relacionamiento entre esta jurisdicción, o jurisdicciones, con la población en general, así como con las demás instituciones que conforman el Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 193,
+    "titulo": "Artículo 193",
+    "presentacion": "El Artículo 193 se encuentra el apartado dedicado al Órgano Judicial. Hace referencia al Consejo de la Magistratura, estableciendo las características generales de dicha institución....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 194,
+    "titulo": "Artículo 194",
+    "presentacion": "El Artículo 194 se encuentra en el apartado dedicado al Órgano Judicial. Hace referencia a la elección, requisitos, duración de funciones y la prohibición de relección de los miembros del Consejo de la Magistratura....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 195,
+    "titulo": "Artículo 195",
+    "presentacion": "El Artículo 195 se encuentra en el apartado dedicado al Órgano Judicial. Hace referencia a las atribuciones del Consejo de la Magistratura....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 196,
+    "titulo": "Artículo 196",
+    "presentacion": "El Artículo 196 inaugura el apartado dedicado al Tribunal Constitucional Plurinacional. Hace referencia a la naturaleza del Tribunal, así como a los criterios de interpretación del texto constitucional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 197,
+    "titulo": "Artículo 197",
+    "presentacion": "El Artículo 197 se encuentra en el apartado dedicado al Tribunal Constitucional Plurinacional. Hace referencia a los criterios de conformación del Tribunal Constitucional Plurinacional, la función de los magistrados suplentes y remite a una ley la composición, organización y funcionamiento del Tribu...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 198,
+    "titulo": "Artículo 198",
+    "presentacion": "El Artículo 198 se encuentra en el apartado referido al Tribunal Constitucional Plurinacional. Hace referencia a la elección, mediante sufragio universal, de las Magistradas y los Magistrados del Tribunal Constitucional Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 199,
+    "titulo": "Artículo 199",
+    "presentacion": "El Artículo 199 se encuentra en el apartado dedicado al Tribunal Constitucional Plurinacional. Hace referencia a los requisitos para optar a la magistratura del Tribunal Constitucional Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 200,
+    "titulo": "Artículo 200",
+    "presentacion": "El Artículo 200 se encuentra en el apartado dedicado al Tribunal Constitucional Plurinacional. Señala el tiempo de ejercicio, la permanencia y la cesación del cargo de Magistradas y Magistrados del Tribunal Constitucional Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 201,
+    "titulo": "Artículo 201",
+    "presentacion": "El Artículo 201 se encuentra en el apartado dedicado al Tribunal Constitucional Plurinacional. Hace referencia al sistema de prohibiciones e incompatibilidades de las Magistradas y los Magistrados del Tribunal Constitucional Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 202,
+    "titulo": "Artículo 202",
+    "presentacion": "El Artículo 202 se encuentra en el apartado dedicado al Tribunal Constitucional Plurinacional. Hace referencia a las atribuciones del Tribunal Constitucional Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 203,
+    "titulo": "Artículo 203",
+    "presentacion": "El Artículo 203 se encuentra en el apartado dedicado al Tribunal Constitucional Plurinacional. Hace referencia a la vinculatoriedad de las decisiones y sentencias del Tribunal Constitucional Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 204,
+    "titulo": "Artículo 204",
+    "presentacion": "El Artículo 204 cierra el apartado dedicado al Tribunal Constitucional Plurinacional. Hace referencia a la reserva de ley respecto a los procedimientos constitucionales que regirán ante el Tribunal Constitucional Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 205,
+    "titulo": "Artículo 205",
+    "presentacion": "El Artículo 205 inaugura el apartado dedicado al Órgano Electoral Plurinacional. Hace referencia a la composición de este ente, así como una reserva legal referente a la jurisdicción, competencias y atribuciones del mismo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 206,
+    "titulo": "Artículo 206",
+    "presentacion": "El Artículo 206 se encuentra en el apartado dedicado al Órgano Electoral Plurinacional. Hace referencia a las condiciones de designación las y los Vocales del Tribunal Supremo Electoral y de los Tribunales Electorales Departamentales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 207,
+    "titulo": "Artículo 207",
+    "presentacion": "El Artículo 207 se encuentra en el apartado dedicado al Órgano Electoral Plurinacional. Hace referencia a los requisitos para acceder a la designación de Vocal del Tribunal Supremo Electoral y de los Tribunales Electorales Departamentales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 208,
+    "titulo": "Artículo 208",
+    "presentacion": "El Artículo 208 clausura el apartado referido al Órgano Electoral Plurinacional. Hace referencia a las responsabilidades y funciones que son otorgadas al máximo ente del Órgano Electoral Plurinacional, es decir el Tribunal Supremo Electoral....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 209,
+    "titulo": "Artículo 209",
+    "presentacion": "El Artículo 209 se encuentra en el apartado sobre representación política. Hace referencia a la igualdad de condiciones de las organizaciones de las naciones y pueblos indígena originario campesinos, agrupaciones ciudadanas y los partidos políticos en la postulación de candidatas y candidatos a carg...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 210,
+    "titulo": "Artículo 210",
+    "presentacion": "El Artículo 210 se encuentra en el apartado sobre representación política. Hace referencia a las prácticas democráticas que deben ser ejercidas por las organizaciones de las naciones y pueblos indígena originario campesinos, por las agrupaciones ciudadanas y por los partidos políticos en cuanto a su...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 211,
+    "titulo": "Artículo 211",
+    "presentacion": "El Artículo 211 se encuentra en el apartado sobre representación política. Hace referencia al reconocimiento del derecho de las naciones y pueblo indígena originario campesinos a elegir a sus autoridades, representantes y candidatos de acuerdo a sus formas propias de elección, asimismo establece la ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 212,
+    "titulo": "Artículo 212",
+    "presentacion": "El Artículo 212 cierra el apartado sobre representación política. Hace referencia a la prohibición relacionada a la postulación simultánea de los candidatos, ya sea por dos o más circunscripciones electorales o a dos o más cargos electivos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 213,
+    "titulo": "Artículo 213",
+    "presentacion": "El Artículo 213 inaugura el apartado referido a la Contraloría General del Estado. Hace referencia a la función y facultades de la Contraloría General del Estado, así como los principios en los que están fundados su organización, funcionamiento y atribuciones....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 214,
+    "titulo": "Artículo 214",
+    "presentacion": "El Artículo 214 se encuentra en el apartado dedicado a la Contraloría General del Estado. Hace referencia a la forma y requisitos para la designación de la Contralora o Contralor General del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 215,
+    "titulo": "Artículo 215",
+    "presentacion": "El Artículo 215 se encuentra en el apartado dedicado a la Contraloría General del Estado. Hace referencia a los requisitos para ser designada Contralora o ser designado Contralor General del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 216,
+    "titulo": "Artículo 216",
+    "presentacion": "El Artículo 216 se encuentra en el apartado dedicado a la Contraloría General del Estado. Hace referencia al período de funciones de la Contralora o Contralor General del Estado, así como la imposibilidad de nueva designación....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 217,
+    "titulo": "Artículo 217",
+    "presentacion": "El Artículo 217 clausura el apartado referido a la Contraloría General del Estado. Hace referencia a la responsabilidad de la Contraloría General del Estado respecto a las entidades públicas y las que tenga participación o interés el Estado, así como sobre la adquisición, manejo y distribución de bi...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 218,
+    "titulo": "Artículo 218",
+    "presentacion": "El Artículo 218 inaugura el apartado dedicado a la Defensoría del Pueblo. Hace referencia a la naturaleza y a las principales funciones de esta institución, así como los principios que la rigen y su carácter autónomo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 219,
+    "titulo": "Artículo 219",
+    "presentacion": "El Artículo 219 se encuentra en el apartado dedicado a la Defensoría del Pueblo. Hace referencia a la Defensora o Defensor del Pueblo, al periodo del ejercicio de sus funciones, a la imposibilidad de ser nuevamente designado para el mismo cargo, y a ciertos privilegios de los que goza en el ejercici...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 220,
+    "titulo": "Artículo 220",
+    "presentacion": "El Artículo 220 forma parte del apartado dedicado a la Defensoría del Pueblo. Hace referencia a la forma y procedimientos de designación de la máxima autoridad de dicha institución....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 221,
+    "titulo": "Artículo 221",
+    "presentacion": "El Artículo 221 forma parte del apartado dedicado a la Defensoría del Pueblo. Hace referencia a los requisitos para la designación de la autoridad que dirige dicha institución....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 222,
+    "titulo": "Artículo 222",
+    "presentacion": "El Artículo 222 se encuentra en el apartado dedicado a la Defensoría del Pueblo. Hace referencia a las atribuciones de la Defensoría del Pueblo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 223,
+    "titulo": "Artículo 223",
+    "presentacion": "El Artículo 223 forma parte del apartado dedicado a la Defensoría del Pueblo. Hace referencia a la obligación de todo servidor público de proporcionar a dicha institución la información que solicite relacionada al ejercicio de sus funciones....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 224,
+    "titulo": "Artículo 224",
+    "presentacion": "El Artículo 224 cierra el apartado dedicado a la Defensoría del Pueblo. Hace referencia a la obligación de la Defensora o Defensor del Pueblo de rendir informes a la Asamblea Legislativa Plurinacional y al Control Social sobre la situación de los derechos humanos en el país, así como respecto al eje...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 225,
+    "titulo": "Artículo 225",
+    "presentacion": "El Artículo 225 inaugura el apartado dedicado al Ministerio Público. Hace referencia a las funciones que debe cumplir; que goza de autonomía funcional, administrativa y financiera; y los principios de acuerdo a los que debe ejercer sus funciones....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 226,
+    "titulo": "Artículo 226",
+    "presentacion": "El Artículo 226 se encuentra en el apartado dedicado al Ministerio Público. Hace referencia a la cualidad de autoridad jerárquica y de representación de la Fiscal o el Fiscal General del Estado, así como la composición del Ministerio Público....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 227,
+    "titulo": "Artículo 227",
+    "presentacion": "El Artículo 227 se encuentra en el apartado dedicado al Ministerio Público. Hace referencia a la designación de la Fiscal o el Fiscal General del Estado y los requisitos que debe reunir....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 228,
+    "titulo": "Artículo 228",
+    "presentacion": "El Artículo 228 clausura el apartado dedicado al Ministerio Público. Hace referencia a que la Fiscal o el Fiscal General del Estado ejercerá sus funciones por un periodo de seis años y no tiene posibilidad de ser nuevamente designado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 229,
+    "titulo": "Artículo 229",
+    "presentacion": "El Artículo 229 inaugura el apartado dedicado a la Procuraduría General del Estado. Hace referencia a la definición de la institución, sus atribuciones, su organización y estructura....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 230,
+    "titulo": "Artículo 230",
+    "presentacion": "El Artículo 230 se encuentra en el apartado dedicado a la Procuraduría General del Estado. Hace referencia a la composición de la institución, la forma de designación de la Procuradora o Procurador General del Estado, además de la posibilidad de la Asamblea Legislativa de objetar y dejar sin efecto ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 231,
+    "titulo": "Artículo 231",
+    "presentacion": "El Artículo 231 clausura el apartado dedicado a la Procuraduría General del Estado. Hace referencia a las funciones de esta institución....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 232,
+    "titulo": "Artículo 232",
+    "presentacion": "El Artículo 232 inaugura el apartado dedicado a las servidoras y los servidores públicos. Hace referencia a los principios rectores de la Administración Pública de Bolivia....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 233,
+    "titulo": "Artículo 233",
+    "presentacion": "El Artículo 233 se encuentra en el apartado dedicado a las servidoras y los servidores públicos. Hace referencia a la naturaleza de la condición de servidora o servidor público, de la carrera administrativa y las excepciones de acceso a la misma....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 234,
+    "titulo": "Artículo 234",
+    "presentacion": "El Artículo 234 se encuentra en el apartado dedicado a las servidoras y servidores públicos. Hace referencia a los requisitos mínimos para poder acceder al desempeño de cargos de función pública....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 235,
+    "titulo": "Artículo 235",
+    "presentacion": "El Artículo 235 se encuentra en el apartado dedicado a las servidoras y servidores públicos. Hace referencia a las obligaciones a las que se sujetan las personas que ocupan un cargo de servicio público....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 236,
+    "titulo": "Artículo 236",
+    "presentacion": "El Artículo 236 se encuentra en el apartado dedicado a las servidoras y servidores públicos. Hace referencia a las acciones que están prohibidas para el ejercicio de la función pública....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 237,
+    "titulo": "Artículo 237",
+    "presentacion": "El Artículo 237 se encuentra en el apartado dedicado a las servidoras y servidores públicos. Hace referencia a las obligaciones para el ejercicio de la función pública....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 238,
+    "titulo": "Artículo 238",
+    "presentacion": "El Artículo 238 se encuentra en el apartado dedicado a las servidoras y los servidores públicos. Hace referencia a las causales de inelegibilidad de los cargos públicos electivos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 239,
+    "titulo": "Artículo 239",
+    "presentacion": "El Artículo 239 se encuentra en el apartado dedicado a las servidoras y los servidores públicos. Hace referencia a las incompatibilidades con el ejercicio de la función pública....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 240,
+    "titulo": "Artículo 240",
+    "presentacion": "El Artículo 240 clausura el apartado dedicado a las servidoras y servidores públicos. Hace referencia a las disposiciones que regulan el mecanismo de revocatoria de mandato, su alcance, procedimiento y efectos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 241,
+    "titulo": "Artículo 241",
+    "presentacion": "El Artículo 241 se encuentra en el apartado dedicado a la participación y control social. Hace referencia a potestad de la sociedad civil organizada de participar en el diseño de políticas públicas y de ejercer control social a la gestión pública y servicios públicos. Asimismo, dispone que las entid...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 242,
+    "titulo": "Artículo 242",
+    "presentacion": "El Artículo 242 clausura el apartado dedicado a la participación y control social. Hace referencia a las formas de ejercicio de la participación y el control social....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 243,
+    "titulo": "Artículo 243",
+    "presentacion": "El Artículo 243 inaugura el apartado dedicado a las Fuerzas Armadas. Hace referencia a la organización de las Fuerzas Armadas y al número de efectivos a establecer por la Asamblea Legislativa Plurinacional a propuesta del Órgano Ejecutivo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 244,
+    "titulo": "Artículo 244",
+    "presentacion": "El Artículo 244 se encuentra en el apartado dedicado a las Fuerzas Armadas. Hace referencia a la misión fundamental de las Fuerzas Armadas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 245,
+    "titulo": "Artículo 245",
+    "presentacion": "El Artículo 245 se encuentra en el apartado dedicado a las Fuerzas Armadas. Hace referencia a la organización de las Fuerzas Armadas en base a la jerarquía y disciplina....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 246,
+    "titulo": "Artículo 246",
+    "presentacion": "El Artículo 246 se encuentra en el apartado dedicado a las Fuerzas Armadas. Hace referencia a la dependencia que tienen las Fuerzas Armadas hacia el Presidente o Presidenta del Estado. Asimismo establece que en caso de guerra dirigirá las operaciones el Comandante en Jefe de las Fuerzas Armadas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 247,
+    "titulo": "Artículo 247",
+    "presentacion": "El Artículo 247 se encuentra en el apartado dedicado a las Fuerzas Armadas. Hace referencia a los requisitos de mando de dicha institución, tales como ser boliviana o boliviano por nacimiento y reunir demás requisitos que señale la ley. Dichos requisitos también serán exigidos para ser Viceministra ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 248,
+    "titulo": "Artículo 248",
+    "presentacion": "El Artículo 248 se encuentra en el apartado dedicado a las Fuerzas Armadas. Hace referencia a una reserva de ley que determinará la composición, organización y atribuciones del Consejo Supremo de Defensa del Estado Plurinacional. Adicionalmente determina que éste estará presidido por el Capitán Gene...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 249,
+    "titulo": "Artículo 249",
+    "presentacion": "El Artículo 249 se encuentra en el apartado dedicado a las Fuerzas Armadas. Hace referencia a la obligación de todo boliviano de prestar servicio militar de acuerdo con la ley....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 250,
+    "titulo": "Artículo 250",
+    "presentacion": "El Artículo 250 se encuentra en el apartado dedicado a las Fuerzas Armadas. Hace referencia a los ascensos de las Fuerzas Armadas remitiendo los mismos a una ley....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 251,
+    "titulo": "Artículo 251",
+    "presentacion": "El Artículo 251 inaugura el apartado dedicado a la Policía Boliviana. Hace referencia al carácter de fuerza pública de la policía, la misión específica que tiene, la forma de ejercicio de su función (de manera integral, indivisible y bajo mando único), y la prohibición de la institución de participa...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 252,
+    "titulo": "Artículo 252",
+    "presentacion": "El Artículo 252 se encuentra en el apartado dedicado a la institución policial. Establece la dependencia de la Policía Boliviana al Presidente por intermedio del Ministro de Gobierno....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 253,
+    "titulo": "Artículo 253",
+    "presentacion": "El Artículo 253 se encuentra en el apartado dedicado a la Policía Boliviana. Establece los requisitos para la designación del Comandante General de la Policía Boliviana....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 254,
+    "titulo": "Artículo 254",
+    "presentacion": "El Artículo 254 cierra el apartado dedicado a la Policía Boliviana. Establece la dependencia de dicha institución al Comando en Jefe de las Fuerzas Armadas en caso específico de guerra internacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 255,
+    "titulo": "Artículo 255",
+    "presentacion": "El Artículo 255 se encuentra en el apartado dedicado a las relaciones internacionales. Hace referencia a los fines rectores de las relaciones internacionales en general, así como a los principios y fines que deben regir la negociación, suscripción y ratificación de los tratados internacionales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 256,
+    "titulo": "Artículo 256",
+    "presentacion": "El Artículo 256 se encuentra en el apartado dedicado a las relaciones internacionales del Estado boliviano. Hace referencia a los instrumentos internacionales de derechos humanos que declaran derechos más favorables a los contenidos en la Constitución. Asimismo señala que los derechos se interpretar...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 257,
+    "titulo": "Artículo 257",
+    "presentacion": "El Artículo 257 se encuentra en el apartado dedicado a las relaciones internacionales. Hace referencia al rango de los tratados internacionales en el ordenamiento jurídico interno y establece la figura de referendo aprobatorio vinculante para los tratados que impliquen cuestiones limítrofes, integra...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 258,
+    "titulo": "Artículo 258",
+    "presentacion": "El Artículo 258 se encuentra en el apartado dedicado a las relaciones internacionales. Hace referencia a la reserva legal que regulará el procedimiento de celebración de los tratados internacionales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 259,
+    "titulo": "Artículo 259",
+    "presentacion": "El Artículo 259 se encuentra en el apartado dedicado a las relaciones internacionales. Hace referencia a la iniciativa ciudadana y de la Asamblea Legislativa Plurinacional para solicitar la aprobación y suscripción de un tratado internacional vía referendo. Asimismo establece que cualquier anuncio d...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 260,
+    "titulo": "Artículo 260",
+    "presentacion": "El Artículo 260 se encuentra en el apartado dedicado a las relaciones internacionales. Introduce, por primera vez al constitucionalismo boliviano, la figura jurídica de denuncia de los tratados internacionales. En concordancia a la Disposición Transitoria Novena, el Artículo obedece a una preocupaci...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 261,
+    "titulo": "Artículo 261",
+    "presentacion": "El Artículo 261 inaugura el apartado dedicado a las fronteras del Estado. Hace referencia al deber estatal relacionado a la integridad territorial y a la preservación y desarrollo de las zonas fronterizas...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 262,
+    "titulo": "Artículo 262",
+    "presentacion": "El Artículo 262 se encuentra en el apartado dedicado a las fronteras estatales. Establece una prohibición relacionada a la adquisición de propiedades y posesión de títulos de agua, suelo y subsuelo por parte de extranjeros, dentro de los 50 kilómetros medidos a partir de las líneas fronterizas. El t...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 263,
+    "titulo": "Artículo 263",
+    "presentacion": "El Artículo 263 se encuentra en el apartado dedicado a las fronteras estatales. Determina las funciones de las Fuerzas Armadas en las zonas de seguridad fronteriza. Entre éstas se encuentran la defensa, seguridad, control y presencia permanente, así como la participación en las políticas de desarrol...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 264,
+    "titulo": "Artículo 264",
+    "presentacion": "El Artículo 264 forma parte del apartado dedicado a las fronteras del Estado. Hace referencia al régimen de fronteras y al deber estatal de establecer una política de desarrollo fronterizo que tenga por objeto mejorar las condiciones de vida de los pobladores fronterizos, así como de preservar y con...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 265,
+    "titulo": "Artículo 265",
+    "presentacion": "El Artículo 265 inaugura el apartado sobre Integración. Establece que es deber estatal, promover los procesos de integración social, política, cultural y económica en el ámbito internacional y en particular al interior de los Estados latinoamericana. Asimismo señala que el Estado boliviano debe fort...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 266,
+    "titulo": "Artículo 266",
+    "presentacion": "El Artículo 266 cierra el apartado referido a la integración. Establece que los representantes bolivianos ante los organismos supraestatales, deben ser elegidos mediante sufragio universal, elemento tomado en cuenta por primera vez, no sólo en el constitucionalismo boliviano, sino también en la norm...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 267,
+    "titulo": "Artículo 267",
+    "presentacion": "El Artículo 267 inaugura el apartado dedicado a la reivindicación marítima. Este artículo se presenta como una innovación dentro del constitucionalismo boliviano, ya que por primera vez se introduce en el sistema constitucional, el derecho de Bolivia sobre el territorio que le dé acceso al Océano Pa...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 268,
+    "titulo": "Artículo 268",
+    "presentacion": "El Artículo 268 cierra el apartado dedicado a la reivindicación marítima. Hace referencia al desarrollo de los intereses marítimos, fluviales, lacustres, así como el desarrollo de la marina mercante. De la misma forma establece que la administración y protección de estos elementos será función de la...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 269,
+    "titulo": "Artículo 269",
+    "presentacion": "El Artículo 269 se encuentra en el apartado dedicado a las disposiciones generales de la organización territorial del Estado. Hace referencia a la organización territorial de Bolivia, así como a la creación, modificación y delimitación de las unidades territoriales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 270,
+    "titulo": "Artículo 270",
+    "presentacion": "El Artículo 270 se encuentra en el apartado dedicado a las disposiciones generales de la organización territorial del Estado. Hace referencia a los principios que rigen la organización territorial y las entidades territoriales descentralizadas y autónomas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 271,
+    "titulo": "Artículo 271",
+    "presentacion": "El Artículo 271 se encuentra en el apartado dedicado a las disposiciones generales de la organización territorial del Estado. Hace referencia a los elementos que debe regular la Ley Marco de Autonomías y Descentralización, así como la forma de aprobación de dicha ley....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 272,
+    "titulo": "Artículo 272",
+    "presentacion": "El Artículo 272 se encuentra en el acápite apartad a las disposiciones generales de la organización territorial del Estado. Hace referencia a los elementos que implica la autonomía....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 273,
+    "titulo": "Artículo 273",
+    "presentacion": "El Artículo 273 se encuentra en el apartado dedicado a las disposiciones generales de la organización territorial del Estado. Hace referencia a la conformación de mancomunidades entre algunas entidades territoriales autónomas será regulada por ley....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 274,
+    "titulo": "Artículo 274",
+    "presentacion": "El Artículo 274 se encuentra en el apartado dedicado a las disposiciones generales de la organización territorial del Estado. Hace referencia a la forma de elección de prefectos y consejeros departamentales en los departamentos descentralizados, así como la forma de acceso de estos departamentos a l...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 275,
+    "titulo": "Artículo 275",
+    "presentacion": "El Artículo 275 se encuentra en el apartado dedicado a las disposiciones generales de la organización territorial del Estado. Hace referencia a la elaboración, aprobación y entada en vigencia del Estatuto o Carta Orgánica de la entidad territorial, así como su aprobación....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 276,
+    "titulo": "Artículo 276",
+    "presentacion": "El Artículo 276 clausura el apartado dedicado a las disposiciones generales de la organización territorial del Estado. Hace referencia al igual rango constitucional y no subordinación entre las entidades territoriales autónomas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 277,
+    "titulo": "Artículo 277",
+    "presentacion": "El Artículo 277 inaugura el apartado dedicado a la autonomía departamental. Hace referencia a la composición del gobierno autónomo departamental, a sus diferentes facultades y competencias....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 278,
+    "titulo": "Artículo 278",
+    "presentacion": "El Artículo 278 se encuentra en el apartado dedicado a la autonomía departamental. Hace referencia a la composición de las Asambleas Departamentales, así como las formas de elección de quienes las conforman; también prevé una reserva legal para el desarrollo de los criterios de la elección de asambl...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 279,
+    "titulo": "Artículo 279",
+    "presentacion": "El Artículo 279 clausura el acápite dedicado a la autonomía departamental. Hace referencia a la dirección del órgano ejecutivo departamental por la Gobernadora o el Gobernador....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 280,
+    "titulo": "Artículo 280",
+    "presentacion": "El Artículo 280 inaugura el apartado dedicado a la autonomía regional. Hace referencia a la naturaleza de las regiones, su conformación y la posibilidad de que éstas constituyan una autonomía regional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 281,
+    "titulo": "Artículo 281",
+    "presentacion": "El Artículo 281 se encuentra el apartado dedicado a la autonomía regional. Hace referencia a la composición del gobierno de cada autonomía regional y las competencias de sus órganos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 282,
+    "titulo": "Artículo 282",
+    "presentacion": "El Artículo 282 se encuentra el apartado dedicado a la autonomía regional. Hace referencia la composición de la Asamblea Regional, las condiciones de la elección de sus miembros y, asimismo, los criterios de elaboración del Estatuto autonómico regional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 283,
+    "titulo": "Artículo 283",
+    "presentacion": "El Artículo 283 inaugura el apartado dedicado a la autonomía municipal. Hace referencia a la composición del gobierno autónomo municipal....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 284,
+    "titulo": "Artículo 284",
+    "presentacion": "El Artículo 284 clausura el apartado dedicado a la autonomía municipal. Hace referencia a la composición del Concejo Municipal, a la elección directa de representantes de naciones y pueblos indígena originario campesinos ante éste y a la elaboración del proyecto de Carta Orgánica. Asimismo, establec...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 285,
+    "titulo": "Artículo 285",
+    "presentacion": "El Artículo 285 inaugura el apartado dedicado a los órganos ejecutivos de los gobiernos autónomos. Hace referencia a los requisitos para acceder a la candidatura para los cargos de Prefecta o Prefecto, Gobernadora o Gobernador, Alcaldesa o Alcalde y Ejecutiva o Ejecutivo regional. Asimismo dispone e...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 286,
+    "titulo": "Artículo 286",
+    "presentacion": "El Artículo 286 clausura el apartado dedicado a los órganos ejecutivos de los gobiernos autónomos. Hace referencia a los mecanismos de suplencia de las máximas autoridades ejecutivas de estos gobiernos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 287,
+    "titulo": "Artículo 287",
+    "presentacion": "El Artículo 287 inicia el apartado referido a los órganos legislativos, deliberativos y fiscalizadores de los gobiernos autónomos. Hace referencia a los requisitos para el acceso a dichos órganos, así como la elección de sus miembros en listas separadas de los órganos ejecutivos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 288,
+    "titulo": "Artículo 288",
+    "presentacion": "El Artículo 288 se encuentra en el apartado referido a los órganos legislativos, deliberativos y fiscalizadores de los gobiernos autónomos. Hace referencia al tiempo de mandato de los miembros de dichos órganos así como a la posibilidad de su reelección....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 289,
+    "titulo": "Artículo 289",
+    "presentacion": "El Artículo 289 se encuentra en el apartado dedicado a la autonomía indígena originario campesina. Hace referencia a la libre determinación y el autogobierno de las naciones y pueblos indígena originario campesinos como base para la autonomía indígena originario campesina....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 290,
+    "titulo": "Artículo 290",
+    "presentacion": "El Artículo 290 se encuentra en el apartado sobre autonomías indígena originario campesinas. Hace referencia a las bases para la existencia de las autonomías indígena originario campesinas. Si bien no dispone las restricciones para las autonomías indígena originario campesinas puede ser una ventana ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 291,
+    "titulo": "Artículo 291",
+    "presentacion": "El Artículo 291 se halla en el apartado sobre autonomías indígena originario campesinas. Este artículo establece las bases territoriales a partir de las cuales se puede conformar la autonomía indígena originario campesina y la posibilidad de la conformación de una autonomía indígena entre varias Nac...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 292,
+    "titulo": "Artículo 292",
+    "presentacion": "El Artículo 292 se encuentra en el apartado dedicado a autonomías indígena originario campesinas. Hace referencia a la elaboración del estatuto autonómico, por cada autonomía indígena originario campesina, y señala que el mismo deberá elaborarse de acuerdo a las normas y procedimientos propios de ca...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 293,
+    "titulo": "Artículo 293",
+    "presentacion": "El Artículo 293 se encuentra en el apartado dedicado a la autonomía indígena originario campesina. Hace referencia a, por un lado, la constitución de la autonomía indígena basada en territorios indígenas, que deberá fundarse en la voluntad de su población expresada en la consulta. Por otra parte, ha...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 294,
+    "titulo": "Artículo 294",
+    "presentacion": "El Artículo 294 se encuentra en el apartado dedicado a autonomía indígena originario campesina. Hace referencia a, por un lado, la decisión de constituir una autonomía indígena originario campesina, que deberá adoptarse a través de la consulta en base a las normas y procedimientos propios de cada po...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 295,
+    "titulo": "Artículo 295",
+    "presentacion": "El Artículo 295 se encuentra en el apartado dedicado a la autonomía indígena originario campesina. Hace referencia a, por un lado, los términos generales para la conformación de la región indígena originario campesina, y por otra parte, se refiere a la agregación de distritos municipales con autonom...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 296,
+    "titulo": "Artículo 296",
+    "presentacion": "El Artículo 295 se encuentra en el apartado dedicado a la autonomía indígena originario campesina. Hace referencia a, por un lado, los términos generales para la conformación de la región indígena originario campesina, y por otra parte, se refiere a la agregación de distritos municipales con autonom...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 297,
+    "titulo": "Artículo 297",
+    "presentacion": "El Artículo 297 se encuentra en el apartado dedicado a la distribución de competencias de las autonomías. Hace referencia a los tipos de competencias que establece y define la Constitución para la posterior distribución de tareas entre las entidades territoriales autónomas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 298,
+    "titulo": "Artículo 298",
+    "presentacion": "El Artículo 298 se encuentra en el apartado dedicado a la distribución de competencias. Hace referencia a las competencias privativas y exclusivas del nivel central del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 299,
+    "titulo": "Artículo 299",
+    "presentacion": "El Artículo 299 se encuentra en el apartado dedicado a la distribución de competencias. Hace referencia a las competencias que podrán ejercerse de forma compartida y concurrente, entre el nivel central del Estado y las entidades territoriales autónomas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 300,
+    "titulo": "Artículo 300",
+    "presentacion": "El Artículo 300 se encuentra en el apartado dedicado a la distribución de competencias. Hace referencia a las competencias que ejercerán los gobiernos departamentales autónomos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 301,
+    "titulo": "Artículo 301",
+    "presentacion": "El Artículo 301 se encuentra en el apartado dedicado a distribución de competencias para las entidades territoriales autónomas. Establece que la región autónoma, luego de constituirse, recibe las competencias que le sean transferidas o delegadas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 302,
+    "titulo": "Artículo 302",
+    "presentacion": "El Artículo 302 se encuentra en el apartado dedicado a la distribución de competencias. Hace referencia a las competencias que ejercerán los gobiernos municipales autónomos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 303,
+    "titulo": "Artículo 303",
+    "presentacion": "El Artículo 303 se encuentra en el apartado dedicado a la distribución de competencias del nivel central y las entidades territoriales autónomas. Hace referencia al marco competencial de las autonomías indígena originario campesinas que asumen las competencias del municipio, así como el marco compet...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 304,
+    "titulo": "Artículo 304",
+    "presentacion": "El Artículo 304 se encuentra en el apartado dedicado a la distribución de competencias. Hace referencia a las competencias que ejercerán las autonomías de los gobiernos indígena originario campesinos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 305,
+    "titulo": "Artículo 305",
+    "presentacion": "El Artículo 305 se encuentra en el apartado dedicado a la distribución de competencias del nivel central y las entidades territoriales autónomas. Hace referencia a la necesidad de que toda transferencia o delegación de competencias esté acompañada por la definición de los recursos económicos y finan...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 306,
+    "titulo": "Artículo 306",
+    "presentacion": "El Artículo 306 inaugura la Cuarta Parte de la Constitución, así como el apartado dedicado a las disposiciones generales de la organización económica del Estado. Define al modelo económico boliviano como un modelo plural y establece las principales características del mismo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 307,
+    "titulo": "Artículo 307",
+    "presentacion": "El Artículo 307 se encuentra en el apartado dedicado a las disposiciones generales de la organización económica del Estado. Hace referencia a las funciones del Estado respecto de esta forma de organización, así como a los elementos que comprende la misma....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 308,
+    "titulo": "Artículo 308",
+    "presentacion": "El Artículo 308 se encuentra en el apartado dedicado a las disposiciones generales de la organización económica del Estado. Hace referencia al reconocimiento, respeto y protección estatal hacia la economía privada, asimismo garantiza la libertad de empresa y el pleno ejercicio de actividades empresa...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 309,
+    "titulo": "Artículo 309",
+    "presentacion": "El Artículo 309 se encuentra en el apartado dedicado a las disposiciones generales de la organización económica del Estado. Hace referencia a los objetivos a ser cumplidos por la forma de organización económica estatal....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 310,
+    "titulo": "Artículo 310",
+    "presentacion": "El Artículo 310 se encuentra en el apartado dedicado a la organización económica del Estado. Hace referencia al reconocimiento y protección estatal a las cooperativas y la promoción preferente a las cooperativas de producción....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 311,
+    "titulo": "Artículo 311",
+    "presentacion": "El Artículo 311 se encuentra en el apartado dedicado a las disposiciones generales de la organización económica. Hace referencia a la igualdad ante la ley de todas las formas de organización económica establecidas en la Constitución, así como a los aspectos que comprende la economía plural....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 312,
+    "titulo": "Artículo 312",
+    "presentacion": "El Artículo 312 se encuentra en el apartado dedicado a las disposiciones generales de la organización económica del Estado. Hace referencia a los deberes y obligaciones de toda actividad económica en el país....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 313,
+    "titulo": "Artículo 313",
+    "presentacion": "El Artículo 313 se encuentra en el apartado dedicado a las disposiciones generales de la organización económica del Estado. Hace referencia a los propósitos para la eliminación de la pobreza y la exclusión social y económica y para el logro del vivir bien....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 314,
+    "titulo": "Artículo 314",
+    "presentacion": "El Artículo 314 se encuentra en el apartado dedicado a las disposiciones generales de la organización económica del Estado. Hace referencia a la prohibición de monopolios, oligopolios y a cualquier otra actividad de personas privadas que pretenda el control y exclusividad en la producción y comercia...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 315,
+    "titulo": "Artículo 315",
+    "presentacion": "El Artículo 315 se encuentra en el apartado dedicado a las disposiciones generales de la organización económica del Estado. Hace referencia al reconocimiento estatal a la propiedad de la tierra de las personas jurídicas, en el marco de ciertos requisitos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 316,
+    "titulo": "Artículo 316",
+    "presentacion": "El Artículo 316 se encuentra en el apartado dedicado a la función del Estado en la economía. Establece once funciones generales del Estado en la economía....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 317,
+    "titulo": "Artículo 317",
+    "presentacion": "El Artículo 317 cierra el apartado dedicado a las funciones del Estado en la economía. Hace referencia a la creación, organización y funcionamiento de una entidad de planificación participativa....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 318,
+    "titulo": "Artículo 318",
+    "presentacion": "El Artículo 318 inaugura el apartado dedicado a las políticas económicas. Hace referencia a los mecanismos y prioridades para la función del Estado de determinar una política productiva industrial y comercial....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 319,
+    "titulo": "Artículo 319",
+    "presentacion": "El Artículo 319 se encuentra en el apartado dedicado a políticas económicas. Hace referencia a la industrialización de los recursos naturales como prioridad de las políticas económicas, y al carácter prioritario de la articulación entre explotación de recursos naturales y el aparato productivo inter...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 320,
+    "titulo": "Artículo 320",
+    "presentacion": "El Artículo 320 se encuentra en el apartado dedicado a las políticas económicas. Hace referencia a las relaciones económicas del Estado con otros Estados o con empresas extranjeras....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 321,
+    "titulo": "Artículo 321",
+    "presentacion": "El Artículo 321 inicia el apartado dedicado a política fiscal. Hace referencia a algunos elementos básicos sobre la política presupuestaria del Estado Plurinacional....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 322,
+    "titulo": "Artículo 322",
+    "presentacion": "El Artículo 322 se encuentra en el apartado dedicado a política fiscal. Hace referencia a la facultad de la Asamblea Legislativa Plurinacional de autorizar la contratación de deuda pública....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 323,
+    "titulo": "Artículo 323",
+    "presentacion": "El Artículo 323 se encuentra en el apartado referido a Política Fiscal. Hace referencia a los principios de la política fiscal, así como a la aprobación, clasificación y definición de tributos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 324,
+    "titulo": "Artículo 324",
+    "presentacion": "El Artículo 324 se encuentra en el apartado dedicado a política fiscal. Hace referencia a la prohibición de la prescripción de deudas por daños económicos ocasionados al Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 325,
+    "titulo": "Artículo 325",
+    "presentacion": "El Artículo 325 cierra el apartado dedicado a política fiscal. Hace referencia a la penalización de ilícitos económicos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 326,
+    "titulo": "Artículo 326",
+    "presentacion": "El Artículo 326 inaugura el apartado sobre política monetaria. Hace referencia a la política monetaria y cambiaria del país y establece que los objetivos de éstas son determinados por el Órgano Ejecutivo, en coordinación con el Banco Central de Bolivia. Asimismo, señala que cualquier transacción púb...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 327,
+    "titulo": "Artículo 327",
+    "presentacion": "El Artículo 327 se encuentra en el apartado sobre política monetaria. Hace referencia a la naturaleza jurídica del Banco Central de Bolivia, su patrimonio, así como su función en el marco de la política económica del Estado. El artículo en cuestión se encuentra en estrecha relación a los artículos 3...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 328,
+    "titulo": "Artículo 328",
+    "presentacion": "El Artículo 328 forma parte del apartado sobre política monetaria. Hace referencia a las atribuciones del Banco Central de Bolivia. Este artículo debe ser leído en concordancia con el Artículo 318 referido a la política económica y el Artículo 327, mediante el cual se establece la función general de...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 329,
+    "titulo": "Artículo 329",
+    "presentacion": "El Artículo 329 cierra el apartado sobre política monetaria. Hace referencia a la conformación del Directorio del Banco Central de Bolivia, la designación de los miembros que conforman dicho directorio, la duración de sus funciones, el carácter de servidor público de los miembros, y la obligación de...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 330,
+    "titulo": "Artículo 330",
+    "presentacion": "El Artículo 330 inicia el apartado dedicado a política financiera. Hace referencia a la regulación estatal del sistema financiero, a la priorización de determinados sectores en el acceso al crédito, al fomento estatal para la creación de entidades financieras no bancarias, la construcción de un fond...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 331,
+    "titulo": "Artículo 331",
+    "presentacion": "El Artículo 331 se encuentra en el apartado dedicado a política financiera. Establece que cualquier actividad relacionada con el manejo, aprovechamiento e inversión del ahorro es de interés público y que debe ser ejercida previa autorización del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 332,
+    "titulo": "Artículo 332",
+    "presentacion": "El Artículo 332 se encuentra en el apartado dedicado a política financiera. Hace referencia a la creación de una institución que regule a las entidades financieras, así como la designación de su máxima autoridad....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 333,
+    "titulo": "Artículo 333",
+    "presentacion": "El Artículo 333 se encuentra en el apartado dedicado a política financiera. Hace referencia al derecho de confidencialidad para las operaciones financieras y sus salvedades....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 334,
+    "titulo": "Artículo 334",
+    "presentacion": "El Artículo 334 inaugura el apartado dedicado a políticas sectoriales. Hace referencia a los sectores que protegerá y fomentará el Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 335,
+    "titulo": "Artículo 335",
+    "presentacion": "El Artículo 335 se encuentra en apartado dedicado a políticas sectoriales. Hace referencia a las principales características de las cooperativas de servicios públicos, así como la supervisión del Órgano Electoral Plurinacional en la elección de sus autoridades administrativas y de vigilancia....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 336,
+    "titulo": "Artículo 336",
+    "presentacion": "El Artículo 336 se encuentra en el apartado referido a políticas sectoriales. Hace referencia al apoyo estatal financiero a las organizaciones de economía comunitaria....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 337,
+    "titulo": "Artículo 337",
+    "presentacion": "El Artículo 337 se encuentra en el apartado dedicado a políticas sectoriales. Hace referencia al turismo como actividad económica estratégica, que deberá desarrollarse de manera sustentable, así mismo hace referencia a la promoción y fomento estatal hacia el turismo comunitario....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 338,
+    "titulo": "Artículo 338",
+    "presentacion": "El Artículo 338 se encuentra ubicado en el apartado referido a políticas sectoriales. Hace referencia al reconocimiento estatal al valor económico del trabajo del hogar y a su consecuente cuantificación en las cuentas públicas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 339,
+    "titulo": "Artículo 339",
+    "presentacion": "El Artículo 339 inicia el apartado dedicado a los bienes y recursos del Estado y su distribución. Hace referencia a los pagos no autorizados que puede decretar el Presidente, a los bienes de patrimonio del Estado y a la inversión de los ingresos del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 340,
+    "titulo": "Artículo 340",
+    "presentacion": "El Artículo 340 se encuentra en el apartado dedicado a los bienes y recursos del Estado. Hace referencia a la división de las rentas del Estado, la clasificación de ingresos, la descentralización de los recursos recaudados por oficinas dependientes del nivel centra, así como la responsabilidad del E...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 341,
+    "titulo": "Artículo 341",
+    "presentacion": "El Artículo 341 se encuentra en el apartado dedicado a los bienes y recursos del Estado. Establece un listado de ocho recursos que pertenecen a los departamentos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 342,
+    "titulo": "Artículo 342",
+    "presentacion": "El Artículo 342 se encuentra en el apartado dedicado al medio ambiente. Hace referencia al deber del Estado y de la población de conservar, proteger y aprovechar de manera sustentable los recursos naturales, y de mantener el equilibrio del medio ambiente....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 343,
+    "titulo": "Artículo 343",
+    "presentacion": "El Artículo 343 se encuentra en el apartado dedicado a medio ambiente. Este artículo dispone el derecho de la población a participar del control sobre las políticas que pudieran afectar al medio ambiente. Por otra parte dispone un límite al Estado en su accionar, en el caso de decisiones que pudiera...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 344,
+    "titulo": "Artículo 344",
+    "presentacion": "El Artículo 344 se encuentra en el apartado dedicado al medio ambiente. Establece la prohibición del uso y fabricación de armas de destrucción masiva, así como de la internación y depósito de residuos nucleares y desechos tóxicos. Por otra parte, hace referencia a la función del Estado de regular to...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 345,
+    "titulo": "Artículo 345",
+    "presentacion": "El Artículo 345 se encuentra en el apartado dedicado a medio ambiente. Profundiza el tema de la gestión ambiental, tratado en primera instancia en el Artículo 343, estableciendo sus características, su contenido y sus alcances....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 346,
+    "titulo": "Artículo 346",
+    "presentacion": "El Artículo 346 se encuentra en el apartado dedicado al medio ambiente. Hace referencia al carácter estratégico para el desarrollo sustentable del país, del patrimonio natural, y establece la función del Estado con respecto a la conservación y aprovechamiento del mismo....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 347,
+    "titulo": "Artículo 347",
+    "presentacion": "El Artículo 347 se encuentra en el apartado dedicado a medio ambiente. Hace referencia a la función del Estado y la sociedad de promover la mitigación de efectos nocivos al medio ambiente, declara la imprescriptibilidad de los delitos ambientales, y establece las acciones que deberán efectuar quiene...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 348,
+    "titulo": "Artículo 348",
+    "presentacion": "El Artículo 348 se encuentra en el apartado dedicado a recursos naturales. Hace referencia a, por un lado, cuales son los recursos naturales bolivianos, y por otra parte, establece que los mismos son de carácter estratégico así como de interés público, para el desarrollo del país....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 349,
+    "titulo": "Artículo 349",
+    "presentacion": "El Artículo 349 se encuentra en el apartado dedicado a recursos naturales. Hace referencia a, por un lado, el carácter de propiedad y dominio del pueblo boliviano, de los recursos naturales; por otra parte establece que el Estado reconoce, respeta y otorga derechos para el aprovechamiento de la tier...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 350,
+    "titulo": "Artículo 350",
+    "presentacion": "El Artículo 350 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia a la nulidad de títulos sobre reserva fiscal, salvo autorización expresa....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 351,
+    "titulo": "Artículo 351",
+    "presentacion": "El Artículo 351 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia al control y dirección del Estado en la cadena productiva de los recursos naturales; la posibilidad de suscribir contratos de asociación para su aprovechamiento; el control y participación social en la ges...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 352,
+    "titulo": "Artículo 352",
+    "presentacion": "El Artículo 352 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia a que la exploración de recursos naturales estará sujeta a consulta libre, previa e informada a la población afectada, así como que se garantiza la participación ciudadana en el proceso de gestión ambienta...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 353,
+    "titulo": "Artículo 353",
+    "presentacion": "El Artículo 353 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia al acceso equitativo a los beneficios que provienen del aprovechamiento de los recursos naturales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 354,
+    "titulo": "Artículo 354",
+    "presentacion": "El Artículo 354 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia al mandato al Estado de desarrollar y promover la investigación, relacionada con el manejo, conservación y aprovechamiento de los recursos naturales y la biodiversidad....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 355,
+    "titulo": "Artículo 355",
+    "presentacion": "El Artículo 355 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia a la industrialización y comercialización de los recursos naturales, así como las utilidades obtenidas por éstas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 356,
+    "titulo": "Artículo 356",
+    "presentacion": "El Artículo 356 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia al carácter de necesidad estatal y utilidad pública de las actividades de la cadena productiva de los recursos naturales no renovables....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 357,
+    "titulo": "Artículo 357",
+    "presentacion": "El Artículo 357 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia a la imposibilidad de inscripción de la propiedad de los recursos naturales en mercados de valores o su utilización para operaciones financieras de titularización o seguridad; adicionalmente establece que ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 358,
+    "titulo": "Artículo 358",
+    "presentacion": "El Artículo 358 se encuentra en el apartado dedicado a los recursos naturales. Hace referencia a los derechos de uso y aprovechamiento de los recursos naturales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 359,
+    "titulo": "Artículo 359",
+    "presentacion": "El Artículo 359 inaugura el apartado dedicado a los hidrocarburos. Hace referencia a la propiedad del pueblo boliviano sobre los hidrocarburos; el ejercicio de la propiedad sobre la producción de éstos, por parte del Estado; la propiedad de los ingresos percibidos por la comercialización de los hidr...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 360,
+    "titulo": "Artículo 360",
+    "presentacion": "El Artículo 360 se encuentra en el apartado dedicado a los hidrocarburos. Hace referencia a la definición, por parte del Estado, de la política de hidrocarburos, su promoción y la garantía estatal de soberanía energética....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 361,
+    "titulo": "Artículo 361",
+    "presentacion": "El Artículo 361 se encuentra en el apartado dedicado a los hidrocarburos. Hace referencia a la naturaleza y características de Yacimientos Petrolíferos Fiscales Bolivianos (YPFB), su facultad con respecto a la cadena productiva de los hidrocarburos y la prohibición a que ésta transfiera sus derechos...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 362,
+    "titulo": "Artículo 362",
+    "presentacion": "El Artículo 362 se encuentra en el apartado dedicado a los hidrocarburos. Hace referencia a la facultad de YPFB de suscribir contratos de prestación de servicios, con empresas, para que éstas realicen determinadas actividades en la cadena productiva, así como la previa autorización de la Asamblea Le...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 363,
+    "titulo": "Artículo 363",
+    "presentacion": "El Artículo 363 se encuentra en el apartado dedicado a hidrocarburos. Hace referencia a, por un lado, las características y responsabilidades de la Empresa Boliviana de Industrialización de Hidrocarburos. Por otra parte, el artículo establece la facultad de la empresa estatal, Yacimientos Petrolífer...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 364,
+    "titulo": "Artículo 364",
+    "presentacion": "El Artículo 364 se encuentra en el apartado dedicado a hidrocarburos. Hace referencia a la facultad de Yacimientos Petrolíferos Fiscales Bolivianos de operar derechos de propiedad en el territorio de otros Estados, sentando la posibilidad de devenir a esta empresa en una corporación de alcance inter...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 365,
+    "titulo": "Artículo 365",
+    "presentacion": "El Artículo 365 se encuentra en el apartado dedicado a hidrocarburos. Hace referencia a la creación de una entidad autárquica y de derecho pública encargada de controlar y supervisar toda la cadena productiva del sector de hidrocarburos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 366,
+    "titulo": "Artículo 366",
+    "presentacion": "El Artículo 366 se encuentra en el apartado dedicado a hidrocarburos. Establece un mandato constitucional, por el cual todas las empresas extranjeras que intervengan en la cadena productiva del sector de hidrocarburos están sometidas a la soberanía, las autoridades y la jurisdicción del Estado boliv...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 367,
+    "titulo": "Artículo 367",
+    "presentacion": "El Artículo 367 se encuentra en el apartado dedicado a hidrocarburos. Resuelve que las actividades de uso y aprovechamiento de los hidrocarburos deben garantizar el consumo interno. Por otra parte, el artículo también establece que la exportación de los excedentes de la producción de hidrocarburos c...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 368,
+    "titulo": "Artículo 368",
+    "presentacion": "El Artículo 368 se encuentra en el apartado dedicado a hidrocarburos. Hace referencia a la manera en cómo se distribuirán de las regalías obtenidas por la producción de hidrocarburos, entre los departamentos productores y no productores de hidrocarburos, y el Tesoro General del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 369,
+    "titulo": "Artículo 369",
+    "presentacion": "El Artículo 369 inaugura el apartado Minería y Metalurgia. Hace referencia a las funciones del Estado respecto a los recursos mineralógicos, y a la propia actividad minera. Por otra parte, hace referencia a los recursos no metálicos de los salares, salmueras, y otros, que actualmente han despertado ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 370,
+    "titulo": "Artículo 370",
+    "presentacion": "El Artículo 370 se encuentra en el apartado dedicado a minería y metalurgia. Hace referencia, por un lado, a la función del Estado de otorgar derechos mineras en toda la cadena productiva minera. Por otra parte, el artículo se refiere a cada una de las figuras legales mediante las cuales los distint...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 371,
+    "titulo": "Artículo 371",
+    "presentacion": "El Artículo 371 se encuentra en el apartado Minería y Metalurgia, y establece las características de las áreas de explotación minera, así como establece la locación en la que deberá situarse el domicilio legal de las empresas que desarrollen actividades mineras en Bolivia....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 372,
+    "titulo": "Artículo 372",
+    "presentacion": "El Artículo 372 se encuentra en el apartado Minería y Metalurgia, e introduce varias temáticas respecto a la organización de la economía minera. En primera instancia trata el tema de los grupos mineros nacionalizados y la cualidad y característica que los mismos adquieren con el actual régimen const...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 373,
+    "titulo": "Artículo 373",
+    "presentacion": "El Artículo 373 se encuentra en el apartado sobre recursos hídricos. Hace referencia a al agua como derecho fundamentalísimo para la vida, a la obligación estatal de promover el uso y acceso a este recurso, y a su carácter estratégico, que impide que el recurso sea objeto de apropiaciones privadas y...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 374,
+    "titulo": "Artículo 374",
+    "presentacion": "El Artículo 374 se encuentra en el apartado dedicado a los recursos hídricos, hace referencia al deber estatal de proteger y garantizar el acceso al agua para la vida, el respeto y protección de los usos y costumbres de las naciones y pueblos indígena originario campesinos sobre el agua, así como la...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 375,
+    "titulo": "Artículo 375",
+    "presentacion": "El Artículo 375 se encuentra en el apartado sobre recursos hídricos. Hace referencia a las cuencas y sus recursos hídricos y a los deberes estatales relacionados a éstos....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 376,
+    "titulo": "Artículo 376",
+    "presentacion": "El Artículo 376 se encuentra en el apartado sobre recursos hídricos. Hace referencia al carácter estratégico de los recursos hídricos que conforman las cuencas hidrográficas, así como al deber estatal de evitar daños a los ecosistemas hídricos, preservar su estado natural y velar por el desarrollo y...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 377,
+    "titulo": "Artículo 377",
+    "presentacion": "El Artículo 377 cierra el apartado dedicado a los recursos hídricos. Hace referencia a que todo tratado internacional que suscriba Bolivia en materia de recursos hídricos debe garantizar la soberanía del país y priorizar los intereses del Estado. El artículo también hace referencia a las aguas front...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 378,
+    "titulo": "Artículo 378",
+    "presentacion": "El Artículo 378 abre el apartado de energía. Hace referencia a la importancia de las formas y fuentes de energía, así como a su acceso y los servicios para la prestación de servicios derivados de la energía. Hace referencia también a la facultad del Estado respecto de la cadena productiva energética...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 379,
+    "titulo": "Artículo 379",
+    "presentacion": "El Artículo 379 finaliza el apartado dedicado a energía. Hace referencia a la función del Estado de desarrollar y promover las energías alternativas, así como su responsabilidad de garantizar la generación de energía para el consumo interno y de exportar los excedentes....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 380,
+    "titulo": "Artículo 380",
+    "presentacion": "El Artículo 380 inaugura el apartado sobre la biodiversidad. Hace referencia al carácter del aprovechamiento de los recursos naturales renovables, y a la organización y utilización de los suelos para garantizar el equilibrio ecológico....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 381,
+    "titulo": "Artículo 381",
+    "presentacion": "El Artículo 381 se encuentra en el apartado sobre biodiversidad. Hace referencia a los recursos genéticos y microorganismos que se encuentren en territorio boliviano, los conocimientos asociados a su aprovechamiento, y el deber del Estado de protegerlos, a través de, entre otros mecanismos, registro...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 382,
+    "titulo": "Artículo 382",
+    "presentacion": "El Artículo 382 se encuentra en el apartado sobre Biodiversidad y hace referencia a la facultad y deber del Estado en relación a todo material biológico procedente del territorio boliviano...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 383,
+    "titulo": "Artículo 383",
+    "presentacion": "El Artículo 383 se encuentra en el apartado sobre Biodiversidad. Hace referencia a la obligación estatal de establecer medidas de restricción en relación a los usos extractivos de los recursos de la biodiversidad y la orientación que deben tener las mismas; asimismo dispone sanción penal al manejo y...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 384,
+    "titulo": "Artículo 384",
+    "presentacion": "El Artículo 384 se encuentra en el apartado dedicado a la Coca, debe desatacarse que es el único artículo de este apartado. Hace referencia a la función del Estado de proteger la coca originaria y ancestral, en su calidad de recursos natural renovable, que además forma parte del patrimonio cultural ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 385,
+    "titulo": "Artículo 385",
+    "presentacion": "El Artículo 385 se encuentra en el apartado dedicado a áreas protegidas. Hace referencia a las áreas protegidas con un tenor distinto al de anteriores legislaciones. De hecho es la primera vez que se constitucionalizan las áreas protegidas. En este caso, el tema de áreas protegidas ingresa, no sólo ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 386,
+    "titulo": "Artículo 386",
+    "presentacion": "El Artículo 386 inaugura el apartado dedicado a los recursos forestales. Hace referencia al carácter estratégico de los bosques naturales y suelos forestales; la capacidad del Estado de reconocer derechos de aprovechamiento forestal; y por último establece que es deber del Estado promover actividade...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 387,
+    "titulo": "Artículo 387",
+    "presentacion": "El Artículo 387 se encuentra en el apartado dedicado a los recursos forestales. Hace referencia al deber estatal garantizar la conservación y aprovechamiento sustentable de los bosques naturales. Asimismo el artículo establece una reserva legal para la protección y aprovechamiento de distintas espec...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 388,
+    "titulo": "Artículo 388",
+    "presentacion": "El Artículo 388 se encuentra en el apartado dedicado a los recursos forestales. Hace referencia a la titularidad del derecho exclusivo de aprovechamiento y gestión del las áreas forestales habitadas por comunidades indígena originario campesinas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 389,
+    "titulo": "Artículo 389",
+    "presentacion": "El Artículo 389 se encuentra en el apartado dedicado a los recursos forestales. Hace referencia al límite para la conversión de uso de tierras con cobertura boscosa a usos agropecuarios, establece que ésta solo procederá en los espacios legalmente asignados para esto, reserva a una ley la determinac...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 390,
+    "titulo": "Artículo 390",
+    "presentacion": "El Artículo 390 se encuentra en el apartado dedicado a la amazonia. Hace referencia a las características de la cuenca amazónica, que hacen de la misma un territorio estratégico y de cuidado especial. El Artículo también establece los límites territoriales de esta región, con el objetivo de delimita...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 391,
+    "titulo": "Artículo 391",
+    "presentacion": "El Artículo 391 se encuentra en el apartado dedicado a la amazonia. Hace referencia, por un lado a la función del Estado de priorizar el desarrollo integral sustentable de la amazonia boliviana a través de una administración integral de la selva amazónica; también se refiere a la función del Estado ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 392,
+    "titulo": "Artículo 392",
+    "presentacion": "El Artículo 392 se encuentra en el apartado dedicado a la amazonia boliviana. Hace referencia a, en primera instancia, la función del Estado de implementar políticas especiales que beneficien a las naciones y pueblos indígena originario campesinos amazónicos, con el fin de fortalecer la economía de ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 393,
+    "titulo": "Artículo 393",
+    "presentacion": "El Artículo 393 se encuentra en el apartado sobre tierra y territorio. Hace referencia a la propiedad de la tierra y a la obligación estatal de reconocerla y protegerla en tanto cumpla su función respectiva....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 394,
+    "titulo": "Artículo 394",
+    "presentacion": "El Artículo 394 se encuentra en el apartado dedicado a tierra y territorio. Hace referencia a la propiedad agraria individual, su clasificación, sus extensiones, sus características y formas de conversión; a la pequeña propiedad y sus características; y a la propiedad comunitaria o colectiva....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 395,
+    "titulo": "Artículo 395",
+    "presentacion": "El Artículo 395 se encuentra en el apartado dedicado a tierra territorio. Hace referencia a la dotación de tierras fiscales, los sujetos que se beneficiarán de éstas, las necesidades que debe atender la política estatal de dotación, su vínculo con las políticas de desarrollo rural sustentable, la ti...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 396,
+    "titulo": "Artículo 396",
+    "presentacion": "El Artículo 396 se encuentra en el apartado sobre tierra y territorio. Hace referencia al deber estatal de regular el mercado de tierras, y establece una prohibición para que extranjeros no adquieran tierras del Estado....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 397,
+    "titulo": "Artículo 397",
+    "presentacion": "El Artículo 397 se encuentra en el apartado sobre tierra y territorio. Hace referencia al trabajo como la fuente de adquisición de la tierra, y a la función social y económica social que debe cumplir la misma....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 398,
+    "titulo": "Artículo 398",
+    "presentacion": "El Artículo 398 se encuentra en el apartado dedicado a tierra y territorio. Hace referencia a la prohibición del latifundio, caracterizando al mismo; y establece el límite máximo de extensión que puede alcanzar la tenencia de tierra....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 399,
+    "titulo": "Artículo 399",
+    "presentacion": "El Artículo 399 se encuentra en el apartado sobre tierra y territorio. Hace referencia a los derechos de posesión y propiedad agraria de aquellos predios adquiridos con anterioridad a la vigencia de la Constitución y que se encuentran fuera de los límites actuales de la propiedad agraria. Asimismo, ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 400,
+    "titulo": "Artículo 400",
+    "presentacion": "El Artículo 400 se encuentra en el apartado sobre tierra y territorio. Hace referencia a la prohibición de división de las propiedades en superficies menores a las reconocidas por la ley. Asimismo el artículo establece que es un mandato para el Estado, establecer mecanismos legales destinados a evit...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 401,
+    "titulo": "Artículo 401",
+    "presentacion": "El Artículo 401 se encuentra en el apartado sobre tierra y territorio. Hace referencia a las causales de reversión y expropiación de la tierra....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 402,
+    "titulo": "Artículo 402",
+    "presentacion": "El Artículo 402 se encuentra en el apartado sobre tierra y territorio. Hace referencia a la obligación estatal de fomentar planes de asentamientos humanos y promover políticas destinadas a eliminar la discriminación de la mujer en el acceso a la tierra....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 403,
+    "titulo": "Artículo 403",
+    "presentacion": "El Artículo 403 se encuentra en el apartado sobre tierra y territorio. Hace referencia a la integralidad del territorio indígena originario campesino, los componentes a partir de los cuales debe ser leída la integralidad, y las áreas y espacios que comprende dicho territorio....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 404,
+    "titulo": "Artículo 404",
+    "presentacion": "El Artículo 404 se encuentra en el apartado sobre tierra y territorio. Hace referencia al Servicio Boliviano de Reforma Agraria, la autoridad que la dirige así como la responsabilidad que cumple en el proceso de reforma agraria....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 405,
+    "titulo": "Artículo 405",
+    "presentacion": "El Artículo 405 se encuentra en el apartado dedicado a desarrollo rural integral sustentable. Hace referencia a la importancia del desarrollo rural integral sustentable, para las políticas económicas del Estado, y establece las principales acciones que deberá llevar a cabo el mismo para el fomento d...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 406,
+    "titulo": "Artículo 406",
+    "presentacion": "El Artículo 406 se encuentra en el apartado dedicado al desarrollo rural integral sustentable. Hace referencia a, por un lado, la función del Estado de garantizar el desarrollo rural integral sustentable a través de mecanismos de fomento a las distintas actividades del sector rural; por otra parte e...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 407,
+    "titulo": "Artículo 407",
+    "presentacion": "El Artículo 407 se encuentra en el apartado Desarrollo Rural Integral Sustentable. Hace referencia a los objetivos de la política de desarrollo rural integral que debe llevar a cabo el Estado, en todos sus niveles, institucionales y territoriales....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 408,
+    "titulo": "Artículo 408",
+    "presentacion": "El Artículo 408 se encuentra en el apartado sobre desarrollo rural integral sustentable. Hace referencia a la función del Estado de determinar estímulos para beneficiar a los pequeños y medianos productores, y compensar las condiciones de intercambio desventajosas para los productos agropecuarios....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 409,
+    "titulo": "Artículo 409",
+    "presentacion": "El Artículo 409 se encuentra en el apartado sobre desarrollo rural integral sustentable. Hace referencia a la regulación, mediante ley, de la producción, importación y comercialización de transgénicos. Este artículo debe leerse, necesariamente, en concordancia con los artículos 16 que establece el d...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 410,
+    "titulo": "Artículo 410",
+    "presentacion": "El Artículo 410 se encuentra en el apartado dedicado a la jerarquía normativa y reforma de la Constitución, conformado por los artículos 410 y 411. Hace referencia al estatus de primacía y jerarquía normativa de la Constitución Política del Estado. Su transcendencia es de suma importancia, pues conc...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 411,
+    "titulo": "Artículo 411",
+    "presentacion": "El Artículo 411 se encuentra en el apartado dedicado a la jerarquía normativa y reforma de la Constitución. Hace referencia a las características y procedimientos básicos de reforma total y parcial de la Constitución....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 412,
+    "titulo": "Disposición Transitoria Primera",
+    "presentacion": "La Disposición Transitoria Primera se encuentra en el apartado correspondiente a las disposiciones transitorias. Hace referencia a la convocatoria a elecciones generales y elecciones departamentales y municipales después de promulgada la Constitución, así como algunas disposiciones referidas a los m...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 413,
+    "titulo": "Disposición Transitoria Segunda",
+    "presentacion": "La Disposición Transitoria Segunda se encuentra en el apartado correspondiente a las disposiciones transitorias. Hace referencia al mandato constitucional de la Asamblea Legislativa Plurinacional, para que esta, en un determinado tiempo, sancione las leyes fundamentales que regulen el nuevo orden in...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 414,
+    "titulo": "Disposición Transitoria Tercera",
+    "presentacion": "La Disposición Transitoria Tercera se encuentra en el apartado correspondiente a lasdisposiciones transitorias. Hace referencia a la forma de acceso a las autonomías de los departamentos que optaron por éstas, mediante referendo del 2 de julio de 2006, la cual es directa y conforme a lo establecido ...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 415,
+    "titulo": "Disposición Transitoria Cuarta",
+    "presentacion": "La Disposición Transitoria Cuarta se encuentra en el apartado dedicado a las disposiciones transitorias. Establece la elección de autoridades de las entidades públicas previstas en la Disposición Transitoria Segunda, de conformidad al calendario electoral establecido por el Órgano Electoral Plurinac...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 416,
+    "titulo": "Disposición Transitoria Quinta",
+    "presentacion": "La Disposición Transitoria Quinta se encuentra en el apartado de las Disposiciones Transitorias. Hace referencia al deber que tiene la Asamblea Legislativa Plurinacional de aprobar las leyes necesarias para el desarrollo de las disposiciones constitucionales en el primer mandato de ésta....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 417,
+    "titulo": "Disposición Transitoria Sexta",
+    "presentacion": "La Disposición Transitoria Sexta se encuentra en el apartado de las disposiciones transitorias. Hace referencia al plazo para la revisión del escalafón judicial, luego de la vigencia de la Ley del Órgano Judicial....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 418,
+    "titulo": "Disposición Transitoria Séptima",
+    "presentacion": "La Disposición Transitoria Séptima se encuentra en el apartado de las disposiciones transitorias. Hace referencia a la base territorial sobre la que se deberá delimitar el Territorio Indígena Originario Campesino en caso de consolidarse esta unidad territorial, además establece el plazo de un año pa...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 419,
+    "titulo": "Disposición Transitoria Octava",
+    "presentacion": "La Disposición Transitoria Octava se encuentra en el apartado de las disposiciones transitorias. Hace referencia a las concesiones sobre recursos naturales, electricidad, telecomunicaciones y servicios básicos; las concesiones mineras de minerales metálicos y no metálicos, evaporíticos, salares, azu...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 420,
+    "titulo": "Disposición Transitoria Novena",
+    "presentacion": "La Disposición Transitoria Novena se encuentra en el apartado de las disposiciones transitorias. Hace referencia a los tratados internacionales suscritos por el país y establece que aquellos que se encuentren en concordancia con la Constitución permanecerán en el ordenamiento jurídico interno con ra...",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 421,
+    "titulo": "Disposición Transitoria Décima",
+    "presentacion": "La Disposición Transitoria Décima se encuentra en el apartado de las disposiciones transitorias. Hace referencia al requisito de hablar al menos dos idiomas oficiales para el desempeño de funciones públicas....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 422,
+    "titulo": "Disposición Abrogatoria ",
+    "presentacion": "La Disposición Abrogatoria se encuentra inmediatamente después de las disposiciones transitorias y es la norma que ordena la abrogación de la Constitución Política del Estado de 1967 y sus reformas de 1994, 2004 y 2005....",
+    "tieneAnalisis": true
+  },
+  {
+    "id": 423,
+    "titulo": "Disposición Final",
+    "presentacion": "La disposición final cierra las disposiciones de la Constitución Política del Estado y establece la vigencia de la misma a partir de su publicación en la Gaceta Oficial de Bolivia....",
+    "tieneAnalisis": true
+  }
+]

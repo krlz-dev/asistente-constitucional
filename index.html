@@ -31,6 +31,9 @@
                         <a class="nav-link active" href="#chat"><i class="bi bi-chat-dots me-1"></i>Consultar</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#articulos"><i class="bi bi-book me-1"></i>Artículos CPE</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#documentos"><i class="bi bi-file-earmark-text me-1"></i>Documentos</a>
                     </li>
                     <li class="nav-item">
@@ -183,8 +186,78 @@
         </div>
     </section>
 
+    <!-- Articles Section -->
+    <section id="articulos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Artículos de la CPE Bolivia 2009</h2>
+                <p class="text-muted">Explora los 411 artículos de la Constitución con análisis detallado</p>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="row mb-4">
+                <div class="col-md-6 mx-auto">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" id="articleSearch" placeholder="Buscar artículo por número o tema...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Articles Stats -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <span class="badge bg-primary p-2"><i class="bi bi-file-text me-1"></i><span id="totalArticles">0</span> Artículos</span>
+                        <span class="badge bg-success p-2"><i class="bi bi-check-circle me-1"></i><span id="articlesWithAnalysis">0</span> Con Análisis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="row g-3" id="articlesGrid">
+                <div class="col-12 text-center py-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Cargando...</span>
+                    </div>
+                    <p class="text-muted mt-2">Cargando artículos...</p>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center mt-4" id="loadMoreContainer" style="display: none;">
+                <button class="btn btn-outline-primary" id="loadMoreBtn">
+                    <i class="bi bi-arrow-down-circle me-2"></i>Cargar más artículos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Detail Modal -->
+    <div class="modal fade" id="articleModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="articleModalTitle">Artículo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="articleModalBody">
+                    <div class="text-center py-5">
+                        <div class="spinner-border text-primary" role="status"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="askAboutArticle">
+                        <i class="bi bi-chat-dots me-2"></i>Preguntar al asistente
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Documents Section -->
-    <section id="documentos" class="py-5">
+    <section id="documentos" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bold">Base de Conocimiento</h2>

@@ -447,6 +447,57 @@ input:focus {
     outline-offset: 2px;
 }
 
+/* Article Cards */
+.article-card {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.article-card .card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.article-card .card-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Article Modal */
+#articleModal .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+#articleModal .accordion-button:not(.collapsed) {
+    background-color: rgba(26, 75, 140, 0.1);
+    color: var(--primary-color);
+}
+
+#articleModal .accordion-body {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* Articles Grid */
+#articlesGrid .col-md-6 {
+    transition: var(--transition);
+}
+
+/* Article Search */
+#articleSearch {
+    border-radius: 25px;
+    padding: 0.75rem 1.25rem;
+}
+
 /* Dark mode support (optional) */
 @media (prefers-color-scheme: dark) {
     :root {
