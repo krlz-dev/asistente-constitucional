@@ -17,6 +17,8 @@ let state = {
     isLoading: false,
     articles: [],
     filteredArticles: [],
+    tematicas: [],
+    selectedTematica: null,
     articlesDisplayed: 0,
     articlesPerPage: 20,
     currentArticle: null
@@ -237,12 +239,16 @@ async function initArticles() {
 
         const data = await response.json();
         state.articles = data.articulos || [];
+        state.tematicas = data.tematicas || [];
         state.filteredArticles = [...state.articles];
 
         // Update stats
         document.getElementById('totalArticles').textContent = state.articles.length;
         const withAnalysis = state.articles.filter(a => a.tieneAnalisis).length;
         document.getElementById('articlesWithAnalysis').textContent = withAnalysis;
+
+        // Display temáticas filter
+        displayTematicasFilter();
 
         // Display articles
         displayArticles();
@@ -261,6 +267,7 @@ async function initArticles() {
     if (articleSearch) {
         articleSearch.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
+            state.selectedTematica = null;
             filterArticles(query);
         });
     }
@@ -286,6 +293,46 @@ async function initArticles() {
             }
         });
     }
+}
+
+function displayTematicasFilter() {
+    const container = document.getElementById('tematicasFilter');
+    if (!container || !state.tematicas.length) return;
+
+    let html = '<button class="btn btn-sm btn-primary tematica-btn active" data-tematica="">Todas</button>';
+
+    state.tematicas.slice(0, 20).forEach(t => {
+        html += `<button class="btn btn-sm btn-outline-primary tematica-btn" data-tematica="${t.titulo}">${t.titulo} (${t.articulos.length})</button>`;
+    });
+
+    if (state.tematicas.length > 20) {
+        html += `<button class="btn btn-sm btn-outline-secondary" disabled>+${state.tematicas.length - 20} más</button>`;
+    }
+
+    container.innerHTML = html;
+
+    // Add click handlers
+    container.querySelectorAll('.tematica-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            container.querySelectorAll('.tematica-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const tematica = btn.dataset.tematica;
+            state.selectedTematica = tematica || null;
+
+            if (tematica) {
+                const tema = state.tematicas.find(t => t.titulo === tematica);
+                if (tema) {
+                    state.filteredArticles = state.articles.filter(a => tema.articulos.includes(a.id));
+                }
+            } else {
+                state.filteredArticles = [...state.articles];
+            }
+
+            state.articlesDisplayed = 0;
+            displayArticles();
+        });
+    });
 }
 
 function filterArticles(query) {
@@ -393,6 +440,7 @@ async function showArticleDetail(articleId) {
 
         let content = '';
 
+        // Article text
         if (article.articuloTranscrito) {
             content += `
                 <div class="mb-4">
@@ -402,51 +450,48 @@ async function showArticleDetail(articleId) {
             `;
         }
 
-        if (article.presentacion) {
+        // Related articles (concordancias)
+        if (article.articulosRelacionados && article.articulosRelacionados.length > 0) {
             content += `
                 <div class="mb-4">
-                    <h6 class="text-primary"><i class="bi bi-info-circle me-2"></i>Presentación</h6>
-                    <p>${article.presentacion}</p>
-                </div>
-            `;
-        }
-
-        if (article.descripcion) {
-            content += `
-                <div class="mb-4">
-                    <h6 class="text-primary"><i class="bi bi-card-text me-2"></i>Descripción</h6>
-                    <p>${article.descripcion}</p>
-                </div>
-            `;
-        }
-
-        if (article.analisis && article.analisis.length > 0) {
-            content += `
-                <div class="mb-4">
-                    <h6 class="text-primary"><i class="bi bi-lightbulb me-2"></i>Análisis</h6>
-                    <div class="accordion" id="analysisAccordion">
-            `;
-
-            article.analisis.forEach((analisis, idx) => {
-                content += `
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button ${idx > 0 ? 'collapsed' : ''}" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#analysis${idx}">
-                                <span class="badge bg-secondary me-2">${analisis.tipo}</span>
-                                ${analisis.titulo}
-                            </button>
-                        </h2>
-                        <div id="analysis${idx}" class="accordion-collapse collapse ${idx === 0 ? 'show' : ''}"
-                             data-bs-parent="#analysisAccordion">
-                            <div class="accordion-body">
-                                ${analisis.contenido || 'Sin contenido disponible'}
-                                ${analisis.concordancias ? `<hr><small class="text-muted"><strong>Concordancias:</strong> ${analisis.concordancias}</small>` : ''}
-                            </div>
-                        </div>
+                    <h6 class="text-primary"><i class="bi bi-diagram-3 me-2"></i>Artículos Relacionados (${article.articulosRelacionados.length})</h6>
+                    <div class="related-articles">
+                        ${article.articulosRelacionados.slice(0, 20).map(id =>
+                            `<button class="btn btn-sm btn-outline-secondary me-1 mb-1 related-article-btn" data-article="${id}">Art. ${id}</button>`
+                        ).join('')}
+                        ${article.articulosRelacionados.length > 20 ? `<span class="badge bg-secondary">+${article.articulosRelacionados.length - 20} más</span>` : ''}
                     </div>
-                `;
-            });
+                </div>
+            `;
+        }
+
+        // Grouped Analysis
+        if (article.analisis) {
+            const { tematica, categoria, subcategoria } = article.analisis;
+            let accordionIdx = 0;
+
+            content += `<div class="mb-4"><h6 class="text-primary"><i class="bi bi-lightbulb me-2"></i>Análisis</h6><div class="accordion" id="analysisAccordion">`;
+
+            // Temáticas first
+            if (tematica && tematica.length > 0) {
+                tematica.forEach(item => {
+                    content += buildAccordionItem(item, 'Temática', 'bg-primary', accordionIdx++);
+                });
+            }
+
+            // Then Categorías
+            if (categoria && categoria.length > 0) {
+                categoria.forEach(item => {
+                    content += buildAccordionItem(item, 'Categoría', 'bg-info', accordionIdx++);
+                });
+            }
+
+            // Then Subcategorías
+            if (subcategoria && subcategoria.length > 0) {
+                subcategoria.forEach(item => {
+                    content += buildAccordionItem(item, 'Subcategoría', 'bg-secondary', accordionIdx++);
+                });
+            }
 
             content += `</div></div>`;
         }
@@ -457,6 +502,14 @@ async function showArticleDetail(articleId) {
 
         modalBody.innerHTML = content;
 
+        // Add click handlers for related articles
+        modalBody.querySelectorAll('.related-article-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const relatedId = parseInt(btn.dataset.article);
+                showArticleDetail(relatedId);
+            });
+        });
+
     } catch (error) {
         console.error('Error loading article:', error);
         modalBody.innerHTML = `
@@ -466,4 +519,35 @@ async function showArticleDetail(articleId) {
             </div>
         `;
     }
+}
+
+function buildAccordionItem(item, tipo, badgeClass, idx) {
+    const relatedLinks = item.articulosRelacionados && item.articulosRelacionados.length > 0
+        ? `<div class="mt-3 pt-3 border-top">
+             <small class="text-muted"><strong>Concordancias:</strong></small><br>
+             ${item.articulosRelacionados.slice(0, 10).map(id =>
+                 `<button class="btn btn-sm btn-outline-secondary me-1 mb-1 related-article-btn" data-article="${id}">Art. ${id}</button>`
+             ).join('')}
+             ${item.articulosRelacionados.length > 10 ? `<span class="badge bg-secondary">+${item.articulosRelacionados.length - 10} más</span>` : ''}
+           </div>`
+        : '';
+
+    return `
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button ${idx > 0 ? 'collapsed' : ''}" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#analysis${idx}">
+                    <span class="badge ${badgeClass} me-2">${tipo}</span>
+                    ${item.titulo || 'Sin título'}
+                </button>
+            </h2>
+            <div id="analysis${idx}" class="accordion-collapse collapse ${idx === 0 ? 'show' : ''}"
+                 data-bs-parent="#analysisAccordion">
+                <div class="accordion-body">
+                    ${item.contenido || 'Sin contenido disponible'}
+                    ${relatedLinks}
+                </div>
+            </div>
+        </div>
+    `;
 }
