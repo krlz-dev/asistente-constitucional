@@ -81,20 +81,30 @@
                 <p class="cpe-reference">411 artículos · 12 disposiciones · 5 partes</p>
             </div>
 
-            <!-- Search -->
-            <div class="row mb-4">
-                <div class="col-lg-6">
+            <!-- Search and Category Filter -->
+            <div class="row mb-5 g-3">
+                <div class="col-lg-5">
                     <div class="search-box">
                         <span class="search-icon"><i class="bi bi-search"></i></span>
                         <input type="text" id="articleSearch" placeholder="Buscar artículo por número o tema...">
                     </div>
                 </div>
-            </div>
-
-            <!-- Temáticas Filter -->
-            <div class="mb-5">
-                <div id="tematicasFilter" class="d-flex flex-wrap gap-2">
-                    <!-- Populated by JavaScript -->
+                <div class="col-lg-4">
+                    <div class="category-dropdown" id="categoryDropdown">
+                        <div class="category-select" id="categorySelect">
+                            <span class="category-label" id="categoryLabel">Todas las categorías</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                        <div class="category-menu" id="categoryMenu">
+                            <div class="category-search">
+                                <i class="bi bi-search"></i>
+                                <input type="text" id="categorySearchInput" placeholder="Buscar categoría...">
+                            </div>
+                            <div class="category-options" id="categoryOptions">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

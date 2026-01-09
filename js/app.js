@@ -371,8 +371,8 @@ async function initArticles() {
         state.tematicas = data.tematicas || [];
         state.filteredArticles = [...state.articles];
 
-        // Display temáticas filter
-        displayTematicasFilter();
+        // Initialize category dropdown
+        initCategoryDropdown();
 
         // Show welcome message initially (articles hidden)
         showWelcomeMessage();
@@ -392,6 +392,9 @@ async function initArticles() {
         articleSearch.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
             state.selectedTematica = null;
+            // Reset category dropdown label
+            const categoryLabel = document.getElementById('categoryLabel');
+            if (categoryLabel) categoryLabel.textContent = 'Todas las categorías';
             filterArticles(query);
         });
     }
@@ -439,81 +442,151 @@ async function initArticles() {
     }
 }
 
-function displayTematicasFilter() {
-    const container = document.getElementById('tematicasFilter');
-    if (!container || !state.tematicas.length) return;
+function initCategoryDropdown() {
+    const categorySelect = document.getElementById('categorySelect');
+    const categoryMenu = document.getElementById('categoryMenu');
+    const categoryLabel = document.getElementById('categoryLabel');
+    const categoryOptions = document.getElementById('categoryOptions');
+    const categorySearchInput = document.getElementById('categorySearchInput');
 
-    const initialLimit = 20;
-    const visibleTematicas = state.tematicas.slice(0, initialLimit);
-    const hiddenTematicas = state.tematicas.slice(initialLimit);
+    if (!categorySelect || !state.tematicas.length) return;
 
-    let html = '<button class="btn btn-sm btn-primary tematica-btn active" data-tematica="">Todas</button>';
+    // Render options
+    function renderOptions(filter = '') {
+        const filterLower = filter.toLowerCase();
+        let filtered = state.tematicas;
 
-    visibleTematicas.forEach(t => {
-        html += `<button class="btn btn-sm btn-outline-primary tematica-btn" data-tematica="${t.titulo}">${t.titulo} (${t.articulos.length})</button>`;
+        if (filterLower) {
+            // When searching, show all matching results
+            filtered = state.tematicas.filter(t =>
+                t.titulo.toLowerCase().includes(filterLower)
+            );
+        } else {
+            // When not searching, show only first 10
+            filtered = state.tematicas.slice(0, 10);
+        }
+
+        if (filtered.length === 0) {
+            categoryOptions.innerHTML = `
+                <div class="category-no-results">
+                    No se encontraron categorías
+                </div>
+            `;
+            return;
+        }
+
+        let html = `
+            <div class="category-option ${!state.selectedTematica ? 'selected' : ''}" data-tematica="">
+                <span class="category-name">Todas las categorías</span>
+                <span class="category-count">${state.articles.length}</span>
+            </div>
+        `;
+
+        filtered.forEach(t => {
+            const isSelected = state.selectedTematica === t.titulo;
+            html += `
+                <div class="category-option ${isSelected ? 'selected' : ''}" data-tematica="${t.titulo}">
+                    <span class="category-name">${t.titulo}</span>
+                    <span class="category-count">${t.articulos.length}</span>
+                </div>
+            `;
+        });
+
+        categoryOptions.innerHTML = html;
+
+        // Add click handlers to options
+        categoryOptions.querySelectorAll('.category-option').forEach(option => {
+            option.addEventListener('click', () => {
+                const tematica = option.dataset.tematica;
+                selectCategory(tematica);
+                closeDropdown();
+            });
+        });
+    }
+
+    // Select category
+    function selectCategory(tematica) {
+        state.selectedTematica = tematica || null;
+
+        // Update label
+        if (tematica) {
+            const tema = state.tematicas.find(t => t.titulo === tematica);
+            categoryLabel.textContent = tema ? tema.titulo : 'Todas las categorías';
+        } else {
+            categoryLabel.textContent = 'Todas las categorías';
+        }
+
+        // Clear search input
+        const articleSearch = document.getElementById('articleSearch');
+        if (articleSearch) articleSearch.value = '';
+
+        // Filter and display
+        if (tematica) {
+            const tema = state.tematicas.find(t => t.titulo === tematica);
+            if (tema) {
+                state.filteredArticles = state.articles.filter(a => tema.articulos.includes(a.id));
+            }
+            state.currentPage = 1;
+            state.articlesVisible = true;
+            displayArticles();
+        } else {
+            state.filteredArticles = [...state.articles];
+            showWelcomeMessage();
+        }
+    }
+
+    // Toggle dropdown
+    function toggleDropdown() {
+        const isOpen = categoryMenu.classList.contains('open');
+        if (isOpen) {
+            closeDropdown();
+        } else {
+            openDropdown();
+        }
+    }
+
+    function openDropdown() {
+        categorySelect.classList.add('open');
+        categoryMenu.classList.add('open');
+        categorySearchInput.value = '';
+        renderOptions();
+        setTimeout(() => categorySearchInput.focus(), 50);
+    }
+
+    function closeDropdown() {
+        categorySelect.classList.remove('open');
+        categoryMenu.classList.remove('open');
+        categorySearchInput.value = '';
+    }
+
+    // Event listeners
+    categorySelect.addEventListener('click', toggleDropdown);
+
+    categorySearchInput.addEventListener('input', (e) => {
+        renderOptions(e.target.value);
     });
 
-    if (hiddenTematicas.length > 0) {
-        html += `<span class="hidden-tematicas" style="display: none;">`;
-        hiddenTematicas.forEach(t => {
-            html += `<button class="btn btn-sm btn-outline-primary tematica-btn" data-tematica="${t.titulo}">${t.titulo} (${t.articulos.length})</button>`;
-        });
-        html += `</span>`;
-        html += `<button class="btn btn-sm btn-primary show-more-tematicas-btn">+${hiddenTematicas.length} más</button>`;
-    }
+    // Prevent dropdown close when clicking inside menu
+    categoryMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
 
-    container.innerHTML = html;
-
-    // Add click handler for show more button
-    const showMoreBtn = container.querySelector('.show-more-tematicas-btn');
-    if (showMoreBtn) {
-        showMoreBtn.addEventListener('click', () => {
-            const hiddenContainer = container.querySelector('.hidden-tematicas');
-            if (hiddenContainer) {
-                hiddenContainer.style.display = 'inline';
-                showMoreBtn.style.display = 'none';
-                // Add click handlers for newly visible buttons
-                addTematicaClickHandlers(container);
-            }
-        });
-    }
-
-    // Add click handlers for tematica buttons
-    addTematicaClickHandlers(container);
-}
-
-function addTematicaClickHandlers(container) {
-    container.querySelectorAll('.tematica-btn').forEach(btn => {
-        // Remove existing listeners by cloning
-        if (!btn.dataset.hasListener) {
-            btn.dataset.hasListener = 'true';
-            btn.addEventListener('click', () => {
-                container.querySelectorAll('.tematica-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                const tematica = btn.dataset.tematica;
-                state.selectedTematica = tematica || null;
-
-                // Clear search input when selecting category
-                const articleSearch = document.getElementById('articleSearch');
-                if (articleSearch) articleSearch.value = '';
-
-                if (tematica) {
-                    const tema = state.tematicas.find(t => t.titulo === tematica);
-                    if (tema) {
-                        state.filteredArticles = state.articles.filter(a => tema.articulos.includes(a.id));
-                    }
-                    state.currentPage = 1;
-                    state.articlesVisible = true;
-                    displayArticles();
-                } else {
-                    // "Todas" clicked - show welcome message
-                    state.filteredArticles = [...state.articles];
-                    showWelcomeMessage();
-                }
-            });
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.category-dropdown')) {
+            closeDropdown();
         }
     });
+
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeDropdown();
+        }
+    });
+
+    // Initial render
+    renderOptions();
 }
 
 function showWelcomeMessage() {
