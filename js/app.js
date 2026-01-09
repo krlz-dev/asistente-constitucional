@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initApp() {
+    // Set current year in footer
+    const currentYearEl = document.getElementById('currentYear');
+    if (currentYearEl) {
+        currentYearEl.textContent = new Date().getFullYear();
+    }
+
     // Chat widget toggle
     if (chatToggleBtn) {
         chatToggleBtn.addEventListener('click', toggleChat);
