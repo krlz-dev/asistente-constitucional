@@ -335,25 +335,38 @@ async function initArticles() {
     if (askAboutBtn) {
         askAboutBtn.addEventListener('click', () => {
             if (state.currentArticle) {
+                // Get fresh references
+                const chatInput = document.getElementById('userInput');
+                const chatSendBtn = document.getElementById('sendBtn');
+                const chatWin = document.getElementById('chatWindow');
+                const chatBack = document.getElementById('chatBackdrop');
+                const chatToggle = document.getElementById('chatToggleBtn');
+
                 // Open chat widget on top of modal (don't close modal)
-                if (chatWindow && !chatWindow.classList.contains('open')) {
-                    chatWindow.classList.add('open');
-                    if (chatBackdrop) chatBackdrop.classList.add('show');
-                    if (chatToggleBtn) chatToggleBtn.classList.add('hidden');
+                if (chatWin && !chatWin.classList.contains('open')) {
+                    chatWin.classList.add('open');
+                    if (chatBack) chatBack.classList.add('show');
+                    if (chatToggle) chatToggle.classList.add('hidden');
                 }
+
                 // Reset loading state and enable inputs
                 state.isLoading = false;
-                userInput.disabled = false;
-                sendBtn.disabled = false;
+                if (chatInput) {
+                    chatInput.disabled = false;
+                    chatInput.readOnly = false;
+                    chatInput.value = `Explícame el Artículo ${state.currentArticle.id} de la Constitución`;
+                }
+                if (chatSendBtn) {
+                    chatSendBtn.disabled = false;
+                }
 
-                // Set suggestion but keep input editable
-                userInput.value = `Explícame el Artículo ${state.currentArticle.id} de la Constitución`;
-
-                // Small delay to ensure DOM is ready
+                // Delay to ensure DOM is ready after modal interaction
                 setTimeout(() => {
-                    userInput.focus();
-                    userInput.select();
-                }, 100);
+                    if (chatInput) {
+                        chatInput.focus();
+                        chatInput.select();
+                    }
+                }, 150);
             }
         });
     }
