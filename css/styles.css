@@ -400,6 +400,79 @@ a:hover {
 }
 
 /* ====================================
+   Mobile Drawer (Offcanvas)
+   ==================================== */
+.offcanvas {
+    background-color: var(--color-background-container-content);
+    border-left: 1px solid var(--color-border-container-default);
+}
+
+.offcanvas-header {
+    background-color: var(--color-primary-default);
+    color: #ffffff;
+    padding: var(--space-m) var(--space-l);
+}
+
+.offcanvas-title {
+    color: #ffffff;
+    font-weight: var(--font-weight-bold);
+}
+
+.offcanvas-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.offcanvas-body {
+    padding: var(--space-l);
+}
+
+.offcanvas-body .navbar-nav {
+    gap: var(--space-xs);
+}
+
+.offcanvas-body .nav-link {
+    color: var(--color-text-body-default);
+    padding: var(--space-s) var(--space-m);
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-body-m);
+    transition: all var(--motion-duration-fast) var(--motion-easing-default);
+}
+
+.offcanvas-body .nav-link:hover {
+    background-color: var(--color-background-item-hover);
+}
+
+.offcanvas-body .nav-link.active {
+    background-color: var(--color-primary-subtle);
+    color: var(--color-primary-default);
+    font-weight: var(--font-weight-medium);
+}
+
+.offcanvas-body .nav-link i {
+    color: var(--color-text-body-secondary);
+}
+
+.offcanvas-body .nav-link.active i {
+    color: var(--color-primary-default);
+}
+
+.offcanvas-body hr {
+    border-color: var(--color-border-divider-default);
+    margin: var(--space-l) 0;
+}
+
+.offcanvas-body .theme-toggle {
+    background: var(--color-background-item-hover);
+    border: 1px solid var(--color-border-container-default);
+    color: var(--color-text-body-default);
+    justify-content: center;
+}
+
+.offcanvas-body .theme-toggle:hover {
+    background: var(--color-background-item-selected);
+}
+
+/* ====================================
    Main Section
    ==================================== */
 .main-section {

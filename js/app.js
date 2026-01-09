@@ -32,8 +32,7 @@ let state = {
 
 function initTheme() {
     const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = document.getElementById('themeIcon');
-    const themeLabel = document.getElementById('themeLabel');
+    const themeToggleMobile = document.getElementById('themeToggleMobile');
 
     // Check for saved theme preference or system preference
     const savedTheme = localStorage.getItem('theme');
@@ -51,13 +50,14 @@ function initTheme() {
     // Apply theme
     applyTheme(state.theme);
 
-    // Theme toggle click handler
+    // Theme toggle click handler (desktop)
     if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            state.theme = state.theme === 'light' ? 'dark' : 'light';
-            applyTheme(state.theme);
-            localStorage.setItem('theme', state.theme);
-        });
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+
+    // Theme toggle click handler (mobile)
+    if (themeToggleMobile) {
+        themeToggleMobile.addEventListener('click', toggleTheme);
     }
 
     // Listen for system theme changes
@@ -69,33 +69,33 @@ function initTheme() {
     });
 }
 
-function applyTheme(theme) {
-    const themeIcon = document.getElementById('themeIcon');
-    const themeLabel = document.getElementById('themeLabel');
+function toggleTheme() {
+    state.theme = state.theme === 'light' ? 'dark' : 'light';
+    applyTheme(state.theme);
+    localStorage.setItem('theme', state.theme);
+}
 
+function applyTheme(theme) {
     // Set data-theme attribute on html element
     document.documentElement.setAttribute('data-theme', theme);
 
-    // Update toggle button UI
-    if (themeIcon && themeLabel) {
-        if (theme === 'dark') {
-            themeIcon.className = 'bi bi-moon-fill';
-            themeLabel.textContent = 'Oscuro';
-        } else {
-            themeIcon.className = 'bi bi-sun-fill';
-            themeLabel.textContent = 'Claro';
-        }
-    }
+    // Update all toggle buttons (desktop and mobile)
+    const toggles = [
+        { icon: document.getElementById('themeIcon'), label: document.getElementById('themeLabel') },
+        { icon: document.getElementById('themeIconMobile'), label: document.getElementById('themeLabelMobile') }
+    ];
 
-    // Update Bootstrap navbar class for dark mode
-    const navbar = document.querySelector('.navbar');
-    if (navbar) {
-        if (theme === 'dark') {
-            navbar.classList.add('navbar-dark');
-        } else {
-            navbar.classList.add('navbar-dark'); // Keep it dark since header is primary color
+    toggles.forEach(({ icon, label }) => {
+        if (icon && label) {
+            if (theme === 'dark') {
+                icon.className = 'bi bi-moon-fill';
+                label.textContent = 'Oscuro';
+            } else {
+                icon.className = 'bi bi-sun-fill';
+                label.textContent = 'Claro';
+            }
         }
-    }
+    });
 }
 
 // DOM Elements
