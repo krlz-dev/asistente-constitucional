@@ -431,10 +431,11 @@ a:hover {
 }
 
 .offcanvas-body .nav-link {
-    color: var(--color-text-body-default);
+    color: #16191f;
     padding: var(--space-s) var(--space-m);
     border-radius: var(--border-radius-m);
     font-size: var(--font-size-body-m);
+    font-weight: var(--font-weight-medium);
     transition: all var(--motion-duration-fast) var(--motion-easing-default);
 }
 
@@ -445,15 +446,24 @@ a:hover {
 .offcanvas-body .nav-link.active {
     background-color: var(--color-primary-subtle);
     color: var(--color-primary-default);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
 }
 
 .offcanvas-body .nav-link i {
-    color: var(--color-text-body-secondary);
+    color: #414d5c;
 }
 
 .offcanvas-body .nav-link.active i {
     color: var(--color-primary-default);
+}
+
+/* Dark mode drawer text */
+[data-theme="dark"] .offcanvas-body .nav-link {
+    color: var(--color-text-body-default);
+}
+
+[data-theme="dark"] .offcanvas-body .nav-link i {
+    color: var(--color-text-body-secondary);
 }
 
 .offcanvas-body hr {
