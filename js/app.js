@@ -19,8 +19,8 @@ let state = {
     filteredArticles: [],
     tematicas: [],
     selectedTematica: null,
-    articlesDisplayed: 0,
-    articlesPerPage: 20,
+    currentPage: 1,
+    articlesPerPage: 24,
     currentArticle: null
 };
 
@@ -280,8 +280,6 @@ function scrollToBottom() {
 async function initArticles() {
     const articlesGrid = document.getElementById('articlesGrid');
     const articleSearch = document.getElementById('articleSearch');
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    const loadMoreContainer = document.getElementById('loadMoreContainer');
 
     if (!articlesGrid) return;
 
@@ -322,13 +320,6 @@ async function initArticles() {
             const query = e.target.value.toLowerCase().trim();
             state.selectedTematica = null;
             filterArticles(query);
-        });
-    }
-
-    // Load more button
-    if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', () => {
-            displayArticles(true);
         });
     }
 
@@ -414,7 +405,7 @@ function addTematicaClickHandlers(container) {
                     state.filteredArticles = [...state.articles];
                 }
 
-                state.articlesDisplayed = 0;
+                state.currentPage = 1;
                 displayArticles();
             });
         }
@@ -433,31 +424,29 @@ function filterArticles(query) {
         });
     }
 
-    state.articlesDisplayed = 0;
+    state.currentPage = 1;
     displayArticles();
 }
 
-function displayArticles(append = false) {
+function displayArticles() {
     const articlesGrid = document.getElementById('articlesGrid');
-    const loadMoreContainer = document.getElementById('loadMoreContainer');
+    const paginationContainer = document.getElementById('paginationContainer');
 
-    if (!append) {
-        articlesGrid.innerHTML = '';
-        state.articlesDisplayed = 0;
-    }
+    articlesGrid.innerHTML = '';
 
-    const start = state.articlesDisplayed;
+    const totalPages = Math.ceil(state.filteredArticles.length / state.articlesPerPage);
+    const start = (state.currentPage - 1) * state.articlesPerPage;
     const end = start + state.articlesPerPage;
     const toDisplay = state.filteredArticles.slice(start, end);
 
-    if (toDisplay.length === 0 && !append) {
+    if (toDisplay.length === 0) {
         articlesGrid.innerHTML = `
             <div class="col-12 text-center py-5">
                 <i class="bi bi-search text-muted" style="font-size: 3rem;"></i>
                 <p class="text-muted mt-2">No se encontraron artículos</p>
             </div>
         `;
-        loadMoreContainer.style.display = 'none';
+        paginationContainer.style.display = 'none';
         return;
     }
 
@@ -490,14 +479,96 @@ function displayArticles(append = false) {
         articlesGrid.appendChild(col);
     });
 
-    state.articlesDisplayed = end;
-
-    // Show/hide load more button
-    if (end < state.filteredArticles.length) {
-        loadMoreContainer.style.display = 'block';
+    // Display pagination
+    if (totalPages > 1) {
+        paginationContainer.style.display = 'block';
+        renderPagination(totalPages);
     } else {
-        loadMoreContainer.style.display = 'none';
+        paginationContainer.style.display = 'none';
     }
+}
+
+function renderPagination(totalPages) {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+
+    // Previous button
+    const prevLi = document.createElement('li');
+    prevLi.className = `page-item ${state.currentPage === 1 ? 'disabled' : ''}`;
+    prevLi.innerHTML = `<a class="page-link" href="#" aria-label="Anterior"><i class="bi bi-chevron-left"></i></a>`;
+    if (state.currentPage > 1) {
+        prevLi.addEventListener('click', (e) => {
+            e.preventDefault();
+            goToPage(state.currentPage - 1);
+        });
+    }
+    pagination.appendChild(prevLi);
+
+    // Page numbers with ellipsis
+    const maxVisible = 5;
+    let startPage = Math.max(1, state.currentPage - Math.floor(maxVisible / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisible - 1);
+
+    if (endPage - startPage < maxVisible - 1) {
+        startPage = Math.max(1, endPage - maxVisible + 1);
+    }
+
+    // First page
+    if (startPage > 1) {
+        pagination.appendChild(createPageItem(1));
+        if (startPage > 2) {
+            const ellipsis = document.createElement('li');
+            ellipsis.className = 'page-item disabled';
+            ellipsis.innerHTML = '<span class="page-link">...</span>';
+            pagination.appendChild(ellipsis);
+        }
+    }
+
+    // Middle pages
+    for (let i = startPage; i <= endPage; i++) {
+        pagination.appendChild(createPageItem(i));
+    }
+
+    // Last page
+    if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+            const ellipsis = document.createElement('li');
+            ellipsis.className = 'page-item disabled';
+            ellipsis.innerHTML = '<span class="page-link">...</span>';
+            pagination.appendChild(ellipsis);
+        }
+        pagination.appendChild(createPageItem(totalPages));
+    }
+
+    // Next button
+    const nextLi = document.createElement('li');
+    nextLi.className = `page-item ${state.currentPage === totalPages ? 'disabled' : ''}`;
+    nextLi.innerHTML = `<a class="page-link" href="#" aria-label="Siguiente"><i class="bi bi-chevron-right"></i></a>`;
+    if (state.currentPage < totalPages) {
+        nextLi.addEventListener('click', (e) => {
+            e.preventDefault();
+            goToPage(state.currentPage + 1);
+        });
+    }
+    pagination.appendChild(nextLi);
+}
+
+function createPageItem(pageNum) {
+    const li = document.createElement('li');
+    li.className = `page-item ${pageNum === state.currentPage ? 'active' : ''}`;
+    li.innerHTML = `<a class="page-link" href="#">${pageNum}</a>`;
+    li.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToPage(pageNum);
+    });
+    return li;
+}
+
+function goToPage(pageNum) {
+    state.currentPage = pageNum;
+    displayArticles();
+    // Scroll to top of articles section
+    document.getElementById('articulos').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 async function showArticleDetail(articleId) {
