@@ -325,7 +325,7 @@ async function initArticles() {
     if (askAboutBtn) {
         askAboutBtn.addEventListener('click', () => {
             if (state.currentArticle) {
-                const articleModal = bootstrap.Modal.getInstance(document.getElementById('articleModal'));
+                const articleModal = bootstrap.Modal.getOrCreateInstance(document.getElementById('articleModal'));
                 articleModal.hide();
 
                 // Open chat widget and set the question
@@ -492,7 +492,8 @@ function displayArticles(append = false) {
 async function showArticleDetail(articleId) {
     const modalTitle = document.getElementById('articleModalTitle');
     const modalBody = document.getElementById('articleModalBody');
-    const modal = new bootstrap.Modal(document.getElementById('articleModal'));
+    const modalEl = document.getElementById('articleModal');
+    const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
 
     modalTitle.textContent = `Artículo ${articleId}`;
     modalBody.innerHTML = `
@@ -502,7 +503,10 @@ async function showArticleDetail(articleId) {
         </div>
     `;
 
-    modal.show();
+    // Only show if not already visible
+    if (!modalEl.classList.contains('show')) {
+        modal.show();
+    }
 
     try {
         const response = await fetch(`${CONFIG.ARTICLES_API}?id=${articleId}`);
