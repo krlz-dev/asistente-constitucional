@@ -295,8 +295,6 @@ async function initArticles() {
 
         // Update stats
         document.getElementById('totalArticles').textContent = state.articles.length;
-        const withAnalysis = state.articles.filter(a => a.tieneAnalisis).length;
-        document.getElementById('articlesWithAnalysis').textContent = withAnalysis;
 
         // Display temáticas filter
         displayTematicasFilter();
@@ -456,9 +454,8 @@ function displayArticles() {
         col.innerHTML = `
             <div class="card article-card h-100 shadow-sm" data-article-id="${article.id}">
                 <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div class="mb-2">
                         <span class="badge bg-primary">Art. ${article.id}</span>
-                        ${article.tieneAnalisis ? '<span class="badge bg-success"><i class="bi bi-check-circle"></i></span>' : ''}
                     </div>
                     <h6 class="card-title">${article.titulo || 'Artículo ' + article.id}</h6>
                     <p class="card-text small text-muted">${article.presentacion ? article.presentacion.substring(0, 150) + '...' : 'Sin descripción disponible'}</p>
