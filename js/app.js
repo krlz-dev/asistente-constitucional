@@ -461,10 +461,7 @@ async function showArticleDetail(articleId) {
                 <div class="mb-4">
                     <h6 class="text-primary"><i class="bi bi-diagram-3 me-2"></i>Artículos Relacionados (${article.articulosRelacionados.length})</h6>
                     <div class="related-articles">
-                        ${article.articulosRelacionados.slice(0, 20).map(id =>
-                            `<button class="btn btn-sm btn-outline-secondary me-1 mb-1 related-article-btn" data-article="${id}">Art. ${id}</button>`
-                        ).join('')}
-                        ${article.articulosRelacionados.length > 20 ? `<span class="badge bg-secondary">+${article.articulosRelacionados.length - 20} más</span>` : ''}
+                        ${buildRelatedArticlesHTML(article.articulosRelacionados, 'main')}
                     </div>
                 </div>
             `;
@@ -515,6 +512,25 @@ async function showArticleDetail(articleId) {
             });
         });
 
+        // Add click handlers for "show more" buttons
+        modalBody.querySelectorAll('.show-more-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const groupId = btn.dataset.group;
+                const hiddenContainer = modalBody.querySelector(`.hidden-articles[data-group="${groupId}"]`);
+                if (hiddenContainer) {
+                    hiddenContainer.style.display = 'inline';
+                    btn.style.display = 'none';
+                    // Add click handlers for newly visible buttons
+                    hiddenContainer.querySelectorAll('.related-article-btn').forEach(newBtn => {
+                        newBtn.addEventListener('click', () => {
+                            const relatedId = parseInt(newBtn.dataset.article);
+                            showArticleDetail(relatedId);
+                        });
+                    });
+                }
+            });
+        });
+
     } catch (error) {
         console.error('Error loading article:', error);
         modalBody.innerHTML = `
@@ -526,14 +542,34 @@ async function showArticleDetail(articleId) {
     }
 }
 
+// Build related articles HTML with expandable "show more"
+function buildRelatedArticlesHTML(articles, groupId, initialLimit = 15) {
+    if (!articles || articles.length === 0) return '';
+
+    const visibleArticles = articles.slice(0, initialLimit);
+    const hiddenArticles = articles.slice(initialLimit);
+
+    let html = visibleArticles.map(id =>
+        `<button class="btn btn-sm btn-outline-secondary me-1 mb-1 related-article-btn" data-article="${id}">Art. ${id}</button>`
+    ).join('');
+
+    if (hiddenArticles.length > 0) {
+        html += `<span class="hidden-articles" data-group="${groupId}" style="display: none;">`;
+        html += hiddenArticles.map(id =>
+            `<button class="btn btn-sm btn-outline-secondary me-1 mb-1 related-article-btn" data-article="${id}">Art. ${id}</button>`
+        ).join('');
+        html += `</span>`;
+        html += `<button class="btn btn-sm btn-primary show-more-btn" data-group="${groupId}">+${hiddenArticles.length} más</button>`;
+    }
+
+    return html;
+}
+
 function buildAccordionItem(item, tipo, badgeClass, idx) {
     const relatedLinks = item.articulosRelacionados && item.articulosRelacionados.length > 0
         ? `<div class="mt-3 pt-3 border-top">
              <small class="text-muted"><strong>Concordancias:</strong></small><br>
-             ${item.articulosRelacionados.slice(0, 10).map(id =>
-                 `<button class="btn btn-sm btn-outline-secondary me-1 mb-1 related-article-btn" data-article="${id}">Art. ${id}</button>`
-             ).join('')}
-             ${item.articulosRelacionados.length > 10 ? `<span class="badge bg-secondary">+${item.articulosRelacionados.length - 10} más</span>` : ''}
+             ${buildRelatedArticlesHTML(item.articulosRelacionados, `accordion-${idx}`)}
            </div>`
         : '';
 
