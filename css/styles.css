@@ -1222,21 +1222,6 @@ body.chat-open .modal-dialog {
 }
 
 /* ====================================
-   Footer
-   ==================================== */
-footer {
-    background: var(--color-primary-default) !important;
-    color: var(--color-text-inverted);
-    padding: var(--space-l) 0;
-}
-
-footer p,
-footer small,
-footer span {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-/* ====================================
    Pagination
    ==================================== */
 .pagination .page-link {
@@ -1359,8 +1344,7 @@ select:focus-visible {
    ==================================== */
 @media print {
     .navbar,
-    .chat-widget,
-    footer {
+    .chat-widget {
         display: none;
     }
 
@@ -1380,16 +1364,13 @@ select:focus-visible {
    Dark Mode Specific Overrides
    ==================================== */
 
-/* Keep white text on blue backgrounds (navbar, modal header, footer) */
+/* Keep white text on blue backgrounds (navbar, modal header, chat header) */
 [data-theme="dark"] .navbar-brand,
 [data-theme="dark"] .nav-link,
 [data-theme="dark"] .modal-header,
 [data-theme="dark"] .modal-header .modal-title,
 [data-theme="dark"] .chat-header,
-[data-theme="dark"] .chat-header-info,
-[data-theme="dark"] footer,
-[data-theme="dark"] footer p,
-[data-theme="dark"] footer small {
+[data-theme="dark"] .chat-header-info {
     color: #ffffff !important;
 }
 
@@ -1410,10 +1391,7 @@ select:focus-visible {
     :root:not([data-theme="light"]) .modal-header,
     :root:not([data-theme="light"]) .modal-header .modal-title,
     :root:not([data-theme="light"]) .chat-header,
-    :root:not([data-theme="light"]) .chat-header-info,
-    :root:not([data-theme="light"]) footer,
-    :root:not([data-theme="light"]) footer p,
-    :root:not([data-theme="light"]) footer small {
+    :root:not([data-theme="light"]) .chat-header-info {
         color: #ffffff !important;
     }
 
