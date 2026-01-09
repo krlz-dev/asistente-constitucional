@@ -745,7 +745,7 @@ input:focus {
 }
 
 .modal-header .btn-close-white {
-    filter: brightness(1);
+    filter: invert(1) grayscale(100%) brightness(200%);
     opacity: 1;
     transition: transform 0.15s ease, opacity 0.15s ease;
 }
