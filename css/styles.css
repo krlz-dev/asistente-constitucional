@@ -239,6 +239,25 @@ a:hover {
     display: flex;
 }
 
+/* Chat backdrop overlay */
+.chat-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1059; /* Below chat widget (1060), above modal (1055) */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.chat-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 .chat-widget .chat-header {
     background: var(--primary-color);
     color: white;
@@ -703,9 +722,16 @@ input:focus {
 }
 
 /* Modal */
+.modal-dialog {
+    max-height: calc(100vh - 120px); /* Leave space for chat button */
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
 .modal-content {
     background-color: var(--bg-white);
     color: var(--text-body);
+    max-height: calc(100vh - 140px);
 }
 
 .modal-header {

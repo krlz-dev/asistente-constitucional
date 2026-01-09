@@ -33,6 +33,7 @@ const chatWidget = document.getElementById('chatWidget');
 const chatWindow = document.getElementById('chatWindow');
 const chatToggleBtn = document.getElementById('chatToggleBtn');
 const chatCloseBtn = document.getElementById('chatCloseBtn');
+const chatBackdrop = document.getElementById('chatBackdrop');
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
@@ -53,6 +54,11 @@ function initApp() {
 
     if (chatCloseBtn) {
         chatCloseBtn.addEventListener('click', toggleChat);
+    }
+
+    // Close chat when clicking backdrop
+    if (chatBackdrop) {
+        chatBackdrop.addEventListener('click', toggleChat);
     }
 
     // Chat form submit
@@ -90,6 +96,9 @@ function initApp() {
 function toggleChat() {
     if (chatWindow) {
         chatWindow.classList.toggle('open');
+        if (chatBackdrop) {
+            chatBackdrop.classList.toggle('show');
+        }
         if (chatWindow.classList.contains('open')) {
             userInput.focus();
         }
