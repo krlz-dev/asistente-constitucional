@@ -22,8 +22,81 @@ let state = {
     currentPage: 1,
     articlesPerPage: 24,
     currentArticle: null,
-    articlesVisible: false
+    articlesVisible: false,
+    theme: 'light'
 };
+
+// ==========================================
+// THEME MANAGEMENT
+// ==========================================
+
+function initTheme() {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+
+    // Check for saved theme preference or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Determine initial theme
+    if (savedTheme) {
+        state.theme = savedTheme;
+    } else if (systemPrefersDark) {
+        state.theme = 'dark';
+    } else {
+        state.theme = 'light';
+    }
+
+    // Apply theme
+    applyTheme(state.theme);
+
+    // Theme toggle click handler
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            state.theme = state.theme === 'light' ? 'dark' : 'light';
+            applyTheme(state.theme);
+            localStorage.setItem('theme', state.theme);
+        });
+    }
+
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+            state.theme = e.matches ? 'dark' : 'light';
+            applyTheme(state.theme);
+        }
+    });
+}
+
+function applyTheme(theme) {
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+
+    // Set data-theme attribute on html element
+    document.documentElement.setAttribute('data-theme', theme);
+
+    // Update toggle button UI
+    if (themeIcon && themeLabel) {
+        if (theme === 'dark') {
+            themeIcon.className = 'bi bi-moon-fill';
+            themeLabel.textContent = 'Oscuro';
+        } else {
+            themeIcon.className = 'bi bi-sun-fill';
+            themeLabel.textContent = 'Claro';
+        }
+    }
+
+    // Update Bootstrap navbar class for dark mode
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        if (theme === 'dark') {
+            navbar.classList.add('navbar-dark');
+        } else {
+            navbar.classList.add('navbar-dark'); // Keep it dark since header is primary color
+        }
+    }
+}
 
 // DOM Elements
 const chatMessages = document.getElementById('chatMessages');
@@ -34,6 +107,7 @@ const chatWidget = document.getElementById('chatWidget');
 const chatWindow = document.getElementById('chatWindow');
 const chatToggleBtn = document.getElementById('chatToggleBtn');
 const chatCloseBtn = document.getElementById('chatCloseBtn');
+const chatBackdrop = document.getElementById('chatBackdrop');
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
@@ -41,6 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initApp() {
+    // Initialize theme system
+    initTheme();
+
     // Set current year in footer
     const currentYearEl = document.getElementById('currentYear');
     if (currentYearEl) {
@@ -94,6 +171,9 @@ function toggleChat() {
         document.body.classList.toggle('chat-open');
         if (chatToggleBtn) {
             chatToggleBtn.classList.toggle('hidden');
+        }
+        if (chatBackdrop) {
+            chatBackdrop.classList.toggle('show');
         }
         if (chatWindow.classList.contains('open')) {
             userInput.focus();
@@ -338,6 +418,8 @@ async function initArticles() {
                     chatWin.classList.add('open');
                     document.body.classList.add('chat-open');
                     if (chatToggle) chatToggle.classList.add('hidden');
+                    const backdrop = document.getElementById('chatBackdrop');
+                    if (backdrop) backdrop.classList.add('show');
                 }
 
                 // Reset loading state and enable inputs
