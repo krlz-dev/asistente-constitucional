@@ -17,6 +17,48 @@ function extractArticleRefs(text) {
   return [...new Set(matches.map(m => parseInt(m[1])))].sort((a, b) => a - b);
 }
 
+// Format text with proper paragraph breaks
+function formatText(text) {
+  if (!text) return '';
+
+  // Split into sentences
+  const sentences = text.split(/(?<=\.)\s+/);
+
+  if (sentences.length <= 3) {
+    return '<p>' + text + '</p>';
+  }
+
+  // Group sentences into paragraphs (3-4 sentences each)
+  const paragraphs = [];
+  let currentPara = [];
+
+  sentences.forEach((sentence, idx) => {
+    currentPara.push(sentence);
+
+    // Check if we should break here
+    const shouldBreak =
+      // Every 3-4 sentences
+      currentPara.length >= 3 ||
+      // Or on transition words
+      /^(Sin embargo|No obstante|Por otro lado|Por otra parte|Asimismo|Además|En este sentido|De esta manera|Por lo tanto|En consecuencia|Cabe señalar|Es importante|Es decir|En efecto|De igual forma|De igual manera|Finalmente|Por último|En primer lugar|En segundo lugar|Por ende|Ahora bien|Esta|Este|Estas|Estos|Dicha|Dicho|Dichas|Dichos)/i.test(sentences[idx + 1] || '') ||
+      // Or on enumeration
+      /^\d+[\.\)\-]/.test(sentences[idx + 1] || '') ||
+      /^[a-z]\)/.test(sentences[idx + 1] || '');
+
+    if (shouldBreak && currentPara.length > 0) {
+      paragraphs.push(currentPara.join(' '));
+      currentPara = [];
+    }
+  });
+
+  // Add remaining sentences
+  if (currentPara.length > 0) {
+    paragraphs.push(currentPara.join(' '));
+  }
+
+  return paragraphs.map(p => '<p>' + p.trim() + '</p>').join('\n');
+}
+
 // Build temáticas index (main groupings)
 const tematicas = new Map();
 
@@ -70,7 +112,7 @@ const articulosEnhanced = articulos.map(art => {
       // Group by type
       const item = {
         titulo: a.titulo,
-        contenido: a.contenido,
+        contenido: formatText(a.contenido),
         concordancias: a.concordancias,
         articulosRelacionados: a.concordancias ? extractArticleRefs(a.concordancias).filter(r => r !== art.id) : []
       };
@@ -95,9 +137,9 @@ const articulosEnhanced = articulos.map(art => {
   return {
     id: art.id,
     titulo: art.titulo,
-    presentacion: art.presentacion,
-    articuloTranscrito: art.articuloTranscrito,
-    descripcion: art.descripcion,
+    presentacion: formatText(art.presentacion),
+    articuloTranscrito: art.articuloTranscrito, // Keep original for legal text
+    descripcion: formatText(art.descripcion),
     analisis: analisisGrouped,
     articulosRelacionados: [...allRefs].sort((a, b) => a - b),
     totalConexiones: allRefs.size
