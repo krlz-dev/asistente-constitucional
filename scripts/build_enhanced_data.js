@@ -174,7 +174,7 @@ const articulosEnhanced = articulos.map(art => {
     titulo: art.titulo,
     estructura: findEstructura(art.id),
     presentacion: formatText(art.presentacion),
-    articuloTranscrito: art.articuloTranscrito, // Keep original for legal text
+    articuloTranscrito: formatText(art.articuloTranscrito),
     descripcion: formatText(art.descripcion),
     analisis: analisisGrouped,
     articulosRelacionados: [...allRefs].sort((a, b) => a - b),
