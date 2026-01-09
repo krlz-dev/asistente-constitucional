@@ -85,9 +85,9 @@ a:hover {
 
 /* Navbar */
 .navbar {
-    background: var(--gradient-primary) !important;
+    background: var(--primary-color) !important;
     padding: 1rem 0;
-    box-shadow: var(--shadow-md);
+    box-shadow: none;
 }
 
 .navbar-brand {
