@@ -325,10 +325,7 @@ async function initArticles() {
     if (askAboutBtn) {
         askAboutBtn.addEventListener('click', () => {
             if (state.currentArticle) {
-                const articleModal = bootstrap.Modal.getOrCreateInstance(document.getElementById('articleModal'));
-                articleModal.hide();
-
-                // Open chat widget and set the question
+                // Open chat widget on top of modal (don't close modal)
                 if (chatWindow && !chatWindow.classList.contains('open')) {
                     chatWindow.classList.add('open');
                 }

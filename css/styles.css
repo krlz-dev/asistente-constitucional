@@ -181,7 +181,7 @@ a:hover {
     position: fixed;
     bottom: 24px;
     right: 24px;
-    z-index: 1050;
+    z-index: 1060; /* Above Bootstrap modal (1055) */
 }
 
 .chat-toggle-btn {
