@@ -207,7 +207,12 @@ a:hover {
     position: fixed;
     bottom: 24px;
     right: 24px;
-    z-index: 9999; /* Above everything including Bootstrap modal */
+    z-index: 99999;
+    pointer-events: auto !important;
+}
+
+.chat-widget * {
+    pointer-events: auto !important;
 }
 
 .chat-toggle-btn {
@@ -280,7 +285,15 @@ a:hover {
 
 /* Disable Bootstrap modal backdrop when chat is open */
 body.chat-open .modal-backdrop {
-    pointer-events: none;
+    pointer-events: none !important;
+}
+
+body.chat-open .modal {
+    pointer-events: none !important;
+}
+
+body.chat-open .modal-dialog {
+    pointer-events: auto;
 }
 
 .chat-widget .chat-header {
