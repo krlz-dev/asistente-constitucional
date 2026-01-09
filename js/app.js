@@ -34,7 +34,6 @@ const chatWidget = document.getElementById('chatWidget');
 const chatWindow = document.getElementById('chatWindow');
 const chatToggleBtn = document.getElementById('chatToggleBtn');
 const chatCloseBtn = document.getElementById('chatCloseBtn');
-const chatBackdrop = document.getElementById('chatBackdrop');
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
@@ -55,11 +54,6 @@ function initApp() {
 
     if (chatCloseBtn) {
         chatCloseBtn.addEventListener('click', toggleChat);
-    }
-
-    // Close chat when clicking backdrop
-    if (chatBackdrop) {
-        chatBackdrop.addEventListener('click', toggleChat);
     }
 
     // Chat form submit
@@ -97,9 +91,6 @@ function initApp() {
 function toggleChat() {
     if (chatWindow) {
         chatWindow.classList.toggle('open');
-        if (chatBackdrop) {
-            chatBackdrop.classList.toggle('show');
-        }
         if (chatToggleBtn) {
             chatToggleBtn.classList.toggle('hidden');
         }
@@ -339,13 +330,11 @@ async function initArticles() {
                 const chatInput = document.getElementById('userInput');
                 const chatSendBtn = document.getElementById('sendBtn');
                 const chatWin = document.getElementById('chatWindow');
-                const chatBack = document.getElementById('chatBackdrop');
                 const chatToggle = document.getElementById('chatToggleBtn');
 
                 // Open chat widget on top of modal (don't close modal)
                 if (chatWin && !chatWin.classList.contains('open')) {
                     chatWin.classList.add('open');
-                    if (chatBack) chatBack.classList.add('show');
                     if (chatToggle) chatToggle.classList.add('hidden');
                 }
 
