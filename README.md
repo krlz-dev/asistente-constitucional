@@ -1,62 +1,27 @@
-# Asistente Constitucional Bolivia
+# econstitucional
 
-Un asistente virtual de inteligencia artificial especializado en la **Constitución Política del Estado Plurinacional de Bolivia (2009)**.
+AI-powered explorer for Bolivia's Constitution (CPE 2009).
 
-## Descripcion
+## Features
 
-Este proyecto es un proof of concept que demuestra como la IA puede especializarse en dominios legales especificos. El asistente esta entrenado con la CPE Bolivia 2009 y documentos relacionados, permitiendo respuestas precisas y fundamentadas en derecho constitucional boliviano.
+- Browse 411 articles with full analysis
+- AI assistant for constitutional queries
+- Clickable article references in responses
+- Search and filter by categories
 
-## Caracteristicas
+## Stack
 
-- **Consultas Inteligentes**: Realiza preguntas sobre la Constitucion y obtiene respuestas fundamentadas
-- **Base de Conocimiento**: Incluye la CPE Bolivia 2009 y el Codigo Procesal Constitucional
-- **Interfaz Moderna**: Diseño responsivo con Bootstrap 5
-- **Sugerencias Rapidas**: Preguntas predefinidas para facilitar la consulta
-- **Backend Serverless**: API serverless con Vercel para manejo seguro de credenciales
+- Frontend: Vanilla JS, Bootstrap 5
+- Backend: Vercel Serverless
+- AI: Llama 3.3 70B (Groq)
 
-## Tecnologias
+## Deploy
 
-- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
-- **Backend**: Vercel Serverless Functions (Node.js)
-- **Modelo LLM**: Llama 3.3 70B via Groq API
-- **Hosting**: Vercel
-
-## Despliegue
-
-### Requisitos
-- Node.js
-- Cuenta en Vercel
-- API Key de Groq
-
-### Pasos
-
-1. Clona el repositorio
-2. Instala Vercel CLI: `npm install -g vercel`
-3. Ejecuta: `./scripts/deploy.sh`
-4. Configura la variable de entorno `GROQ_API_KEY` en Vercel
-
-## Estructura del Proyecto
-
-```
-abogado-constitucional/
-├── index.html       # Pagina principal
-├── api/
-│   └── chat.js      # Serverless function para Groq
-├── css/
-│   └── styles.css   # Estilos personalizados
-├── js/
-│   └── app.js       # Logica del frontend
-├── scripts/
-│   ├── push.sh      # Script para push a GitHub
-│   └── deploy.sh    # Script para deploy a Vercel
-├── vercel.json      # Configuracion de Vercel
-└── README.md
+```bash
+vercel
+vercel env add GROQ_API_KEY
 ```
 
-## Licencia
+## License
 
-Este proyecto es un proof of concept con fines educativos.
-
----
-
-Desarrollado con amor para el Estado Plurinacional de Bolivia
+MIT
