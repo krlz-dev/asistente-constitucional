@@ -99,6 +99,9 @@ function toggleChat() {
         if (chatBackdrop) {
             chatBackdrop.classList.toggle('show');
         }
+        if (chatToggleBtn) {
+            chatToggleBtn.classList.toggle('hidden');
+        }
         if (chatWindow.classList.contains('open')) {
             userInput.focus();
         }
