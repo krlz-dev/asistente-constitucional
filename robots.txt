@@ -1,0 +1,26 @@
+# robots.txt for econstitucional
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://econstitucional.vercel.app/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Block API endpoints from indexing
+Disallow: /api/
