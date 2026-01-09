@@ -714,6 +714,17 @@ input:focus {
 
 .modal-header .btn-close-white {
     filter: brightness(1);
+    opacity: 1;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.modal-header .btn-close-white:hover {
+    opacity: 0.85;
+}
+
+.modal-header .btn-close-white:active {
+    transform: scale(0.85);
+    opacity: 0.7;
 }
 
 .modal-body {
