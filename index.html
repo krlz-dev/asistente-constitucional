@@ -42,112 +42,55 @@
     </nav>
 
     <!-- Chat Section -->
-    <section id="chat" class="py-5 bg-light main-chat-section">
+    <section id="chat" class="main-chat-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="text-center mb-4 pt-5">
-                        <h1 class="display-5 fw-bold text-primary">Asistente Constitucional Bolivia</h1>
-                        <p class="lead text-muted">Pregunta lo que necesites sobre la Constitución Política del Estado</p>
-                    </div>
+                <div class="col-lg-8">
+                    <!-- Hero Input Area -->
+                    <div class="chat-hero text-center">
+                        <h1 class="chat-title">Asistente Constitucional Bolivia</h1>
+                        <p class="chat-subtitle">CPE Bolivia 2009</p>
 
-                    <!-- Quick Prompts -->
-                    <div class="quick-prompts mb-4">
-                        <h6 class="text-muted mb-3"><i class="bi bi-lightbulb me-2"></i>Preguntas sugeridas:</h6>
-                        <div class="d-flex flex-wrap gap-2">
-                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Cuáles son los derechos fundamentales según la Constitución de Bolivia?">
-                                <i class="bi bi-shield-check me-1"></i>Derechos Fundamentales
-                            </button>
-                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Cómo está organizado el Estado Plurinacional de Bolivia?">
-                                <i class="bi bi-diagram-3 me-1"></i>Organización del Estado
-                            </button>
-                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Qué dice la Constitución sobre los derechos de los pueblos indígenas originarios?">
-                                <i class="bi bi-people me-1"></i>Pueblos Indígenas
-                            </button>
-                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Cuáles son las funciones del Tribunal Constitucional Plurinacional?">
-                                <i class="bi bi-bank me-1"></i>Tribunal Constitucional
-                            </button>
-                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Qué establece la Constitución sobre el régimen económico?">
-                                <i class="bi bi-graph-up me-1"></i>Régimen Económico
-                            </button>
-                            <button class="btn btn-outline-primary prompt-btn" data-prompt="¿Cómo se puede reformar la Constitución de Bolivia?">
-                                <i class="bi bi-pencil-square me-1"></i>Reforma Constitucional
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Chat Container -->
-                    <div class="chat-container card shadow-lg">
-                        <div class="chat-header card-header bg-primary text-white">
-                            <div class="d-flex align-items-center">
-                                <div class="avatar-icon me-3">
-                                    <i class="bi bi-robot"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-0">Asistente Constitucional</h5>
-                                    <small class="opacity-75">Especializado en CPE Bolivia 2009</small>
-                                </div>
-                                <div class="ms-auto">
-                                    <span class="badge bg-success"><i class="bi bi-circle-fill me-1" style="font-size: 8px;"></i>En línea</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="chat-messages card-body" id="chatMessages">
-                            <!-- Welcome Message -->
-                            <div class="message assistant-message">
-                                <div class="message-avatar">
-                                    <i class="bi bi-robot"></i>
-                                </div>
-                                <div class="message-content">
-                                    <p>¡Bienvenido! Soy tu asistente especializado en la <strong>Constitución Política del Estado Plurinacional de Bolivia</strong>.</p>
-                                    <p>Puedo ayudarte con consultas sobre:</p>
-                                    <ul>
-                                        <li>Derechos fundamentales y garantías constitucionales</li>
-                                        <li>Organización del Estado y sus órganos</li>
-                                        <li>Derechos de las naciones y pueblos indígenas</li>
-                                        <li>Procedimientos constitucionales</li>
-                                        <li>Y mucho más...</li>
-                                    </ul>
-                                    <p>¿En qué puedo ayudarte hoy?</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="chat-input card-footer">
-                            <form id="chatForm" class="d-flex gap-2">
-                                <input type="text"
-                                       class="form-control form-control-lg"
-                                       id="userInput"
-                                       placeholder="Escribe tu pregunta sobre la Constitución..."
-                                       autocomplete="off">
-                                <button type="submit" class="btn btn-primary btn-lg px-4" id="sendBtn">
-                                    <i class="bi bi-send"></i>
+                        <!-- Main Input -->
+                        <form id="chatForm" class="chat-main-input">
+                            <div class="input-wrapper">
+                                <textarea
+                                    id="userInput"
+                                    class="chat-textarea"
+                                    placeholder="Pregunta sobre la Constitución Política del Estado..."
+                                    rows="1"
+                                    autocomplete="off"></textarea>
+                                <button type="submit" class="chat-send-btn" id="sendBtn">
+                                    <i class="bi bi-arrow-up"></i>
                                 </button>
-                            </form>
-                            <div class="text-center mt-2">
-                                <small class="text-muted">
-                                    <i class="bi bi-info-circle me-1"></i>
-                                    Presiona Enter para enviar o haz clic en el botón
-                                </small>
                             </div>
+                        </form>
+
+                        <!-- Suggested Questions -->
+                        <div class="suggestions-grid" id="suggestionsGrid">
+                            <button class="suggestion-card prompt-btn" data-prompt="¿Cuáles son los derechos fundamentales según la Constitución?">
+                                <i class="bi bi-shield-check"></i>
+                                <span>Derechos Fundamentales</span>
+                            </button>
+                            <button class="suggestion-card prompt-btn" data-prompt="¿Cómo está organizado el Estado Plurinacional de Bolivia?">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>Organización del Estado</span>
+                            </button>
+                            <button class="suggestion-card prompt-btn" data-prompt="¿Qué dice la Constitución sobre los pueblos indígenas?">
+                                <i class="bi bi-people"></i>
+                                <span>Pueblos Indígenas</span>
+                            </button>
+                            <button class="suggestion-card prompt-btn" data-prompt="¿Cuáles son las funciones del Tribunal Constitucional?">
+                                <i class="bi bi-bank"></i>
+                                <span>Tribunal Constitucional</span>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Model Info -->
-                    <div class="model-info mt-4 p-3 bg-white rounded shadow-sm">
-                        <div class="row align-items-center">
-                            <div class="col-md-8">
-                                <h6 class="mb-1"><i class="bi bi-cpu me-2"></i>Modelo de IA</h6>
-                                <p class="text-muted mb-0 small">
-                                    Utilizando <strong>Llama 3.3 70B</strong> via Groq,
-                                    con contexto específico de la CPE Bolivia 2009.
-                                </p>
-                            </div>
-                            <div class="col-md-4 text-md-end">
-                                <span class="badge bg-info"><i class="bi bi-lightning me-1"></i>Groq</span>
-                                <span class="badge bg-secondary"><i class="bi bi-translate me-1"></i>Español</span>
-                            </div>
+                    <!-- Chat Messages (hidden initially, shown when conversation starts) -->
+                    <div class="chat-messages-container" id="chatContainer" style="display: none;">
+                        <div class="chat-messages" id="chatMessages">
+                            <!-- Messages will appear here -->
                         </div>
                     </div>
                 </div>

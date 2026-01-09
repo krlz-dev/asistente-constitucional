@@ -30,6 +30,9 @@ const chatForm = document.getElementById('chatForm');
 const userInput = document.getElementById('userInput');
 const sendBtn = document.getElementById('sendBtn');
 const promptBtns = document.querySelectorAll('.prompt-btn');
+const chatContainer = document.getElementById('chatContainer');
+const chatHero = document.querySelector('.chat-hero');
+const suggestionsGrid = document.getElementById('suggestionsGrid');
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
@@ -40,12 +43,24 @@ function initApp() {
     // Event Listeners
     chatForm.addEventListener('submit', handleSubmit);
 
+    // Textarea auto-grow
+    if (userInput) {
+        userInput.addEventListener('input', autoGrowTextarea);
+        userInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                chatForm.dispatchEvent(new Event('submit'));
+            }
+        });
+    }
+
     // Quick prompt buttons
     promptBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const prompt = btn.dataset.prompt;
             userInput.value = prompt;
-            userInput.focus();
+            autoGrowTextarea.call(userInput);
+            handleSubmit(new Event('submit'));
         });
     });
 
@@ -64,6 +79,19 @@ function initApp() {
     initArticles();
 }
 
+// Auto-grow textarea
+function autoGrowTextarea() {
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 200) + 'px';
+}
+
+// Show conversation UI
+function showConversationUI() {
+    if (chatContainer) chatContainer.style.display = 'block';
+    if (suggestionsGrid) suggestionsGrid.style.display = 'none';
+    if (chatHero) chatHero.classList.add('conversation-active');
+}
+
 // Handle form submission
 async function handleSubmit(e) {
     e.preventDefault();
@@ -71,9 +99,13 @@ async function handleSubmit(e) {
     const message = userInput.value.trim();
     if (!message || state.isLoading) return;
 
+    // Show conversation UI on first message
+    showConversationUI();
+
     // Add user message to chat
     addMessage(message, 'user');
     userInput.value = '';
+    userInput.style.height = 'auto';
 
     // Show loading indicator
     setLoading(true);
@@ -211,7 +243,7 @@ function setLoading(isLoading) {
     if (isLoading) {
         sendBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span>';
     } else {
-        sendBtn.innerHTML = '<i class="bi bi-send"></i>';
+        sendBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
     }
 }
 
