@@ -835,6 +835,96 @@ section > .container > .text-center > p {
     padding: 0.2rem 0.5rem;
 }
 
+/* ====================================
+   Constitutional Structure Breadcrumb
+   ==================================== */
+
+.estructura-breadcrumb {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: var(--border-radius);
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.estructura-breadcrumb h6 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.estructura-path {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.estructura-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    background: var(--bg-white);
+    color: var(--text-body);
+    border: 1px solid var(--border-color);
+}
+
+.estructura-item i {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.estructura-item.parte {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--text-light);
+    border: none;
+    font-weight: 600;
+}
+
+.estructura-item.titulo {
+    background: var(--primary-light);
+    color: var(--text-light);
+    border: none;
+    font-weight: 500;
+}
+
+.estructura-item.capitulo {
+    background: #e3f2fd;
+    color: #1565c0;
+    border-color: #90caf9;
+}
+
+.estructura-item.seccion {
+    background: #f3e5f5;
+    color: #7b1fa2;
+    border-color: #ce93d8;
+}
+
+.estructura-separator {
+    display: none;
+}
+
+/* Responsive: horizontal on larger screens */
+@media (min-width: 768px) {
+    .estructura-path {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .estructura-separator {
+        display: flex;
+        align-items: center;
+        color: var(--text-muted);
+        font-size: 0.75rem;
+    }
+
+    .estructura-item {
+        flex: none;
+    }
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -887,5 +977,27 @@ section > .container > .text-center > p {
     .accordion-body {
         background-color: var(--bg-white);
         color: var(--text-body);
+    }
+
+    /* Structure breadcrumb dark mode */
+    .estructura-breadcrumb {
+        background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%);
+    }
+
+    .estructura-item {
+        background-color: var(--bg-white);
+        border-color: var(--border-color);
+    }
+
+    .estructura-item.capitulo {
+        background: #1a3a5c;
+        color: #90caf9;
+        border-color: #2a5a8c;
+    }
+
+    .estructura-item.seccion {
+        background: #3a1a4c;
+        color: #ce93d8;
+        border-color: #5a2a6c;
     }
 }

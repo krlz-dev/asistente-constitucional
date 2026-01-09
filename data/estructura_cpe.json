@@ -1,0 +1,304 @@
+{
+  "partes": [
+    {
+      "numero": 1,
+      "nombre": "Bases Fundamentales del Estado, Derechos, Deberes y Garantías",
+      "articulos": [1, 144],
+      "titulos": [
+        {
+          "numero": 1,
+          "nombre": "Bases Fundamentales del Estado",
+          "articulos": [1, 12],
+          "capitulos": [
+            { "numero": 1, "nombre": "Modelo de Estado", "articulos": [1, 6] },
+            { "numero": 2, "nombre": "Principios, Valores y Fines del Estado", "articulos": [7, 10] },
+            { "numero": 3, "nombre": "Sistema de Gobierno", "articulos": [11, 12] }
+          ]
+        },
+        {
+          "numero": 2,
+          "nombre": "Derechos Fundamentales y Garantías",
+          "articulos": [13, 107],
+          "capitulos": [
+            { "numero": 1, "nombre": "Disposiciones Generales", "articulos": [13, 14] },
+            { "numero": 2, "nombre": "Derechos Fundamentales", "articulos": [15, 20] },
+            {
+              "numero": 3,
+              "nombre": "Derechos Civiles y Políticos",
+              "articulos": [21, 29],
+              "secciones": [
+                { "numero": 1, "nombre": "Derechos Civiles", "articulos": [21, 25] },
+                { "numero": 2, "nombre": "Derechos Políticos", "articulos": [26, 29] }
+              ]
+            },
+            { "numero": 4, "nombre": "Derechos de las Naciones y Pueblos Indígena Originario Campesinos", "articulos": [30, 32] },
+            {
+              "numero": 5,
+              "nombre": "Derechos Sociales y Económicos",
+              "articulos": [33, 76],
+              "secciones": [
+                { "numero": 1, "nombre": "Derecho al Medio Ambiente", "articulos": [33, 34] },
+                { "numero": 2, "nombre": "Derecho a la Salud y a la Seguridad Social", "articulos": [35, 45] },
+                { "numero": 3, "nombre": "Derecho al Trabajo y al Empleo", "articulos": [46, 55] },
+                { "numero": 4, "nombre": "Derecho a la Propiedad", "articulos": [56, 57] },
+                { "numero": 5, "nombre": "Derechos de la Niñez, Adolescencia y Juventud", "articulos": [58, 61] },
+                { "numero": 6, "nombre": "Derechos de las Familias", "articulos": [62, 66] },
+                { "numero": 7, "nombre": "Derechos de las Personas Adultas Mayores", "articulos": [67, 69] },
+                { "numero": 8, "nombre": "Derechos de las Personas con Discapacidad", "articulos": [70, 72] },
+                { "numero": 9, "nombre": "Derechos de las Personas Privadas de Libertad", "articulos": [73, 74] },
+                { "numero": 10, "nombre": "Derechos de las Usuarias y los Usuarios y de las Consumidoras y los Consumidores", "articulos": [75, 76] }
+              ]
+            },
+            {
+              "numero": 6,
+              "nombre": "Educación, Interculturalidad y Derechos Culturales",
+              "articulos": [77, 105],
+              "secciones": [
+                { "numero": 1, "nombre": "Educación", "articulos": [77, 90] },
+                { "numero": 2, "nombre": "Educación Superior", "articulos": [91, 97] },
+                { "numero": 3, "nombre": "Culturas", "articulos": [98, 102] },
+                { "numero": 4, "nombre": "Ciencia, Tecnología e Investigación", "articulos": [103, 103] },
+                { "numero": 5, "nombre": "Deporte y Recreación", "articulos": [104, 105] }
+              ]
+            },
+            { "numero": 7, "nombre": "Comunicación Social", "articulos": [106, 107] }
+          ]
+        },
+        {
+          "numero": 3,
+          "nombre": "Deberes",
+          "articulos": [108, 108],
+          "capitulos": []
+        },
+        {
+          "numero": 4,
+          "nombre": "Garantías Jurisdiccionales y Acciones de Defensa",
+          "articulos": [109, 136],
+          "capitulos": [
+            { "numero": 1, "nombre": "Garantías Jurisdiccionales", "articulos": [109, 124] },
+            {
+              "numero": 2,
+              "nombre": "Acciones de Defensa",
+              "articulos": [125, 136],
+              "secciones": [
+                { "numero": 1, "nombre": "Acción de Libertad", "articulos": [125, 127] },
+                { "numero": 2, "nombre": "Acción de Amparo Constitucional", "articulos": [128, 129] },
+                { "numero": 3, "nombre": "Acción de Protección de Privacidad", "articulos": [130, 131] },
+                { "numero": 4, "nombre": "Acción de Inconstitucionalidad", "articulos": [132, 133] },
+                { "numero": 5, "nombre": "Acción de Cumplimiento", "articulos": [134, 134] },
+                { "numero": 6, "nombre": "Acción Popular", "articulos": [135, 136] }
+              ]
+            },
+            { "numero": 3, "nombre": "Estados de Excepción", "articulos": [137, 140] }
+          ]
+        },
+        {
+          "numero": 5,
+          "nombre": "Nacionalidad y Ciudadanía",
+          "articulos": [141, 144],
+          "capitulos": [
+            { "numero": 1, "nombre": "Nacionalidad", "articulos": [141, 143] },
+            { "numero": 2, "nombre": "Ciudadanía", "articulos": [144, 144] }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "nombre": "Estructura y Organización Funcional del Estado",
+      "articulos": [145, 268],
+      "titulos": [
+        {
+          "numero": 1,
+          "nombre": "Órgano Legislativo",
+          "articulos": [145, 164],
+          "capitulos": [
+            { "numero": 1, "nombre": "Composición y Atribuciones de la Asamblea Legislativa Plurinacional", "articulos": [145, 161] },
+            { "numero": 2, "nombre": "Procedimiento Legislativo", "articulos": [162, 164] }
+          ]
+        },
+        {
+          "numero": 2,
+          "nombre": "Órgano Ejecutivo",
+          "articulos": [165, 177],
+          "capitulos": [
+            {
+              "numero": 1,
+              "nombre": "Composición y Atribuciones del Órgano Ejecutivo",
+              "articulos": [165, 177],
+              "secciones": [
+                { "numero": 1, "nombre": "Disposición General", "articulos": [165, 165] },
+                { "numero": 2, "nombre": "Presidencia y Vicepresidencia del Estado", "articulos": [166, 174] },
+                { "numero": 3, "nombre": "Ministros y Ministras de Estado", "articulos": [175, 177] }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "nombre": "Órgano Judicial y Tribunal Constitucional Plurinacional",
+          "articulos": [178, 204],
+          "capitulos": [
+            { "numero": 1, "nombre": "Disposiciones Generales", "articulos": [178, 180] },
+            { "numero": 2, "nombre": "Jurisdicción Ordinaria", "articulos": [181, 185] },
+            { "numero": 3, "nombre": "Jurisdicción Agroambiental", "articulos": [186, 189] },
+            { "numero": 4, "nombre": "Jurisdicción Indígena Originaria Campesina", "articulos": [190, 192] },
+            { "numero": 5, "nombre": "Consejo de la Magistratura", "articulos": [193, 195] },
+            { "numero": 6, "nombre": "Tribunal Constitucional Plurinacional", "articulos": [196, 204] }
+          ]
+        },
+        {
+          "numero": 4,
+          "nombre": "Órgano Electoral",
+          "articulos": [205, 212],
+          "capitulos": [
+            { "numero": 1, "nombre": "Órgano Electoral Plurinacional", "articulos": [205, 208] },
+            { "numero": 2, "nombre": "Representación Política", "articulos": [209, 212] }
+          ]
+        },
+        {
+          "numero": 5,
+          "nombre": "Funciones de Control, de Defensa de la Sociedad y de Defensa del Estado",
+          "articulos": [213, 231],
+          "capitulos": [
+            { "numero": 1, "nombre": "Función de Control", "articulos": [213, 217] },
+            {
+              "numero": 2,
+              "nombre": "Función de Defensa de la Sociedad",
+              "articulos": [218, 228],
+              "secciones": [
+                { "numero": 1, "nombre": "Defensoría del Pueblo", "articulos": [218, 224] },
+                { "numero": 2, "nombre": "Ministerio Público", "articulos": [225, 228] }
+              ]
+            },
+            { "numero": 3, "nombre": "Función de Defensa del Estado", "articulos": [229, 231] }
+          ]
+        },
+        {
+          "numero": 6,
+          "nombre": "Participación y Control Social",
+          "articulos": [232, 242],
+          "capitulos": [
+            { "numero": 1, "nombre": "Servidoras Públicas y Servidores Públicos", "articulos": [232, 240] },
+            { "numero": 2, "nombre": "Participación y Control Social", "articulos": [241, 242] }
+          ]
+        },
+        {
+          "numero": 7,
+          "nombre": "Fuerzas Armadas y Policía Boliviana",
+          "articulos": [243, 251],
+          "capitulos": [
+            { "numero": 1, "nombre": "Fuerzas Armadas", "articulos": [243, 250] },
+            { "numero": 2, "nombre": "Policía Boliviana", "articulos": [251, 251] }
+          ]
+        },
+        {
+          "numero": 8,
+          "nombre": "Relaciones Internacionales, Fronteras, Integración y Reivindicación Marítima",
+          "articulos": [252, 268],
+          "capitulos": [
+            { "numero": 1, "nombre": "Relaciones Internacionales", "articulos": [252, 256] },
+            { "numero": 2, "nombre": "Fronteras del Estado", "articulos": [257, 261] },
+            { "numero": 3, "nombre": "Integración", "articulos": [262, 266] },
+            { "numero": 4, "nombre": "Reivindicación Marítima", "articulos": [267, 268] }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "nombre": "Estructura y Organización Territorial del Estado",
+      "articulos": [269, 305],
+      "titulos": [
+        {
+          "numero": 1,
+          "nombre": "Organización Territorial del Estado",
+          "articulos": [269, 305],
+          "capitulos": [
+            { "numero": 1, "nombre": "Disposiciones Generales", "articulos": [269, 276] },
+            { "numero": 2, "nombre": "Autonomía Departamental", "articulos": [277, 279] },
+            { "numero": 3, "nombre": "Autonomía Regional", "articulos": [280, 282] },
+            { "numero": 4, "nombre": "Autonomía Municipal", "articulos": [283, 284] },
+            { "numero": 5, "nombre": "Órganos Ejecutivos de los Gobiernos Autónomos", "articulos": [285, 286] },
+            { "numero": 6, "nombre": "Concejos y Asambleas de los Gobiernos Autónomos", "articulos": [287, 288] },
+            { "numero": 7, "nombre": "Autonomía Indígena Originaria Campesina", "articulos": [289, 296] },
+            { "numero": 8, "nombre": "Distribución de Competencias", "articulos": [297, 305] }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "nombre": "Estructura y Organización Económica del Estado",
+      "articulos": [306, 409],
+      "titulos": [
+        {
+          "numero": 1,
+          "nombre": "Organización Económica del Estado",
+          "articulos": [306, 341],
+          "capitulos": [
+            { "numero": 1, "nombre": "Disposiciones Generales", "articulos": [306, 315] },
+            { "numero": 2, "nombre": "Función del Estado en la Economía", "articulos": [316, 317] },
+            {
+              "numero": 3,
+              "nombre": "Políticas Económicas",
+              "articulos": [318, 339],
+              "secciones": [
+                { "numero": 1, "nombre": "Política Fiscal", "articulos": [318, 323] },
+                { "numero": 2, "nombre": "Política Monetaria", "articulos": [324, 327] },
+                { "numero": 3, "nombre": "Política Financiera", "articulos": [328, 332] },
+                { "numero": 4, "nombre": "Políticas Sectoriales", "articulos": [333, 339] }
+              ]
+            },
+            { "numero": 4, "nombre": "Bienes y Recursos del Estado y su Distribución", "articulos": [340, 341] }
+          ]
+        },
+        {
+          "numero": 2,
+          "nombre": "Medio Ambiente, Recursos Naturales, Tierra y Territorio",
+          "articulos": [342, 403],
+          "capitulos": [
+            { "numero": 1, "nombre": "Medio Ambiente", "articulos": [342, 347] },
+            { "numero": 2, "nombre": "Recursos Naturales", "articulos": [348, 358] },
+            { "numero": 3, "nombre": "Hidrocarburos", "articulos": [359, 368] },
+            { "numero": 4, "nombre": "Minería y Metalurgia", "articulos": [369, 372] },
+            { "numero": 5, "nombre": "Recursos Hídricos", "articulos": [373, 377] },
+            { "numero": 6, "nombre": "Energía", "articulos": [378, 379] },
+            {
+              "numero": 7,
+              "nombre": "Biodiversidad, Coca, Áreas Protegidas y Recursos Forestales",
+              "articulos": [380, 389],
+              "secciones": [
+                { "numero": 1, "nombre": "Biodiversidad", "articulos": [380, 383] },
+                { "numero": 2, "nombre": "Coca", "articulos": [384, 384] },
+                { "numero": 3, "nombre": "Áreas Protegidas", "articulos": [385, 385] },
+                { "numero": 4, "nombre": "Recursos Forestales", "articulos": [386, 389] }
+              ]
+            },
+            { "numero": 8, "nombre": "Amazonía", "articulos": [390, 392] },
+            { "numero": 9, "nombre": "Tierra y Territorio", "articulos": [393, 403] }
+          ]
+        },
+        {
+          "numero": 3,
+          "nombre": "Desarrollo Rural Integral Sustentable",
+          "articulos": [404, 409],
+          "capitulos": []
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "nombre": "Jerarquía Normativa y Reforma de la Constitución",
+      "articulos": [410, 411],
+      "titulos": [
+        {
+          "numero": 1,
+          "nombre": "Primacía y Reforma de la Constitución",
+          "articulos": [410, 411],
+          "capitulos": []
+        }
+      ]
+    }
+  ]
+}

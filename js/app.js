@@ -440,6 +440,11 @@ async function showArticleDetail(articleId) {
 
         let content = '';
 
+        // Constitutional structure breadcrumb
+        if (article.estructura) {
+            content += buildEstructuraBreadcrumb(article.estructura);
+        }
+
         // Article text
         if (article.articuloTranscrito) {
             content += `
@@ -550,4 +555,53 @@ function buildAccordionItem(item, tipo, badgeClass, idx) {
             </div>
         </div>
     `;
+}
+
+// Build constitutional structure breadcrumb
+function buildEstructuraBreadcrumb(estructura) {
+    if (!estructura) return '';
+
+    const parts = [];
+
+    if (estructura.parte) {
+        parts.push(`<span class="estructura-item parte"><i class="bi bi-bookmark-fill"></i> Parte ${toRoman(estructura.parte.numero)}: ${estructura.parte.nombre}</span>`);
+    }
+
+    if (estructura.titulo) {
+        parts.push(`<span class="estructura-item titulo"><i class="bi bi-collection"></i> Título ${toRoman(estructura.titulo.numero)}: ${estructura.titulo.nombre}</span>`);
+    }
+
+    if (estructura.capitulo) {
+        parts.push(`<span class="estructura-item capitulo"><i class="bi bi-folder2"></i> Capítulo ${estructura.capitulo.numero}: ${estructura.capitulo.nombre}</span>`);
+    }
+
+    if (estructura.seccion) {
+        parts.push(`<span class="estructura-item seccion"><i class="bi bi-file-text"></i> Sección ${toRoman(estructura.seccion.numero)}: ${estructura.seccion.nombre}</span>`);
+    }
+
+    if (parts.length === 0) return '';
+
+    return `
+        <div class="estructura-breadcrumb mb-4">
+            <h6 class="text-primary mb-2"><i class="bi bi-diagram-2 me-2"></i>Ubicación en la CPE</h6>
+            <div class="estructura-path">
+                ${parts.join('<span class="estructura-separator"><i class="bi bi-chevron-right"></i></span>')}
+            </div>
+        </div>
+    `;
+}
+
+// Convert number to Roman numerals
+function toRoman(num) {
+    const romanNumerals = [
+        ['X', 10], ['IX', 9], ['V', 5], ['IV', 4], ['I', 1]
+    ];
+    let result = '';
+    for (const [roman, value] of romanNumerals) {
+        while (num >= value) {
+            result += roman;
+            num -= value;
+        }
+    }
+    return result;
 }

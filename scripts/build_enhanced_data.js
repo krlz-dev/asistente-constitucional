@@ -8,6 +8,41 @@ const path = require('path');
 
 const dataDir = path.join(__dirname, '../data');
 const articulos = JSON.parse(fs.readFileSync(path.join(dataDir, 'articulos_completos.json'), 'utf-8'));
+const estructuraCPE = JSON.parse(fs.readFileSync(path.join(dataDir, 'estructura_cpe.json'), 'utf-8'));
+
+// Find structure for an article number
+function findEstructura(artNum) {
+  for (const parte of estructuraCPE.partes) {
+    if (artNum >= parte.articulos[0] && artNum <= parte.articulos[1]) {
+      const result = {
+        parte: { numero: parte.numero, nombre: parte.nombre }
+      };
+
+      for (const titulo of parte.titulos || []) {
+        if (artNum >= titulo.articulos[0] && artNum <= titulo.articulos[1]) {
+          result.titulo = { numero: titulo.numero, nombre: titulo.nombre };
+
+          for (const capitulo of titulo.capitulos || []) {
+            if (artNum >= capitulo.articulos[0] && artNum <= capitulo.articulos[1]) {
+              result.capitulo = { numero: capitulo.numero, nombre: capitulo.nombre };
+
+              for (const seccion of capitulo.secciones || []) {
+                if (artNum >= seccion.articulos[0] && artNum <= seccion.articulos[1]) {
+                  result.seccion = { numero: seccion.numero, nombre: seccion.nombre };
+                  break;
+                }
+              }
+              break;
+            }
+          }
+          break;
+        }
+      }
+      return result;
+    }
+  }
+  return null;
+}
 
 // Extract article references from concordancias text
 function extractArticleRefs(text) {
@@ -137,6 +172,7 @@ const articulosEnhanced = articulos.map(art => {
   return {
     id: art.id,
     titulo: art.titulo,
+    estructura: findEstructura(art.id),
     presentacion: formatText(art.presentacion),
     articuloTranscrito: art.articuloTranscrito, // Keep original for legal text
     descripcion: formatText(art.descripcion),
