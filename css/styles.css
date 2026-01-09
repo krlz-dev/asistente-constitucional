@@ -129,16 +129,16 @@ a:hover {
 }
 
 .chat-title {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--text-dark);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .chat-subtitle {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Main Input Wrapper */
@@ -162,13 +162,13 @@ a:hover {
 
 .chat-textarea {
     width: 100%;
-    padding: 1rem 3.5rem 1rem 1.5rem;
+    padding: 0.875rem 3.5rem 0.875rem 1.25rem;
     border: none;
     background: transparent;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     line-height: 1.5;
     resize: none;
-    min-height: 56px;
+    min-height: 48px;
     max-height: 200px;
     color: var(--text-body);
 }
