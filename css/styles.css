@@ -4,10 +4,10 @@
    ==================================== */
 
 :root {
-    /* Primary colors - Bolivian flag inspired */
-    --primary-color: #1a4b8c;
-    --primary-dark: #0d2e5c;
-    --primary-light: #2d6bc4;
+    /* Primary colors - Brighter blue */
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #3b82f6;
 
     /* Secondary/Accent - Gold/Yellow */
     --secondary-color: #d4920a;
@@ -27,7 +27,7 @@
     --text-on-secondary: #1a1a1a;
 
     /* Background colors */
-    --bg-light: #f5f7fa;
+    --bg-light: #f8fafc;
     --bg-white: #ffffff;
     --bg-dark: #1a1a1a;
 
@@ -35,8 +35,8 @@
     --white: #ffffff;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #1a4b8c 0%, #0d2e5c 100%);
-    --gradient-hero: linear-gradient(135deg, #1a4b8c 0%, #2d5a9e 50%, #0d2e5c 100%);
+    --gradient-primary: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    --gradient-hero: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
 
     /* Shadows */
     --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
@@ -112,16 +112,24 @@ a:hover {
 
 /* Main Section */
 .main-section {
-    padding-top: 100px;
-    padding-bottom: 2rem;
+    padding-top: 120px;
+    padding-bottom: 3rem;
     min-height: 100vh;
 }
 
 .section-title {
-    font-size: 1.75rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--text-dark);
-    margin-bottom: 0.5rem;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.article-count {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-left: 0.75rem;
 }
 
 .section-subtitle {

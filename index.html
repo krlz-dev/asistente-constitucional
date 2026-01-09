@@ -69,31 +69,25 @@
     <!-- Articles Section (Main Content) -->
     <section id="articulos" class="main-section">
         <div class="container">
-            <div class="text-center mb-4">
-                <h1 class="section-title">CPE Bolivia 2009</h1>
-                <p class="section-subtitle">Explora los artículos de la Constitución Política del Estado</p>
+            <!-- Title with count -->
+            <div class="mb-5">
+                <h1 class="section-title">CPE Bolivia 2009 <span class="article-count"><span id="totalArticles">0</span> artículos</span></h1>
             </div>
 
-            <!-- Search and Filter -->
+            <!-- Search -->
             <div class="row mb-4">
-                <div class="col-lg-8 mx-auto">
-                    <div class="search-box mb-3">
+                <div class="col-lg-6">
+                    <div class="search-box">
                         <span class="search-icon"><i class="bi bi-search"></i></span>
                         <input type="text" id="articleSearch" placeholder="Buscar artículo por número o tema...">
-                    </div>
-                    <!-- Temáticas Filter -->
-                    <div id="tematicasFilter" class="d-flex flex-wrap gap-2 justify-content-center">
-                        <!-- Populated by JavaScript -->
                     </div>
                 </div>
             </div>
 
-            <!-- Articles Stats -->
-            <div class="row mb-4">
-                <div class="col-12">
-                    <div class="d-flex justify-content-center">
-                        <span class="badge bg-primary p-2"><i class="bi bi-file-text me-1"></i><span id="totalArticles">0</span> Artículos</span>
-                    </div>
+            <!-- Temáticas Filter -->
+            <div class="mb-5">
+                <div id="tematicasFilter" class="d-flex flex-wrap gap-2">
+                    <!-- Populated by JavaScript -->
                 </div>
             </div>
 
