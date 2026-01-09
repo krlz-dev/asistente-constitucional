@@ -294,9 +294,6 @@ async function initArticles() {
         state.tematicas = data.tematicas || [];
         state.filteredArticles = [...state.articles];
 
-        // Update stats
-        document.getElementById('totalArticles').textContent = state.articles.length;
-
         // Display temáticas filter
         displayTematicasFilter();
 
