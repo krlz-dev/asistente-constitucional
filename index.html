@@ -264,8 +264,8 @@
                 <p class="text-muted">Documentos cargados para el asistente constitucional</p>
             </div>
 
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-5">
                     <div class="card document-card h-100 shadow-sm">
                         <div class="card-body text-center">
                             <div class="document-icon mb-3">
@@ -278,7 +278,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-5">
                     <div class="card document-card h-100 shadow-sm">
                         <div class="card-body text-center">
                             <div class="document-icon mb-3">
@@ -287,21 +287,6 @@
                             <h5 class="card-title">Código Procesal Constitucional</h5>
                             <p class="card-text text-muted">Ley 254 - Procedimientos ante el TCP</p>
                             <span class="badge bg-warning"><i class="bi bi-clock me-1"></i>Pendiente</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card document-card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="document-icon mb-3">
-                                <i class="bi bi-file-earmark-plus"></i>
-                            </div>
-                            <h5 class="card-title">Agregar Documento</h5>
-                            <p class="card-text text-muted">Sube documentos adicionales para ampliar la base</p>
-                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#uploadModal">
-                                <i class="bi bi-upload me-1"></i>Subir
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -410,35 +395,6 @@
         </div>
     </footer>
 
-    <!-- Upload Modal -->
-    <div class="modal fade" id="uploadModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="bi bi-upload me-2"></i>Subir Documento</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label class="form-label">Selecciona un documento (PDF, TXT, DOCX)</label>
-                        <input type="file" class="form-control" accept=".pdf,.txt,.docx">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Descripción del documento</label>
-                        <textarea class="form-control" rows="3" placeholder="Ej: Ley del Tribunal Constitucional..."></textarea>
-                    </div>
-                    <div class="alert alert-info small">
-                        <i class="bi bi-info-circle me-2"></i>
-                        Los documentos serán procesados y añadidos a la base de conocimiento del asistente.
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary"><i class="bi bi-cloud-upload me-2"></i>Subir</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
