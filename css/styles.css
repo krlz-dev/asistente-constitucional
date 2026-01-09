@@ -1375,3 +1375,54 @@ select:focus-visible {
         border: 1px solid #ccc;
     }
 }
+
+/* ====================================
+   Dark Mode Specific Overrides
+   ==================================== */
+
+/* Keep white text on blue backgrounds (navbar, modal header, footer) */
+[data-theme="dark"] .navbar-brand,
+[data-theme="dark"] .nav-link,
+[data-theme="dark"] .modal-header,
+[data-theme="dark"] .modal-header .modal-title,
+[data-theme="dark"] .chat-header,
+[data-theme="dark"] .chat-header-info,
+[data-theme="dark"] footer,
+[data-theme="dark"] footer p,
+[data-theme="dark"] footer small {
+    color: #ffffff !important;
+}
+
+/* Article text box in modal - bright text on dark background */
+[data-theme="dark"] .modal-body .bg-light {
+    background-color: var(--color-background-container-header) !important;
+    color: var(--color-text-body-default) !important;
+}
+
+[data-theme="dark"] .modal-body .bg-light * {
+    color: var(--color-text-body-default);
+}
+
+/* System preference dark mode - same overrides */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .navbar-brand,
+    :root:not([data-theme="light"]) .nav-link,
+    :root:not([data-theme="light"]) .modal-header,
+    :root:not([data-theme="light"]) .modal-header .modal-title,
+    :root:not([data-theme="light"]) .chat-header,
+    :root:not([data-theme="light"]) .chat-header-info,
+    :root:not([data-theme="light"]) footer,
+    :root:not([data-theme="light"]) footer p,
+    :root:not([data-theme="light"]) footer small {
+        color: #ffffff !important;
+    }
+
+    :root:not([data-theme="light"]) .modal-body .bg-light {
+        background-color: var(--color-background-container-header) !important;
+        color: var(--color-text-body-default) !important;
+    }
+
+    :root:not([data-theme="light"]) .modal-body .bg-light * {
+        color: var(--color-text-body-default);
+    }
+}
