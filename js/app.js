@@ -299,39 +299,70 @@ function displayTematicasFilter() {
     const container = document.getElementById('tematicasFilter');
     if (!container || !state.tematicas.length) return;
 
+    const initialLimit = 20;
+    const visibleTematicas = state.tematicas.slice(0, initialLimit);
+    const hiddenTematicas = state.tematicas.slice(initialLimit);
+
     let html = '<button class="btn btn-sm btn-primary tematica-btn active" data-tematica="">Todas</button>';
 
-    state.tematicas.slice(0, 20).forEach(t => {
+    visibleTematicas.forEach(t => {
         html += `<button class="btn btn-sm btn-outline-primary tematica-btn" data-tematica="${t.titulo}">${t.titulo} (${t.articulos.length})</button>`;
     });
 
-    if (state.tematicas.length > 20) {
-        html += `<button class="btn btn-sm btn-outline-secondary" disabled>+${state.tematicas.length - 20} más</button>`;
+    if (hiddenTematicas.length > 0) {
+        html += `<span class="hidden-tematicas" style="display: none;">`;
+        hiddenTematicas.forEach(t => {
+            html += `<button class="btn btn-sm btn-outline-primary tematica-btn" data-tematica="${t.titulo}">${t.titulo} (${t.articulos.length})</button>`;
+        });
+        html += `</span>`;
+        html += `<button class="btn btn-sm btn-primary show-more-tematicas-btn">+${hiddenTematicas.length} más</button>`;
     }
 
     container.innerHTML = html;
 
-    // Add click handlers
-    container.querySelectorAll('.tematica-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            container.querySelectorAll('.tematica-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            const tematica = btn.dataset.tematica;
-            state.selectedTematica = tematica || null;
-
-            if (tematica) {
-                const tema = state.tematicas.find(t => t.titulo === tematica);
-                if (tema) {
-                    state.filteredArticles = state.articles.filter(a => tema.articulos.includes(a.id));
-                }
-            } else {
-                state.filteredArticles = [...state.articles];
+    // Add click handler for show more button
+    const showMoreBtn = container.querySelector('.show-more-tematicas-btn');
+    if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
+            const hiddenContainer = container.querySelector('.hidden-tematicas');
+            if (hiddenContainer) {
+                hiddenContainer.style.display = 'inline';
+                showMoreBtn.style.display = 'none';
+                // Add click handlers for newly visible buttons
+                addTematicaClickHandlers(container);
             }
-
-            state.articlesDisplayed = 0;
-            displayArticles();
         });
+    }
+
+    // Add click handlers for tematica buttons
+    addTematicaClickHandlers(container);
+}
+
+function addTematicaClickHandlers(container) {
+    container.querySelectorAll('.tematica-btn').forEach(btn => {
+        // Remove existing listeners by cloning
+        if (!btn.dataset.hasListener) {
+            btn.dataset.hasListener = 'true';
+            btn.addEventListener('click', () => {
+                container.querySelectorAll('.tematica-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const tematica = btn.dataset.tematica;
+                state.selectedTematica = tematica || null;
+
+                if (tematica) {
+                    const tema = state.tematicas.find(t => t.titulo === tematica);
+                    if (tema) {
+                        state.filteredArticles = state.articles.filter(a => tema.articulos.includes(a.id));
+                    }
+                } else {
+                    state.filteredArticles = [...state.articles];
+                }
+
+                state.articlesDisplayed = 0;
+                displayArticles();
+            });
+        }
     });
 }
 
