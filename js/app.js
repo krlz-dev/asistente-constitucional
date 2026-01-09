@@ -91,6 +91,7 @@ function initApp() {
 function toggleChat() {
     if (chatWindow) {
         chatWindow.classList.toggle('open');
+        document.body.classList.toggle('chat-open');
         if (chatToggleBtn) {
             chatToggleBtn.classList.toggle('hidden');
         }
@@ -327,43 +328,36 @@ async function initArticles() {
         askAboutBtn.addEventListener('click', () => {
             if (state.currentArticle) {
                 const articleId = state.currentArticle.id;
+                const chatInput = document.getElementById('userInput');
+                const chatSendBtn = document.getElementById('sendBtn');
+                const chatWin = document.getElementById('chatWindow');
+                const chatToggle = document.getElementById('chatToggleBtn');
 
-                // Close the modal first to remove Bootstrap backdrop
-                const articleModal = bootstrap.Modal.getOrCreateInstance(document.getElementById('articleModal'));
-                articleModal.hide();
+                // Open chat widget on top of modal
+                if (chatWin && !chatWin.classList.contains('open')) {
+                    chatWin.classList.add('open');
+                    document.body.classList.add('chat-open');
+                    if (chatToggle) chatToggle.classList.add('hidden');
+                }
 
-                // Wait for modal to close, then open chat
+                // Reset loading state and enable inputs
+                state.isLoading = false;
+                if (chatInput) {
+                    chatInput.disabled = false;
+                    chatInput.readOnly = false;
+                    chatInput.value = `Explícame el Artículo ${articleId} de la Constitución`;
+                }
+                if (chatSendBtn) {
+                    chatSendBtn.disabled = false;
+                }
+
+                // Focus after chat is open
                 setTimeout(() => {
-                    const chatInput = document.getElementById('userInput');
-                    const chatSendBtn = document.getElementById('sendBtn');
-                    const chatWin = document.getElementById('chatWindow');
-                    const chatToggle = document.getElementById('chatToggleBtn');
-
-                    // Open chat widget
-                    if (chatWin && !chatWin.classList.contains('open')) {
-                        chatWin.classList.add('open');
-                        if (chatToggle) chatToggle.classList.add('hidden');
-                    }
-
-                    // Reset loading state and enable inputs
-                    state.isLoading = false;
                     if (chatInput) {
-                        chatInput.disabled = false;
-                        chatInput.readOnly = false;
-                        chatInput.value = `Explícame el Artículo ${articleId} de la Constitución`;
+                        chatInput.focus();
+                        chatInput.select();
                     }
-                    if (chatSendBtn) {
-                        chatSendBtn.disabled = false;
-                    }
-
-                    // Focus after chat is open
-                    setTimeout(() => {
-                        if (chatInput) {
-                            chatInput.focus();
-                            chatInput.select();
-                        }
-                    }, 100);
-                }, 300);
+                }, 100);
             }
         });
     }
