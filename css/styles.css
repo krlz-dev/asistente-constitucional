@@ -765,9 +765,13 @@ a:hover {
 
 .modal-header {
     background: var(--color-primary-default);
-    color: var(--color-text-inverted);
+    color: #ffffff;
     border-radius: var(--border-radius-l) var(--border-radius-l) 0 0;
     padding: var(--space-m);
+}
+
+.modal-header .modal-title {
+    color: #ffffff;
 }
 
 .modal-header .btn-close-white {
