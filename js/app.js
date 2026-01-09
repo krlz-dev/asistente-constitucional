@@ -478,7 +478,7 @@ function displayArticles() {
         col.innerHTML = `
             <div class="card article-card h-100 shadow-sm" data-article-id="${article.id}">
                 <div class="card-body">
-                    <h6 class="card-title">${article.titulo || 'Artículo ' + article.id}</h6>
+                    <span class="badge bg-primary mb-2">${article.titulo || 'Artículo ' + article.id}</span>
                     <p class="card-text small text-muted">${article.presentacion ? article.presentacion.substring(0, 150) + '...' : 'Sin descripción disponible'}</p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
