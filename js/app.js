@@ -340,6 +340,8 @@ async function initArticles() {
                 // Open chat widget on top of modal (don't close modal)
                 if (chatWindow && !chatWindow.classList.contains('open')) {
                     chatWindow.classList.add('open');
+                    if (chatBackdrop) chatBackdrop.classList.add('show');
+                    if (chatToggleBtn) chatToggleBtn.classList.add('hidden');
                 }
                 userInput.value = `Explícame el Artículo ${state.currentArticle.id} de la Constitución`;
                 userInput.focus();
