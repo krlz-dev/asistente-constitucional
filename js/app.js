@@ -341,11 +341,19 @@ async function initArticles() {
                     if (chatBackdrop) chatBackdrop.classList.add('show');
                     if (chatToggleBtn) chatToggleBtn.classList.add('hidden');
                 }
+                // Reset loading state and enable inputs
+                state.isLoading = false;
+                userInput.disabled = false;
+                sendBtn.disabled = false;
+
                 // Set suggestion but keep input editable
                 userInput.value = `Explícame el Artículo ${state.currentArticle.id} de la Constitución`;
-                userInput.disabled = false;
-                userInput.focus();
-                userInput.select(); // Select text so user can easily replace
+
+                // Small delay to ensure DOM is ready
+                setTimeout(() => {
+                    userInput.focus();
+                    userInput.select();
+                }, 100);
             }
         });
     }

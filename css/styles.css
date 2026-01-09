@@ -265,10 +265,17 @@ a:hover {
     display: none;
     flex-direction: column;
     overflow: hidden;
+    z-index: 1061; /* Above backdrop */
 }
 
 .chat-window.open {
     display: flex;
+}
+
+.chat-window textarea,
+.chat-window button,
+.chat-window input {
+    pointer-events: auto;
 }
 
 /* Chat backdrop overlay */
