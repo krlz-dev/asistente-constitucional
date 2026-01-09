@@ -90,6 +90,12 @@ function showConversationUI() {
     if (chatContainer) chatContainer.style.display = 'block';
     if (suggestionsGrid) suggestionsGrid.style.display = 'none';
     if (chatHero) chatHero.classList.add('conversation-active');
+
+    // Fade out title and subtitle
+    const chatTitle = document.getElementById('chatTitle');
+    const chatSubtitle = document.getElementById('chatSubtitle');
+    if (chatTitle) chatTitle.classList.add('fade-out');
+    if (chatSubtitle) chatSubtitle.classList.add('fade-out');
 }
 
 // Handle form submission

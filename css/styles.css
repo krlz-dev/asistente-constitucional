@@ -133,12 +133,22 @@ a:hover {
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 0.25rem;
+    transition: opacity 0.3s ease;
 }
 
 .chat-subtitle {
-    font-size: 0.9rem;
-    color: var(--text-muted);
+    font-size: 10px;
+    font-weight: 200;
+    color: #999;
     margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+.chat-title.fade-out,
+.chat-subtitle.fade-out {
+    opacity: 0;
+    pointer-events: none;
 }
 
 /* Main Input Wrapper */
