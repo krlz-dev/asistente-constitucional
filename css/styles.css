@@ -511,6 +511,230 @@ input:focus {
     outline-offset: 2px;
 }
 
+/* ===== CONTRAST FIXES ===== */
+
+/* Bootstrap badge overrides - ensure readable text */
+.badge.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+.badge.bg-success {
+    background-color: #157347 !important;
+    color: #ffffff !important;
+}
+
+.badge.bg-info {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+.badge.bg-secondary {
+    background-color: #495057 !important;
+    color: #ffffff !important;
+}
+
+.badge.bg-warning {
+    background-color: #cc8a00 !important;
+    color: #1a1a1a !important;
+}
+
+/* Sections with light backgrounds need dark text */
+.bg-light {
+    background-color: var(--bg-light) !important;
+    color: var(--text-body) !important;
+}
+
+.bg-light h1, .bg-light h2, .bg-light h3,
+.bg-light h4, .bg-light h5, .bg-light h6 {
+    color: var(--text-dark) !important;
+}
+
+.bg-light p, .bg-light span, .bg-light li {
+    color: var(--text-body);
+}
+
+/* White backgrounds need dark text */
+.bg-white {
+    background-color: var(--bg-white) !important;
+    color: var(--text-body) !important;
+}
+
+/* Model info box */
+.model-info {
+    border-left: 4px solid var(--primary-color);
+    background: var(--bg-white);
+    color: var(--text-body);
+}
+
+.model-info h6 {
+    color: var(--text-dark);
+}
+
+.model-info p {
+    color: var(--text-muted);
+}
+
+/* Quick prompts text */
+.quick-prompts {
+    padding: 1.5rem;
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    color: var(--text-body);
+}
+
+.quick-prompts h6 {
+    color: var(--text-muted);
+}
+
+/* Form controls */
+.form-control {
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+    opacity: 1;
+}
+
+.form-label {
+    color: var(--text-dark);
+}
+
+/* Alerts */
+.alert-info {
+    background-color: #cfe2ff;
+    color: #084298;
+    border-color: #b6d4fe;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+    border-color: #ffecb5;
+}
+
+/* Modal */
+.modal-content {
+    background-color: var(--bg-white);
+    color: var(--text-body);
+}
+
+.modal-header {
+    color: #ffffff;
+}
+
+.modal-header .btn-close-white {
+    filter: brightness(1);
+}
+
+.modal-body {
+    color: var(--text-body);
+}
+
+.modal-body h6 {
+    color: var(--text-dark);
+}
+
+.modal-body p {
+    color: var(--text-body);
+}
+
+.modal-footer {
+    background-color: var(--bg-light);
+    border-top-color: var(--border-color);
+}
+
+/* Accordion */
+.accordion-button {
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: rgba(26, 75, 140, 0.08);
+}
+
+.accordion-body {
+    color: var(--text-body);
+    background-color: var(--bg-white);
+}
+
+/* Tech stack list */
+.tech-stack li {
+    color: var(--text-body);
+}
+
+.tech-stack li span:first-child {
+    color: var(--text-dark);
+}
+
+/* Features list */
+.feature-item h6 {
+    color: var(--text-dark);
+}
+
+.feature-item small {
+    color: var(--text-muted);
+}
+
+/* Document cards */
+.document-card .card-title {
+    color: var(--text-dark);
+}
+
+.document-card .card-text {
+    color: var(--text-muted);
+}
+
+/* Footer text */
+footer {
+    background: var(--gradient-primary) !important;
+    color: #ffffff;
+}
+
+footer p, footer small, footer span {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Input group */
+.input-group-text {
+    background-color: var(--bg-light);
+    color: var(--text-muted);
+    border-color: var(--border-color);
+}
+
+/* Lead text */
+.lead {
+    color: var(--text-body);
+}
+
+/* Small text */
+small, .small {
+    color: var(--text-muted);
+}
+
+/* List items */
+ul li, ol li {
+    color: var(--text-body);
+}
+
+/* Section headings */
+section h2.fw-bold {
+    color: var(--text-dark);
+}
+
+section > .container > .text-center > p {
+    color: var(--text-muted);
+}
+
 /* Article Cards */
 .article-card {
     border: none;
