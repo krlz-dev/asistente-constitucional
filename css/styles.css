@@ -865,6 +865,25 @@ section > .container > .text-center > p {
 }
 
 /* Article Cards */
+/* Articles fade animation */
+#articlesGrid {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#articlesGrid.hidden {
+    opacity: 0;
+}
+
+#paginationContainer {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#paginationContainer.hidden {
+    opacity: 0;
+}
+
 .article-card {
     border: none;
     border-radius: var(--border-radius);

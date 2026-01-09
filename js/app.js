@@ -21,7 +21,8 @@ let state = {
     selectedTematica: null,
     currentPage: 1,
     articlesPerPage: 24,
-    currentArticle: null
+    currentArticle: null,
+    articlesVisible: false
 };
 
 // DOM Elements
@@ -299,8 +300,8 @@ async function initArticles() {
         // Display temáticas filter
         displayTematicasFilter();
 
-        // Display articles
-        displayArticles();
+        // Show welcome message initially (articles hidden)
+        showWelcomeMessage();
 
     } catch (error) {
         console.error('Error loading articles:', error);
@@ -394,25 +395,50 @@ function addTematicaClickHandlers(container) {
                 const tematica = btn.dataset.tematica;
                 state.selectedTematica = tematica || null;
 
+                // Clear search input when selecting category
+                const articleSearch = document.getElementById('articleSearch');
+                if (articleSearch) articleSearch.value = '';
+
                 if (tematica) {
                     const tema = state.tematicas.find(t => t.titulo === tematica);
                     if (tema) {
                         state.filteredArticles = state.articles.filter(a => tema.articulos.includes(a.id));
                     }
+                    state.currentPage = 1;
+                    state.articlesVisible = true;
+                    displayArticles();
                 } else {
+                    // "Todas" clicked - show welcome message
                     state.filteredArticles = [...state.articles];
+                    showWelcomeMessage();
                 }
-
-                state.currentPage = 1;
-                displayArticles();
             });
         }
     });
 }
 
+function showWelcomeMessage() {
+    const articlesGrid = document.getElementById('articlesGrid');
+    const paginationContainer = document.getElementById('paginationContainer');
+
+    articlesGrid.innerHTML = `
+        <div class="col-12 text-center py-5">
+            <i class="bi bi-search text-primary" style="font-size: 3rem; opacity: 0.5;"></i>
+            <p class="text-muted mt-3">Busca un artículo o selecciona una categoría</p>
+        </div>
+    `;
+    paginationContainer.style.display = 'none';
+    state.articlesVisible = false;
+}
+
 function filterArticles(query) {
     if (!query) {
         state.filteredArticles = [...state.articles];
+        // If search is cleared and no category selected, show welcome
+        if (!state.selectedTematica) {
+            showWelcomeMessage();
+            return;
+        }
     } else {
         state.filteredArticles = state.articles.filter(art => {
             const idMatch = art.id.toString().includes(query);
@@ -423,6 +449,7 @@ function filterArticles(query) {
     }
 
     state.currentPage = 1;
+    state.articlesVisible = true;
     displayArticles();
 }
 
