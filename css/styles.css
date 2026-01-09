@@ -1137,18 +1137,33 @@ body.chat-open .modal-dialog {
     font-size: var(--font-size-heading-s);
 }
 
-.chat-close-btn {
-    background: none;
-    border: none;
-    color: var(--color-text-inverted);
-    font-size: var(--font-size-body-m);
-    cursor: pointer;
-    opacity: 0.8;
-    transition: opacity var(--motion-duration-fast) var(--motion-easing-default);
+.chat-header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
 }
 
+.chat-new-btn,
+.chat-close-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #ffffff;
+    font-size: var(--font-size-body-m);
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all var(--motion-duration-fast) var(--motion-easing-default);
+    width: 32px;
+    height: 32px;
+    border-radius: var(--border-radius-m);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-new-btn:hover,
 .chat-close-btn:hover {
     opacity: 1;
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /* Chat Messages */

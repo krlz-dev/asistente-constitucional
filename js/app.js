@@ -127,6 +127,12 @@ function initApp() {
         chatCloseBtn.addEventListener('click', toggleChat);
     }
 
+    // New conversation button
+    const chatNewBtn = document.getElementById('chatNewBtn');
+    if (chatNewBtn) {
+        chatNewBtn.addEventListener('click', startNewConversation);
+    }
+
     // Chat form submit
     if (chatForm) {
         chatForm.addEventListener('submit', handleSubmit);
@@ -172,6 +178,36 @@ function toggleChat() {
         if (chatWindow.classList.contains('open')) {
             userInput.focus();
         }
+    }
+}
+
+// Start new conversation
+function startNewConversation() {
+    // Clear chat history
+    state.chatHistory = [];
+
+    // Reset chat messages to initial state
+    if (chatMessages) {
+        chatMessages.innerHTML = `
+            <div class="message assistant-message">
+                <div class="message-content">
+                    <p>¡Hola! Soy tu asistente de la CPE Bolivia. ¿En qué puedo ayudarte?</p>
+                </div>
+            </div>
+        `;
+    }
+
+    // Clear input
+    if (userInput) {
+        userInput.value = '';
+        userInput.style.height = 'auto';
+        userInput.focus();
+    }
+
+    // Reset loading state
+    state.isLoading = false;
+    if (sendBtn) {
+        sendBtn.disabled = false;
     }
 }
 
