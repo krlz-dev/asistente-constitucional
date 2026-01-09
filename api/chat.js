@@ -109,7 +109,9 @@ Estructura de la CPE:
 - Cuarta Parte: Estructura Económica del Estado (Art. 269-341)
 - Quinta Parte: Primacía y Reforma de la Constitución (Art. 342-411)
 
-Responde siempre en español y de forma profesional pero amigable. Cuando cites artículos, menciona el número y un resumen del contenido.${context}`;
+IMPORTANTE: Cuando cites artículos, usa SIEMPRE el formato "Artículo X" (ejemplo: "Artículo 7", "Artículo 13"). Esto permite que el usuario haga clic en la referencia para ver el artículo completo.
+
+Responde siempre en español y de forma profesional pero amigable.${context}`;
 
   try {
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {

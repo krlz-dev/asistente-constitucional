@@ -166,6 +166,17 @@ function addMessage(content, type) {
     chatMessages.appendChild(messageDiv);
     scrollToBottom();
 
+    // Add click handlers for article links
+    messageDiv.querySelectorAll('.article-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const articleId = parseInt(link.dataset.article);
+            if (articleId) {
+                showArticleDetail(articleId);
+            }
+        });
+    });
+
     // Store in history
     state.chatHistory.push({ role: type, content: content });
 
@@ -184,8 +195,8 @@ function formatMessage(content) {
         .replace(/\n/g, '<br>')
         // Lists
         .replace(/^- (.*)/gm, '<li>$1</li>')
-        // Article references
-        .replace(/Art(?:ículo)?\.?\s*(\d+)/gi, '<strong>Artículo $1</strong>');
+        // Article references - make them clickable links
+        .replace(/Art(?:í|i)culo\s*(\d+)/gi, '<a href="#" class="article-link" data-article="$1">Artículo $1</a>');
 
     // Wrap list items in ul if present
     if (formatted.includes('<li>')) {
