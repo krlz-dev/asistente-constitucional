@@ -110,46 +110,14 @@ a:hover {
     background: rgba(255,255,255,0.15);
 }
 
-/* Hero Section */
-.hero-section {
-    background: var(--gradient-hero);
+/* Main Chat Section - Primary Entry */
+.main-chat-section {
     min-height: 100vh;
-    position: relative;
-    overflow: hidden;
+    padding-top: 80px !important;
 }
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.hero-section h1 {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    color: var(--text-light);
-}
-
-.hero-section .lead {
-    color: rgba(255,255,255,0.9);
-}
-
-.hero-section .text-white-50 {
-    color: rgba(255,255,255,0.85) !important;
-}
-
-.hero-illustration {
-    font-size: 15rem;
-    color: rgba(255,255,255,0.1);
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+.main-chat-section h1 {
+    margin-top: 1rem;
 }
 
 /* Buttons */
