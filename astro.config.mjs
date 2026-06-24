@@ -4,7 +4,7 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://econstitucional.vercel.app',
+  site: 'https://econstitucional.com.bo',
   // Pages are prerendered to static HTML; only the /api routes opt into
   // on-demand serverless rendering via `export const prerender = false`.
   output: 'static',

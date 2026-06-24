@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://econstitucional.vercel.app/sitemap.xml
+Sitemap: https://econstitucional.com.bo/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
