@@ -1,2 +1,14 @@
+# build output
+dist/
+.vercel/
+.astro/
+
+# dependencies
+node_modules/
+
+# data backups
 data/db_econstitucional_backup.dump
-.vercel
+
+# env
+.env
+.env.production

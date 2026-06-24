@@ -1,0 +1,50 @@
+---
+// Floating AI chat widget. Behaviour lives in src/scripts/chat.ts.
+---
+
+<!-- Fixed Chat Widget -->
+<div class="chat-widget" id="chatWidget">
+  <!-- Chat Toggle Button -->
+  <button class="chat-toggle-btn" id="chatToggleBtn" aria-label="Abrir asistente IA">
+    <i class="bi bi-robot"></i>
+    <span class="chat-badge" id="chatBadge" style="display: none;">1</span>
+  </button>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <i class="bi bi-robot"></i>
+        <span>Asistente IA</span>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-new-btn" id="chatNewBtn" title="Nueva conversación" aria-label="Nueva conversación">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <button class="chat-close-btn" id="chatCloseBtn" title="Cerrar" aria-label="Cerrar">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="message assistant-message">
+        <div class="message-content">
+          <p>¡Hola! Soy tu asistente de la CPE Bolivia. ¿En qué puedo ayudarte?</p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <form id="chatForm">
+        <div class="chat-input-wrapper">
+          <textarea id="userInput" placeholder="Escribe tu pregunta..." rows="1" autocomplete="off"></textarea>
+          <button type="submit" id="sendBtn" aria-label="Enviar">
+            <i class="bi bi-send"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Chat Backdrop (after widget for proper z-index stacking) -->
+<div class="chat-backdrop" id="chatBackdrop"></div>

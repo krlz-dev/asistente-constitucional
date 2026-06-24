@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+
+const description =
+  'Conoce el proyecto econstitucional: un asistente de IA para explorar la Constitución Política del Estado de Bolivia 2009. Metodología de análisis constitucional.';
+const keywords =
+  'econstitucional, sobre el proyecto, metodología constitucional, análisis CPE Bolivia, interpretación constitucional';
+---
+
+<Layout
+  title="Acerca de | econstitucional - CPE Bolivia 2009"
+  description={description}
+  keywords={keywords}
+  path="/acerca"
+>
+  <Navbar active="acerca" />
+
+  <!-- About Section -->
+  <section class="main-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <h1 class="section-title mb-5">Sobre este Proyecto</h1>
+
+          <!-- La Constitución como Tejido -->
+          <div class="about-block mb-4">
+            <h5><i class="bi bi-layers me-2"></i>La Constitución como Tejido</h5>
+            <p>
+              La Constitución Política del Estado es un tejido de posibilidades con fuerza performativa. No es una
+              colección de órdenes de cumplimiento inmediato, sino una combinación de materiales constitucionales que
+              convoca archivos, instrumentos internacionales de derechos humanos, derecho comunitario y las normas
+              propias de las naciones y pueblos indígena originario campesinos.
+            </p>
+          </div>
+
+          <!-- Multiplicidad Textual -->
+          <div class="about-block mb-4">
+            <h5><i class="bi bi-box-seam me-2"></i>Multiplicidad Textual</h5>
+            <p>
+              Los constituyentes empacaron en la CPE derechos, instituciones, valores, principios y complejidades. Este
+              proyecto busca desempacar cada artículo analizando los archivos del proceso constituyente, la historia
+              constitucional boliviana, instrumentos de derechos humanos, doctrina, jurisprudencia y las categorías
+              políticas y jurídicas que respiran en cada artículo.
+            </p>
+          </div>
+
+          <!-- Despliegue Constitucional -->
+          <div class="about-block mb-4">
+            <h5><i class="bi bi-diagram-3 me-2"></i>Despliegue Constitucional</h5>
+            <p>
+              Leer la Constitución es siempre un despliegue, un abrir el texto a su multitextualidad. Detrás de cada uno
+              de los 411 artículos se abren los pliegues de la Constitución, construida y reconstruida constantemente en
+              su aplicación, interpretación y búsqueda de significaciones.
+            </p>
+          </div>
+
+          <!-- Método -->
+          <div class="about-block mb-4">
+            <h5><i class="bi bi-compass me-2"></i>Método de Despliegue</h5>
+            <ul class="method-list">
+              <li><strong>Intertextualidad:</strong> Observar cómo un artículo es invadido por otros artículos, términos y categorías de la Constitución.</li>
+              <li><strong>Exterior constitutivo:</strong> Convocar los archivos del proceso constituyente y la tradición constitucional.</li>
+              <li><strong>Pluralidad interpretativa:</strong> Abrir la interpretación sin cerrarla hacia un significado final.</li>
+              <li><strong>Densidad histórica:</strong> Desde el primer Decreto de 1825 hasta las reformas recientes.</li>
+              <li><strong>Vida cotidiana:</strong> Acercar la Constitución donde sus preceptos deben causar efecto.</li>
+            </ul>
+          </div>
+
+          <!-- Invitación -->
+          <div class="about-block invitation p-4 rounded shadow-sm">
+            <p class="lead mb-0"><em>Esta es una invitación a recorrer la norma fundamental del Estado boliviano, a encontrar en ella las condiciones de posibilidad para una pluralidad de justicias que están aún pendientes.</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import 'bootstrap';
+  import { initTheme } from '../scripts/theme';
+
+  initTheme();
+</script>

@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import ArticleExplorer from '../components/ArticleExplorer.astro';
+import ChatWidget from '../components/ChatWidget.astro';
+
+const description =
+  'Asistente de inteligencia artificial para explorar la Constitución Política del Estado de Bolivia 2009. Consulta los 411 artículos de la CPE, análisis constitucional y concordancias.';
+const keywords =
+  'Constitución Bolivia, CPE Bolivia 2009, Constitución Política del Estado, derecho constitucional boliviano, artículos constitucionales, derechos fundamentales Bolivia, Estado Plurinacional, asistente constitucional, IA constitucional, análisis constitucional, concordancias CPE, tribunal constitucional Bolivia, derechos humanos Bolivia, nueva constitución Bolivia';
+---
+
+<Layout
+  title="econstitucional | CPE Bolivia 2009 - Constitución Política del Estado"
+  description={description}
+  keywords={keywords}
+  path="/"
+>
+  <Navbar active="articulos" />
+  <ArticleExplorer />
+  <ChatWidget />
+</Layout>
+
+<script>
+  import 'bootstrap';
+  import { initTheme } from '../scripts/theme';
+  import { initChat } from '../scripts/chat';
+  import { initArticles } from '../scripts/articles';
+
+  initTheme();
+  initChat();
+  initArticles();
+
+  // Smooth scroll for in-page anchors
+  document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
