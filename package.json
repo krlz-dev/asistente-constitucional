@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test:scope": "node tests/scope.test.mjs"
   },
   "dependencies": {
     "@astrojs/vercel": "^8.0.0",
