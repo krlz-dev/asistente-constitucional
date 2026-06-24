@@ -3,9 +3,42 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 
 const description =
-  'Conoce el proyecto econstitucional: un asistente de IA para explorar la Constitución Política del Estado de Bolivia 2009. Metodología de análisis constitucional.';
+  'La Constitución Política del Estado de Bolivia 2009, anotada, concordada y comentada por el Centro de Estudios Constitucionales. Conoce la metodología del despliegue constitucional y el equipo detrás del proyecto.';
 const keywords =
-  'econstitucional, sobre el proyecto, metodología constitucional, análisis CPE Bolivia, interpretación constitucional';
+  'econstitucional, Centro de Estudios Constitucionales, despliegue constitucional, metodología constitucional, análisis CPE Bolivia, interpretación constitucional, Farit Rojas Tudela, Eduardo Rodríguez Veltzé';
+
+const investigadores = [
+  'Eliana Aguirre Vera Rodo',
+  'Paola Daniela De la Rocha Rada',
+  'Marcos García-Tornel Calderón',
+  'Juan Pablo Neri Pereyra',
+  'Valeria Ortiz Salazar',
+  'Gerardo Andrés Rodríguez Camberos',
+  'Farit Rojas Tudela',
+  'Paula Alejandra Vera Salazar',
+];
+
+const credits = [
+  { role: 'Coordinadores', icon: 'bi-compass', names: ['Eduardo Rodríguez Veltzé', 'Farit Rojas Tudela'] },
+  { role: 'Investigadores', icon: 'bi-people', names: investigadores },
+  { role: 'Edición de estilo y contenidos', icon: 'bi-pencil', names: ['Katerin Ifigenia Brieger Valencia'] },
+  { role: 'Diseño, diagramación y programación', icon: 'bi-code-slash', names: ['Carlos Andrés Monserrat Rojas Rojas'] },
+  { role: 'Revisiones', icon: 'bi-check2-square', names: ['Eduardo Rodríguez Veltzé', 'Oscar Vega Camacho', 'Farit Rojas Tudela'] },
+];
+
+const estudiantes = [
+  'Lorena Márquez Jager', 'Álvaro Muñoz Reyes Gonzales', 'Rodrigo Alejandro Valda Yanguas',
+  'Rodrigo Osmar Urdininea Valencia', 'Hilde Carolina Tarquino Villca', 'Andrés Nicolás Lema Sanz Guerrero',
+  'Anabella Amanda Tarqui Villarroel', 'Alejandra Peñaloza Ramos', 'Fabiana Suarez Araujo',
+  'Mauricio Alejandro Salinas San Martin', 'Víctor Brian Chavarría Rojas', 'Andrea Ericka Gutiérrez Marcks',
+  'Gabriela Isabel Clavijo Quezada', 'Claudia Debbiejem Peredo Mendizábal', 'Palmira Rosario Aranda Quispe',
+  'Valeria Lorena Aguilar Marquez', 'Varinia Nataly Rada Villagómez', 'Marcela Zambrana Antezana',
+  'Ernal Lazarte Vargas', 'Carla Asunción Moya Bravo', 'Sandra Doria Medina Monje',
+  'Denisse Elizabeth Uría Sossa', 'Stephani del Rosario Monrroy Monrroy', 'Armando Magne Zelaya',
+  'Valeria Archondo Cardona', 'Sergio Renán Molina Barcena', 'Santiago Iván Irazoque Sillerico',
+  'Laura Pamela Ramírez Padilla', 'Stephani Gamarra Maldonado', 'Alejandra Sofía Guzmán Ferreyra',
+  'José Roberto Veizaga Aliaga', 'Marcelo Rodo Pérez', 'Marcelo Mercado Despot',
+];
 ---
 
 <Layout
@@ -16,61 +49,195 @@ const keywords =
 >
   <Navbar active="acerca" />
 
-  <!-- About Section -->
   <section class="main-section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-10">
-          <h1 class="section-title mb-5">Sobre este Proyecto</h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <!-- Hero -->
+          <p class="about-eyebrow"><i class="bi bi-bank2 me-2"></i>Centro de Estudios Constitucionales · 2013</p>
+          <h1 class="section-title mb-3">La Constitución como Tejido</h1>
+          <p class="about-lead">
+            La Constitución Política del Estado, anotada, concordada y comentada: una invitación a desplegar
+            la norma fundamental del Estado boliviano y a encontrar en ella las condiciones de posibilidad
+            para una pluralidad de justicias que están aún pendientes.
+          </p>
 
-          <!-- La Constitución como Tejido -->
-          <div class="about-block mb-4">
-            <h5><i class="bi bi-layers me-2"></i>La Constitución como Tejido</h5>
+          <hr class="about-rule" />
+
+          <!-- Essay -->
+          <article class="essay">
             <p>
-              La Constitución Política del Estado es un tejido de posibilidades con fuerza performativa. No es una
-              colección de órdenes de cumplimiento inmediato, sino una combinación de materiales constitucionales que
-              convoca archivos, instrumentos internacionales de derechos humanos, derecho comunitario y las normas
-              propias de las naciones y pueblos indígena originario campesinos.
+              Una Constitución Política del Estado es un texto, a saber un tejido, en consecuencia no es una
+              colección de órdenes de cumplimiento inmediato, sino una combinación sugerente de posibilidades,
+              de materiales con fuerza performativa, pues son materiales constitucionales. Cualquier discurso
+              sea oral o escrito es un tejido y atraviesa una serie de capas, de hebras. En este caso una
+              Constitución es un texto, y no hay nada fuera de este texto, pues este mismo texto está afuera,
+              convocando archivos, convocando instrumentos internacionales de derechos humanos, convocando
+              derecho comunitario, convocando a las normas y procedimientos propios de las naciones y pueblos
+              indígena originario campesinos, convocando pluralismo.
             </p>
-          </div>
-
-          <!-- Multiplicidad Textual -->
-          <div class="about-block mb-4">
-            <h5><i class="bi bi-box-seam me-2"></i>Multiplicidad Textual</h5>
             <p>
-              Los constituyentes empacaron en la CPE derechos, instituciones, valores, principios y complejidades. Este
-              proyecto busca desempacar cada artículo analizando los archivos del proceso constituyente, la historia
-              constitucional boliviana, instrumentos de derechos humanos, doctrina, jurisprudencia y las categorías
-              políticas y jurídicas que respiran en cada artículo.
+              El texto supone una serie de significaciones múltiples, capas sobre capas de textualidad. Cajas
+              dentro de cajas, significantes dentro de significantes, esto nos puede dar una imagen de lo que es
+              un texto, un tejido múltiple. Los constituyentes empacaron en la Constitución Política del Estado
+              una serie de derechos, de condiciones de estatalidad, de instituciones, de realidades posibles, de
+              valores, de principios, de complejidad, de derechos propios de pueblos indígenas, de derechos de
+              tradición republicana, de neoconstitucionalismos. De lo que trata esta Constitución anotada,
+              concordada y comentada es de presentar varios despliegues de la Constitución, es decir de desempacar
+              esto que se encuentra en cada uno de los artículos y que sólo puede ser comprendido al analizar los
+              archivos del proceso constituyente, la historia constitucional boliviana, los instrumentos de
+              derechos humanos, la doctrina, la jurisprudencia, las categorías políticas y jurídicas que respiran
+              en cada uno de los artículos de la Constitución.
             </p>
-          </div>
-
-          <!-- Despliegue Constitucional -->
-          <div class="about-block mb-4">
-            <h5><i class="bi bi-diagram-3 me-2"></i>Despliegue Constitucional</h5>
             <p>
-              Leer la Constitución es siempre un despliegue, un abrir el texto a su multitextualidad. Detrás de cada uno
-              de los 411 artículos se abren los pliegues de la Constitución, construida y reconstruida constantemente en
-              su aplicación, interpretación y búsqueda de significaciones.
+              Todo texto está estructurado, inferido, de capas sobre capas, pliegues sobre pliegues, hebras sobre
+              hebras. De manera que leer un texto es siempre un despliegue, un abrir el texto a su
+              multitextualidad. Realizar estos despliegues es a lo que invita este trabajo.
             </p>
+            <p>
+              Esta multiplicidad textual es siempre anterior a todo texto, es decir, en tanto tejido lo está en
+              base a otras textualidades, por ello nunca hubo una primera vez para una Constitución: la primera
+              vez es ya una segunda vez o una repetición. La multiplicidad textual supone un lugar en el cual se
+              inscriben lugares múltiples. Esta multiplicidad es imposible de determinar de manera final, pues lo
+              múltiple se abre detrás de ella en devenir. Por ello es una singularidad radical, un
+              <em>frágil absoluto</em>, un despliegue que no es general ni universal, pero tampoco particular, sino
+              múltiple.
+            </p>
+            <p>
+              Detrás de cada uno de los cuatrocientos once artículos, diez disposiciones transitorias, una
+              disposición abrogatoria y una disposición final, se abren los pliegues de la Constitución. Entonces
+              la Constitución Política del Estado se abre porque justamente ha sido construida, y a la vez se
+              construye constantemente, en su aplicación, interpretación y en la búsqueda constante de
+              significaciones.
+            </p>
+            <p>
+              Desplegar la Constitución no significa destruirla, ni alisarla o simplificarla, ni mucho menos ir en
+              busca del verdadero significado o la verdadera intención del Derecho que anida en sus artículos. La
+              multiplicidad siempre se abre, e ir en busca de sus despliegues es ir en busca de la justicia que se
+              aplique al caso concreto. Para el Centro de Estudios Constitucionales la justicia no es el Derecho:
+              la justicia es aquello que pretende el Derecho, pero que a la vez es imposible. La justicia sólo
+              puede sentirse en su ausencia, en su imposibilidad.
+            </p>
+
+            <blockquote class="essay-quote">
+              Un intento de decidir, de decir lo que la justicia es, pero a la vez sin cerrar su decibilidad, sino
+              más bien reafirmando su carácter de indecible.
+            </blockquote>
+
+            <h2 class="essay-subtitle">El despliegue como método</h2>
+            <p>
+              Por lo señalado, al momento de tomar el despliegue como método, es preciso tomar las siguientes
+              precauciones:
+            </p>
+
+            <ol class="precautions">
+              <li>
+                <span class="precaution-lead">Ir al texto mismo de la Constitución.</span> Leerlo íntegramente,
+                estar atento a cómo un término se convierte en categoría construida por la intertextualidad interna
+                del texto constitucional; cómo un artículo, un término, una categoría comienzan a ser invadidos,
+                asediados, cercados, inscriptos por otros artículos, términos y categorías de la Constitución. Esta
+                tarea debe descentrar y abrir las categorías para abrir un horizonte más rico de posibilidades de
+                interpretación.
+              </li>
+              <li>
+                <span class="precaution-lead">Convocar al exterior constitutivo.</span> Ir a aquello que está fuera
+                del texto pero que a la vez impacta en él: los archivos del proceso constituyente —conforme al
+                parágrafo II del Artículo 196 de la Constitución— y la tradición constitucional que se sumerge en la
+                historia. Pluralizamos la comprensión de los documentos, actas y resoluciones para enriquecer el
+                horizonte de posibilidades.
+              </li>
+              <li>
+                <span class="precaution-lead">No cerrar la interpretación.</span> La pluralidad en la interpretación
+                constitucional no debe buscar la interpretación final o correcta, sino abrirla. La ausencia de
+                cierre es lo que permite pensar el Derecho y los derechos de manera múltiple y dúctil, y pensar una
+                política constitucional futura decidida por las posibilidades de lo performativo.
+              </li>
+              <li>
+                <span class="precaution-lead">Convocar la densidad histórica.</span> Desde el primer Decreto del 13
+                de agosto de 1825 —considerado la primera Constitución boliviana— pasando por los textos
+                constitucionales del siglo XIX y XX y las reformas recientes, diseminando en el texto la
+                reverberación de las luchas sociales y políticas.
+              </li>
+              <li>
+                <span class="precaution-lead">Acercar la Constitución a la vida cotidiana.</span> Allí donde sus
+                preceptos deben causar efecto y ser comprensibles. La Constitución, también llamada utopía concreta,
+                debe ser la idea rectora, el mapa de navegación de una sociedad, de un Estado, de un conjunto de
+                pueblos que buscan, con todos sus esfuerzos, vivir bien.
+              </li>
+            </ol>
+
+            <p class="essay-sign">— Centro de Estudios Constitucionales, 2013</p>
+          </article>
+
+          <hr class="about-rule" />
+
+          <!-- Team -->
+          <h2 class="credits-heading">Quienes hicieron este trabajo</h2>
+          <p class="text-muted mb-4">
+            Un proyecto colectivo de investigación, recopilación de materiales y redacción a lo largo de varios años.
+          </p>
+
+          <div class="row g-3">
+            {credits.map((c) => (
+              <div class={c.names.length > 4 ? 'col-12' : 'col-md-6'}>
+                <div class="credit-card h-100">
+                  <div class="credit-role"><i class={`bi ${c.icon}`}></i>{c.role}</div>
+                  <ul class="credit-names">
+                    {c.names.map((n) => <li>{n}</li>)}
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
 
-          <!-- Método -->
-          <div class="about-block mb-4">
-            <h5><i class="bi bi-compass me-2"></i>Método de Despliegue</h5>
-            <ul class="method-list">
-              <li><strong>Intertextualidad:</strong> Observar cómo un artículo es invadido por otros artículos, términos y categorías de la Constitución.</li>
-              <li><strong>Exterior constitutivo:</strong> Convocar los archivos del proceso constituyente y la tradición constitucional.</li>
-              <li><strong>Pluralidad interpretativa:</strong> Abrir la interpretación sin cerrarla hacia un significado final.</li>
-              <li><strong>Densidad histórica:</strong> Desde el primer Decreto de 1825 hasta las reformas recientes.</li>
-              <li><strong>Vida cotidiana:</strong> Acercar la Constitución donde sus preceptos deben causar efecto.</li>
-            </ul>
+          <!-- Acknowledgements -->
+          <div class="accordion credits-accordion mt-4" id="agradecimientos">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agrCollapse">
+                  <i class="bi bi-heart me-2"></i>Agradecimientos
+                </button>
+              </h2>
+              <div id="agrCollapse" class="accordion-collapse collapse" data-bs-parent="#agradecimientos">
+                <div class="accordion-body">
+                  <p>A Cosude-Fordecapi, GTZ-Conced, Prisma, UCB y la Vicepresidencia del Estado, auspiciadores de este proyecto.</p>
+                  <p>A Miriam Campos, Verena Blickwede, Héctor Ramírez y Horst Grebe, quienes desde sus instituciones apostaron por este trabajo.</p>
+                  <p>A Marcelo Mercado Despot, Miguel Ángel Foronda, Mariana Zeballos, Verónica Berrios, Álvaro Muñoz Reyes y Tania Montes, con quienes comenzamos este proyecto.</p>
+
+                  <p class="ack-subtitle">Estudiantes de la Universidad Católica Boliviana «San Pablo»</p>
+                  <p class="text-muted">Sus trabajos de grado recopilaron los primeros materiales bibliográficos con los que comenzó el proyecto, y constituyen los primeros esbozos temáticos y bibliográficos trabajados sobre la Constitución Política del Estado.</p>
+                  <ul class="ack-students">
+                    {estudiantes.map((n) => <li>{n}</li>)}
+                  </ul>
+
+                  <p>
+                    A Boaventura de Sousa Santos, Álvaro García Linera, Guillermo Padilla, Salvador Schavelzón, Albert Noguera,
+                    Horst Grebe, Néstor Pedro Sagüés, Víctor Bazán, Esther Sánchez Botero, Rosembert Ariza, Christian Steiner,
+                    Michael Klöde, Fabián Yaksic, Raúl Prada, Ramiro Molina Barrios, Ramiro Molina Rivero, Marcelo Fernández,
+                    Luis Tapia, Alba María Paz Soldán y Josefa Salmón, quienes desarrollaron conversatorios con el equipo de investigación.
+                  </p>
+                  <p>
+                    A los profesores Alberto Del Real Alcalá, Waldo Albarracín, Luis Fernández Fagalde, Claudio Rossell,
+                    Eduardo Freudenthal, Alejandro Almaraz, Horacio Andaluz, Arturo Yáñez, José Antonio Rivera, Reynaldo Imaña,
+                    Jorge Lazarte, Reynaldo Irigoyen, Marcelo Claros, Elizabeth Íñiguez, María Inés Alurralde, Mauricio Diez Canseco,
+                    Diego Cuadros, Carlos Rocha, Árcil Oliva, Salvador Romero Ballivián, Yalú Galarza, Justino Avendaño, Alan Portillo,
+                    Dunia Mokrani, Teresa Ledezma, Edwin Cocarico, Fernando García Yapur, Tania Nava, Enrique Velazco Reckling,
+                    Marcelo Fernández Osco, Patricia Flores y Ana Paola Lorberg, quienes compartieron sus conocimientos.
+                  </p>
+                  <p>
+                    A toda la Universidad Católica Boliviana «San Pablo» —autoridades nacionales, regionales, administrativos,
+                    profesores, estudiantes y personal en general— que cobijaron este proyecto. En especial a Ingrid Flores por su
+                    colaboración con la gestión administrativa.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Invitación -->
-          <div class="about-block invitation p-4 rounded shadow-sm">
-            <p class="lead mb-0"><em>Esta es una invitación a recorrer la norma fundamental del Estado boliviano, a encontrar en ella las condiciones de posibilidad para una pluralidad de justicias que están aún pendientes.</em></p>
-          </div>
+          <p class="about-footer-note">
+            Esta edición digital retoma y rinde homenaje al trabajo del Centro de Estudios Constitucionales (2013),
+            ahora ampliado con un asistente de inteligencia artificial para explorar la CPE.
+          </p>
         </div>
       </div>
     </div>
