@@ -51,15 +51,6 @@ const ogImage = new URL('/img/og-image.png', Astro.site).href;
     <!-- Canonical URL -->
     <link rel="canonical" href={canonical} />
 
-    <!-- Set theme before paint to avoid a flash of the wrong colors -->
-    <script is:inline>
-      (function () {
-        const saved = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
-      })();
-    </script>
-
     <!-- Fonts: IBM Plex Sans / Serif / Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

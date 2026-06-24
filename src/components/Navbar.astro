@@ -33,12 +33,6 @@ const isAcerca = active === 'acerca';
         <li class="nav-item">
           <a class={`nav-link${isAcerca ? ' active' : ''}`} href="/acerca"><i class="bi bi-info-circle me-1"></i>Acerca de</a>
         </li>
-        <li class="nav-item ms-2">
-          <button class="theme-toggle" id="themeToggle" title="Cambiar tema">
-            <i class="bi bi-sun-fill" id="themeIcon"></i>
-            <span id="themeLabel">Claro</span>
-          </button>
-        </li>
       </ul>
     </div>
   </div>
@@ -61,10 +55,5 @@ const isAcerca = active === 'acerca';
         <a class={`nav-link${isAcerca ? ' active' : ''}`} href="/acerca"><i class="bi bi-info-circle me-2"></i>Acerca de</a>
       </li>
     </ul>
-    <hr />
-    <button class="theme-toggle w-100" id="themeToggleMobile" title="Cambiar tema">
-      <i class="bi bi-sun-fill" id="themeIconMobile"></i>
-      <span id="themeLabelMobile">Claro</span>
-    </button>
   </div>
 </div>

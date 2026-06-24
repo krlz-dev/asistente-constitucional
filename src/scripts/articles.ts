@@ -47,7 +47,7 @@ export async function initArticles(): Promise<void> {
     state.filteredArticles = [...state.articles];
 
     initCategoryDropdown();
-    showWelcomeMessage();
+    showAllArticles();
   } catch (error) {
     console.error('Error loading articles:', error);
     articlesGrid.innerHTML = `
@@ -170,8 +170,7 @@ function initCategoryDropdown(): void {
       state.articlesVisible = true;
       displayArticles();
     } else {
-      state.filteredArticles = [...state.articles];
-      showWelcomeMessage();
+      showAllArticles();
     }
   }
 
@@ -206,27 +205,21 @@ function initCategoryDropdown(): void {
   renderOptions();
 }
 
-function showWelcomeMessage(): void {
-  const articlesGrid = document.getElementById('articlesGrid')!;
-  const paginationContainer = document.getElementById('paginationContainer')!;
-
-  articlesGrid.innerHTML = `
-    <div class="col-12 text-center py-5">
-      <i class="bi bi-search text-primary" style="font-size: 3rem; opacity: 0.5;"></i>
-      <p class="text-muted mt-3">Busca un artículo o selecciona una categoría</p>
-    </div>
-  `;
-  paginationContainer.style.display = 'none';
-  state.articlesVisible = false;
+function showAllArticles(): void {
+  state.selectedTematica = null;
+  state.filteredArticles = [...state.articles];
+  state.currentPage = 1;
+  state.articlesVisible = true;
+  displayArticles();
 }
 
 function filterArticles(query: string): void {
   if (!query) {
-    state.filteredArticles = [...state.articles];
     if (!state.selectedTematica) {
-      showWelcomeMessage();
+      showAllArticles();
       return;
     }
+    state.filteredArticles = [...state.articles];
   } else {
     state.filteredArticles = state.articles.filter((art) => {
       const idMatch = art.id.toString().includes(query);
