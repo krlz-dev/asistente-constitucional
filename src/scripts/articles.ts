@@ -236,7 +236,6 @@ function filterArticles(query: string): void {
 
 function displayArticles(): void {
   const articlesGrid = document.getElementById('articlesGrid')!;
-  const paginationContainer = document.getElementById('paginationContainer')!;
 
   articlesGrid.innerHTML = '';
 
@@ -251,7 +250,7 @@ function displayArticles(): void {
         <p class="text-muted mt-2">No se encontraron artículos</p>
       </div>
     `;
-    paginationContainer.style.display = 'none';
+    setPaginationVisible(false);
     return;
   }
 
@@ -278,15 +277,26 @@ function displayArticles(): void {
   });
 
   if (totalPages > 1) {
-    paginationContainer.style.display = 'block';
-    renderPagination(totalPages);
+    setPaginationVisible(true);
+    // Top bar (#paginationTop) and bottom bar (#pagination) stay in sync.
+    renderPagination(document.getElementById('paginationTop'), totalPages);
+    renderPagination(document.getElementById('pagination'), totalPages);
   } else {
-    paginationContainer.style.display = 'none';
+    setPaginationVisible(false);
   }
 }
 
-function renderPagination(totalPages: number): void {
-  const pagination = document.getElementById('pagination')!;
+// Show/hide both pagination bars. The top bar only exists to save scrolling,
+// so it follows the same rule as the bottom one (visible when there are pages).
+function setPaginationVisible(visible: boolean): void {
+  ['paginationContainerTop', 'paginationContainer'].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = visible ? 'block' : 'none';
+  });
+}
+
+function renderPagination(pagination: HTMLElement | null, totalPages: number): void {
+  if (!pagination) return;
   pagination.innerHTML = '';
 
   const prevLi = document.createElement('li');
