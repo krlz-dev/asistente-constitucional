@@ -9,6 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "test:guard": "node tests/sanitize.test.mjs",
     "test:scope": "node tests/scope.test.mjs"
   },
   "dependencies": {
